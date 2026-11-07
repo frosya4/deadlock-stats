@@ -10,6 +10,9 @@ services:
       DATA_DIR: /data
     volumes:
       - ./data:/data
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
     restart: unless-stopped
   caddy:
     image: caddy:2
@@ -25,6 +28,9 @@ services:
       - caddy_config:/config
     depends_on:
       - app
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
     restart: unless-stopped
 volumes:
   caddy_data:
