@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Deadlock · разбор матчей</title><link rel="stylesheet" href="/css/style.css"></head>
+<body><main>
+  <nav><span>DEADLOCK / СТАТИСТИКА</span><span>Разбор демозаписей</span></nav>
+  <header class="intro"><h1>Каждый матч — в деталях</h1><p class="mut">Загрузите демозапись Deadlock: сравните игроков, проследите экономику и изучите билды.</p></header>
+  <section class="card drop-zone" id="drop-zone" aria-label="Загрузка демозаписи">
+    <h2>Перетащите .dem сюда</h2><label class="file-label" for="file">или выберите файл</label><input class="file-input" id="file" type="file" accept=".dem" aria-label="Демозапись Deadlock">
+    <p class="mut small">До 600 МБ. Исходная демозапись удаляется после обработки.</p>
+  </section>
+  <form id="fetch-form"><label for="match-id">Номер матча</label> <input id="match-id" inputmode="numeric" pattern="[0-9]+" required> <button type="submit">Скачать и разобрать</button></form>
+  <progress id="progress" class="upload-progress" max="100" value="0" aria-label="Прогресс загрузки" hidden></progress>
+  <p id="upload-status" role="status" aria-live="polite"></p>
+  <section><h2>Разобранные матчи</h2><p id="list-status" class="mut">Загрузка списка…</p><div id="matches" class="match-list"></div></section>
+</main>
+<script type="module">
+const fileInput = document.querySelector('#file');
+const drop = document.querySelector('#drop-zone');
+const progress = document.querySelector('#progress');
+const status = document.querySelector('#upload-status');
+let busy = false;
+function element(tag, text, className) {
+  const node = document.createElement(tag); node.textContent = text;
+  if (className) node.className = className;
+  return node;
+}
+function redirect(id) {
+  if (!/^(?:\d+|u[0-9a-f]{12})$/.test(String(id))) throw new Error('Сервер вернул неверный номер матча');
+  location.assign('/m/' + id);
+}
+async function jsonResponse(response) {
+  const data = await response.json();
+  if (!response.ok) throw new Error(data.error || 'Не удалось получить ответ сервера');
+  return data;
+}
+async function poll(job) {
+  while (true) {
+    const data = await jsonResponse(await fetch('/api/jobs/' + encodeURIComponent(job)));
+    if (data.state === 'done') { redirect(data.matchId); return; }
+    if (data.state === 'error') throw new Error(data.error || 'Ошибка обработки демозаписи');
+    status.textContent = data.state === 'queued' ? 'Очередь: позиция ' + data.position : 'Обработка демозаписи…';
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  }
+}
+function send(file) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest(); xhr.open('POST', '/api/upload'); xhr.responseType = 'json';
+    xhr.upload.onprogress = event => {
+      if (event.lengthComputable) {
+        progress.value = Math.round(event.loaded / event.total * 100);
+        status.textContent = 'Загрузка: ' + progress.value + '%';
+      } else progress.removeAttribute('value');
+    };
+    xhr.onload = () => xhr.status >= 200 && xhr.status < 300 ? resolve(xhr.response) : reject(new Error(xhr.response?.error || 'Ошибка загрузки (' + xhr.status + ')'));
+    xhr.onerror = () => reject(new Error('Нет связи с сервером. Попробуйте загрузить файл снова.'));
+    xhr.onabort = () => reject(new Error('Загрузка прервана'));
+    xhr.setRequestHeader('Content-Type', 'application/octet-stream');
+    xhr.setRequestHeader('X-Filename', encodeURIComponent(file.name)); xhr.send(file);
+  });
+}
+async function upload(file) {
+  if (!file || busy) return;
+  busy = true; fileInput.disabled = true; status.classList.remove('error'); progress.hidden = true;
+  try {
+    if (file.size > 600 * 1024 * 1024) throw new Error('Файл слишком большой: максимум 600 МБ');
+    const signature = new Uint8Array(await file.slice(0, 8).arrayBuffer());
+    if (signature.length !== 8 || ![80,66,68,69,77,83,50,0].every((v, i) => signature[i] === v)) throw new Error('Это не демка Deadlock');
+    progress.hidden = false; progress.value = 0; status.textContent = 'Загрузка: 0%';
+    const data = await send(file); progress.value = 100;
+    if (data.matchId) redirect(data.matchId);
+    else if (data.job) await poll(data.job);
+    else throw new Error('Сервер не вернул номер задачи');
+  } catch (error) {
+    status.textContent = error instanceof TypeError || error instanceof SyntaxError ? 'Не удалось связаться с сервером. Проверьте подключение и повторите загрузку.' : error.message || 'Не удалось загрузить демозапись';
+    status.classList.add('error');
+  }
+  finally { busy = false; fileInput.disabled = false; fileInput.value = ''; }
+}
+document.querySelector('#fetch-form').addEventListener('submit', async event => {
+  event.preventDefault();
+  if (busy) return;
+  busy = true; fileInput.disabled = true; status.classList.remove('error');
+  status.textContent = 'Скачивание демозаписи…';
+  try {
+    const data = await jsonResponse(await fetch('/api/fetch', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({matchId: document.querySelector('#match-id').value})}));
+    if (data.matchId) redirect(data.matchId); else await poll(data.job);
+  } catch (error) { status.textContent = error.message || 'Ошибка скачивания'; status.classList.add('error'); }
+  finally { busy = false; fileInput.disabled = false; }
+});
+fileInput.addEventListener('change', () => upload(fileInput.files[0]));
+for (const name of ['dragenter', 'dragover']) drop.addEventListener(name, event => { event.preventDefault(); if (!busy) drop.classList.add('dragging'); });
+for (const name of ['dragleave', 'drop']) drop.addEventListener(name, event => { event.preventDefault(); drop.classList.remove('dragging'); });
+drop.addEventListener('drop', event => upload(event.dataTransfer.files[0]));
+try {
+  const matches = await jsonResponse(await fetch('/api/matches'));
+  document.querySelector('#list-status').textContent = matches.length ? '' : 'Пока нет матчей. Загрузите первую демозапись.';
+  for (const match of matches) {
+    const card = element('article', '', 'card match-summary');
+    const title = element('h3', ''); const link = element('a', 'Матч ' + match.matchId); link.href = '/m/' + encodeURIComponent(match.matchId); title.append(link); card.append(title);
+    if (match.verified === false) card.append(element('p', 'не проверено', 'mut'));
+    card.append(element('p', new Date(match.startUTC).toLocaleString('ru-RU') + ' · ' + match.duration, 'mut'));
+    card.append(element('p', 'Победитель: ' + (String(match.winner).startsWith('Amber') ? 'Янтарь' : 'Сапфир')));
+    for (const [team, label, className] of [['Amber', 'Янтарь', 'amber'], ['Sapphire', 'Сапфир', 'sapphire']]) {
+      card.append(element('p', label + ': ' + match.heroes.filter(p => p.team.startsWith(team)).map(p => p.hero).join(' · '), 'team-heroes ' + className));
+    }
+    document.querySelector('#matches').append(card);
+  }
+} catch (error) {
+  document.querySelector('#list-status').textContent = error instanceof TypeError || error instanceof SyntaxError ? 'Не удалось загрузить список матчей. Проверьте подключение и обновите страницу.' : error.message || 'Не удалось загрузить список матчей';
+}
+</script>
+</body></html>

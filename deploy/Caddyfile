@@ -1,0 +1,8 @@
+{$SITE_HOST} {
+    request_body {
+        max_size 650MB
+    }
+    {$CADDY_TLS}
+    reverse_proxy app:8000
+}
+

@@ -1,0 +1,32 @@
+services:
+  app:
+    mem_limit: 3g
+    pids_limit: 64
+    cpus: 2
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+  caddy:
+    image: caddy:2
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      SITE_HOST: ${SITE_HOST:?Set SITE_HOST in deploy/.env}
+      CADDY_TLS: ${CADDY_TLS:-}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - app
+    restart: unless-stopped
+volumes:
+  caddy_data:
+  caddy_config:
+

@@ -1,0 +1,11 @@
+__pycache__/
+*.dem
+/data/
+node_modules/
+target/
+
+/deploy/data/
+/deploy/.env
+tests/web/node_modules/
+tests/web/test-results/
+**/__pycache__/

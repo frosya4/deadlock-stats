@@ -1,0 +1,52 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 1a5deec..c3951ce 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -61,6 +61,7 @@ haste_core.workspace = true
+ [dev-dependencies]
+ anyhow.workspace = true
+ rand.workspace = true
++serde_json.workspace = true
+ 
+ [features]
+ broadcast = ["haste_broadcast/reqwest", "haste_broadcast/tokio"]
+@@ -92,3 +93,7 @@ required-features = ["preserve-metadata"]
+ 
+ [[example]]
+ name = "seek"
++
++[[example]]
++name = "dldump"
++required-features = ["deadlock", "preserve-metadata"]
+diff --git a/crates/haste_core/src/fieldmetadata.rs b/crates/haste_core/src/fieldmetadata.rs
+index db6461b..46c7bbb 100644
+--- a/crates/haste_core/src/fieldmetadata.rs
++++ b/crates/haste_core/src/fieldmetadata.rs
+@@ -286,6 +286,13 @@ pub(crate) fn get_field_metadata(
+     field: &FlattenedSerializerField,
+     var_type: &String,
+ ) -> Result<FieldMetadata, FieldMetadataError> {
+-    let expr = vartype::parse(var_type.as_str())?;
++    let cleaned: String = { let mut out=String::new(); let mut skip_depth: Option<i32>=None; let mut depth=0i32;
++        for ch in var_type.as_str().chars() {
++            match ch { '<' => { depth+=1; if skip_depth.is_none(){out.push(ch);} }
++                '>' => { if skip_depth==Some(depth){skip_depth=None;} depth-=1; if skip_depth.is_none(){out.push(ch);} }
++                ',' => { if skip_depth.is_none(){ skip_depth=Some(depth);} }
++                _ => { if skip_depth.is_none(){out.push(ch);} } } }
++        out };
++    let expr = match vartype::parse(cleaned.as_str()) { Ok(e) => e, Err(e) => { eprintln!("VARTYPE FAIL: {}", cleaned); return Err(e.into()); } };
+     visit_any(expr, field)
+ }
+diff --git a/crates/haste_core/src/parser.rs b/crates/haste_core/src/parser.rs
+index b383d82..e2bbbc8 100644
+--- a/crates/haste_core/src/parser.rs
++++ b/crates/haste_core/src/parser.rs
+@@ -144,6 +144,8 @@ pub struct Parser<D: DemoStream, V: Visitor> {
+ }
+ 
+ impl<D: DemoStream, V: Visitor> Parser<D, V> {
++    pub fn visitor_mut(&mut self) -> &mut V { &mut self.visitor }
++
+     pub fn from_stream_with_visitor(demo_stream: D, visitor: V) -> Result<Self, DemoHeaderError> {
+         Ok(Self {
+             demo_stream,

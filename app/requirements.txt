@@ -1,0 +1,7 @@
+protobuf>=7.36.2
+pytest>=8
+fastapi
+uvicorn[standard]
+python-multipart
+httpx
+zstandard>=0.23

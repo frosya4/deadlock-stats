@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deadlock матч __ID__</title>
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--fg:#1d1d1f;--mut:#6b6b70;--line:#e3e1dc;--amber:#c7861a;--sapph:#2f6fd0;--win:#2e8b57;--bad:#c0392b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141416;--card:#1d1d21;--fg:#ececef;--mut:#9a9aa3;--line:#2e2e34;--amber:#e3a03a;--sapph:#5b93ec}}
+:root[data-theme="dark"]{--bg:#141416;--card:#1d1d21;--fg:#ececef;--mut:#9a9aa3;--line:#2e2e34;--amber:#e3a03a;--sapph:#5b93ec}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1180px;margin:0 auto;padding:20px 16px 60px}h1{font-size:24px;margin:0 0 4px}h2{font-size:17px;margin:28px 0 10px}
+.mut{color:var(--mut)}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;overflow-x:auto}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px}.kpi b{display:block;font-size:20px}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th{font-weight:600;color:var(--mut);font-size:12px}td:first-child,th:first-child,td.l,th.l{text-align:left}
+.A{color:var(--amber)}.S{color:var(--sapph)}.tag{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+.tA{background:var(--amber)}.tS{background:var(--sapph)}.win{color:var(--win);font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:800px){.grid2{grid-template-columns:1fr}}
+details{border-bottom:1px solid var(--line);padding:6px 0}summary{cursor:pointer;font-weight:600}
+.chips span{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:2px 6px;margin:2px;font-size:12px}
+.chips span.sold{text-decoration:line-through;opacity:.6}.Weapon{border-color:#d58a2a!important}.Vitality{border-color:#4caf50!important}.Tech{border-color:#9b59b6!important}
+svg text{fill:var(--mut);font-size:11px}.feed td{font-size:13px}
+</style></head><body><main>
+<h1>Deadlock · матч <span id="mid"></span></h1><div class="mut" id="sub"></div>
+<div class="kpis" id="kpis"></div>
+<h2>Игроки</h2><div class="card"><table id="pt"></table></div>
+<h2>Получено золота</h2><div class="card"><table id="gold"></table><div class="mut" style="margin-top:6px">Всего = итоговый нетворс игрока (всё заработанное за матч). GPM = всего ÷ минуты матча. «Пассив и прочее» = всего минус учтённые источники (пассивный доход, стартовое золото и т.п.).</div></div>
+<h2>Нетворс команд</h2><div class="card"><svg id="nw" width="100%" height="260" viewBox="0 0 1000 260" preserveAspectRatio="none"></svg><div class="mut">Линии — суммарный нетворс команд (снимок каждые 30 с), заливка — разница в пользу лидера.</div></div>
+<div class="grid2"><div><h2>Объекты</h2><div class="card"><table id="ob"></table></div></div>
+<div><h2>Карта смертей</h2><div class="card"><svg id="dm" width="100%" viewBox="0 0 400 300"></svg><div class="mut">Точка — смерть героя, цвет — команда погибшего.</div></div></div></div>
+<h2>Урон по героям (кто → кому)</h2><div class="card"><table id="mx"></table></div>
+<h2>Точность и прочее</h2><div class="card"><table id="acc"></table></div>
+<h2>Билды и прокачка</h2><div class="card" id="builds"></div>
+<h2>Хронология убийств</h2><div class="card"><table class="feed" id="kf"></table></div>
+<h2>Чат</h2><div class="card"><table id="chat"></table></div>
+</main><script>
+const D=__DATA__;
+const T=t=>t.startsWith('Amber')?'A':'S', f=n=>(n??0).toLocaleString('ru-RU'), mm=s=>`${Math.floor(s/60)}:${String(Math.round(s%60)).padStart(2,'0')}`;
+const m=D.match; document.getElementById('mid').textContent=m.matchId;
+document.getElementById('sub').textContent=`${new Date(m.startUTC).toLocaleString('ru-RU')} · ${m.duration} · ${m.matchMode.replace('k_ECitadelMatchMode_','')} / ${m.gameMode.replace('k_ECitadelGameMode_','')} · ${m.server}`;
+const tt=m.teamTotals, tn=Object.keys(tt);
+document.getElementById('kpis').innerHTML=[['Победитель',`<span class="${T(m.winner)}">${m.winner}</span>`],['Счёт убийств',tn.map(t=>`<span class="${T(t)}">${tt[t].kills}</span>`).join(' : ')],['Нетворс',tn.map(t=>`<span class="${T(t)}">${(tt[t].netWorth/1000).toFixed(0)}k</span>`).join(' : ')],['Урон по героям',tn.map(t=>`<span class="${T(t)}">${(tt[t].heroDamage/1000).toFixed(0)}k</span>`).join(' : ')],['Урон по объектам',tn.map(t=>`<span class="${T(t)}">${(tt[t].objDamage/1000).toFixed(0)}k</span>`).join(' : ')],['Мидбосс',m.midBoss.map(x=>`<span class="${T(x.claimedBy)}">${x.time}</span>`).join(', ')||'—']].map(([a,b])=>`<div class="card kpi"><span class="mut">${a}</span><b>${b}</b></div>`).join('');
+const P=D.players;
+document.getElementById('pt').innerHTML='<tr><th class="l">Игрок</th><th class="l">Герой</th><th>Линия</th><th>Ур.</th><th>У/С/П</th><th>KDA</th><th>Нетворс</th><th>GPM</th><th>Добив.</th><th>Денаи</th><th>Урон героям</th><th>Получ. урон</th><th>Урон объектам</th><th>Хил</th></tr>'+P.map(p=>`<tr><td><span class="tag t${T(p.team)}"></span>${p.name}${p.team===m.winner?' <span class="win">★</span>':''}</td><td class="l">${p.hero}</td><td>${p.lane}</td><td>${p.level}</td><td>${p.kills}/${p.deaths}/${p.assists}</td><td>${p.kda}</td><td>${f(p.netWorth)}</td><td>${Math.round(p.netWorth/(m.durationS/60))}</td><td>${p.lastHits}</td><td>${p.denies}</td><td>${f(p.heroDamage)}</td><td>${f(p.damageTaken)}</td><td>${f(p.objDamage)}</td><td>${f(p.healing)}</td></tr>`).join('');
+// networth
+(()=>{const s=document.getElementById('nw'),N=D.netWorthTimeline,W=1000,Hh=240,mx=Math.max(...N.map(r=>Math.max(r[tn[0]],r[tn[1]]))),tm=N[N.length-1].t;
+const x=t=>30+t/tm*(W-40),y=v=>Hh-v/mx*(Hh-20);let h='';
+for(let i=0;i<=5;i++){const v=mx*i/5;h+=`<line x1="30" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="0" y="${y(v)+4}">${Math.round(v/1000)}k</text>`}
+for(let t=0;t<=tm;t+=300)h+=`<text x="${x(t)-10}" y="258">${t/60}м</text>`;
+const dif=N.map(r=>r[tn[1]]-r[tn[0]]),dm=Math.max(...dif.map(Math.abs)),yd=v=>Hh/2-v/dm*60;
+h+=`<path d="M${x(0)},${yd(0)} `+N.map((r,i)=>`L${x(r.t)},${yd(dif[i])}`).join(' ')+` L${x(tm)},${yd(0)}Z" fill="var(--sapph)" opacity=".12"/>`;
+tn.forEach(t=>h+=`<polyline fill="none" stroke="var(--${T(t)=='A'?'amber':'sapph'})" stroke-width="2.5" points="${N.map(r=>x(r.t)+','+y(r[t])).join(' ')}"/>`);
+s.innerHTML=h})();
+document.getElementById('ob').innerHTML='<tr><th class="l">Объект</th><th class="l">Чей</th><th>Первый урон</th><th>Уничтожен</th><th>Урон игроков</th></tr>'+D.objectives.map(o=>`<tr><td>${o.name}</td><td class="l"><span class="tag t${T(o.owner)}"></span>${o.owner.split(' ')[0]}</td><td>${o.firstDamage}</td><td>${o.destroyed??'<span class="mut">цел</span>'}</td><td>${f(o.playerDamage)}</td></tr>`).join('');
+(()=>{const s=document.getElementById('dm');let h='<rect x="0" y="0" width="400" height="300" fill="none" stroke="var(--line)"/>';const X=v=>200+v/10000*190,Y=v=>150-v/10000*140;
+P.forEach(p=>p.deathDetails.forEach(d=>{if(d.pos)h+=`<circle cx="${X(d.pos.x)}" cy="${Y(d.pos.y)}" r="3.5" fill="var(--${T(p.team)=='A'?'amber':'sapph'})" opacity=".75"><title>${d.time} ${p.name} (${p.hero}) ← ${d.killer}</title></circle>`}));s.innerHTML=h})();
+(()=>{const names=P.map(p=>p.name);let mx=0;names.forEach(a=>names.forEach(b=>mx=Math.max(mx,(D.damageMatrix[a]||{})[b]||0)));
+document.getElementById('mx').innerHTML='<tr><th class="l">Кто \\ Кому</th>'+P.map(p=>`<th class="${T(p.team)}">${p.hero}</th>`).join('')+'</tr>'+P.map(a=>`<tr><td><span class="tag t${T(a.team)}"></span>${a.hero}</td>`+P.map(b=>{const v=(D.damageMatrix[a.name]||{})[b.name]||0;return `<td style="background:rgba(192,57,43,${(v/mx*.6).toFixed(2)})">${v?f(v):''}</td>`}).join('')+'</tr>').join('')})();
+document.getElementById('acc').innerHTML='<tr><th class="l">Игрок</th><th>Выстрелов по героям</th><th>Попаданий</th><th>Точность</th><th>Хедшоты от попаданий</th><th>Парирования</th><th>Самохил</th><th>Смягчено урона</th><th>Добито крипов</th><th>Нейтралов</th><th>Потеряно золота при смертях</th></tr>'+P.map(p=>`<tr><td><span class="tag t${T(p.team)}"></span>${p.name}</td><td>${f(p.heroShots)}</td><td>${f(p.heroHits)}</td><td>${p.accuracyHero??'—'}%</td><td>${p.headshotRate??'—'}%</td><td>${p.parrySuccess}/${p.parrySuccess+p.parryMiss}</td><td>${f(p.selfHealing)}</td><td>${f(p.damageMitigated)}</td><td>${p.creepKills}</td><td>${p.neutralKills}</td><td>${f(p.goldDeathLoss)}</td></tr>`).join('');
+document.getElementById('builds').innerHTML=P.map(p=>`<details><summary><span class="tag t${T(p.team)}"></span>${p.name} — ${p.hero} <span class="mut">(${p.items.length} предм.)</span></summary><div class="chips">${p.items.map(i=>`<span class="${i.slot} ${i.sold?'sold':''}" title="${i.en||''} · T${i.tier}${i.sold?' · продан '+i.sold:''}">${i.time} ${i.name}</span>`).join('')}</div><div class="mut" style="margin-top:4px">Способности: </div><div class="chips">${p.abilities.map(i=>`<span>${i.time} ${i.name}${i.upgrade?' +'+i.upgrade:''}</span>`).join('')}</div></details>`).join('');
+document.getElementById('kf').innerHTML='<tr><th>Время</th><th class="l">Убийца</th><th class="l">Жертва</th><th class="l">Ассисты</th></tr>'+D.killFeed.map(k=>`<tr><td>${k.time}</td><td class="l">${k.killer}${k.killerHero?` <span class="mut">(${k.killerHero})</span>`:''}</td><td class="l"><span class="tag t${T(k.victimTeam||'S')}"></span>${k.victim} <span class="mut">(${k.victimHero})</span></td><td class="l mut">${k.assists.join(', ')}</td></tr>`).join('');
+document.getElementById('chat').innerHTML=D.chat.map(c=>`<tr><td>${c.time}</td><td class="l">${c.player} <span class="mut">(${c.hero})</span></td><td class="l mut">${c.all?'всем':'команде'}</td><td class="l" style="white-space:normal">${c.text.replace(/</g,'&lt;')}</td></tr>`).join('')||'<tr><td>—</td></tr>';
+
+(()=>{const src=[['Players','Герои'],['Assists','Ассисты'],['LaneCreeps','Крипы линии'],['Neutrals','Нейтралы'],['Bosses','Боссы/объекты'],['Treasure','Сокровища'],['Denies','Денаи']];
+const min=m.durationS/60,cols=['#c0392b','#e67e22','#d4ac0d','#27ae60','#8e44ad','#16a085','#7f8c8d','#95a5a6'];
+const rows=P.map(p=>{const g=src.map(([k])=>(p.gold[k]||{}).gold||0),orbs=Object.values(p.gold).reduce((a,v)=>a+(v.orbs||0),0),rest=Math.max(0,p.netWorth-g.reduce((a,b)=>a+b,0)-orbs);return {p,g,orbs,rest}});
+const sorted=[...rows].sort((a,b)=>b.p.netWorth-a.p.netWorth),mx=sorted[0].p.netWorth;
+document.getElementById('gold').innerHTML='<tr><th class="l">Игрок</th><th>Всего</th><th>GPM</th>'+src.map(x=>`<th>${x[1]}</th>`).join('')+'<th>Орбы душ</th><th>Пассив и прочее</th><th>Потеряно при смертях</th><th class="l" style="min-width:220px">Структура</th></tr>'+sorted.map(({p,g,orbs,rest})=>{const parts=[...g,orbs,rest];return `<tr><td><span class="tag t${T(p.team)}"></span>${p.name} <span class="mut">${p.hero}</span></td><td><b>${f(p.netWorth)}</b></td><td><b>${Math.round(p.netWorth/min)}</b></td>`+g.map(v=>`<td>${f(v)}</td>`).join('')+`<td>${f(orbs)}</td><td>${f(rest)}</td><td>${f(p.goldDeathLoss)}</td><td class="l"><svg width="220" height="12">${(()=>{let x=0;return parts.map((v,i)=>{const w=v/mx*220,r=`<rect x="${x}" y="0" width="${w}" height="12" fill="${cols[i]}"><title>${i<src.length?src[i][1]:(i==src.length?'Орбы':'Пассив')}: ${f(v)}</title></rect>`;x+=w;return r}).join('')})()}</svg></td></tr>`}).join('')+`<tr><td colspan="${src.length+6}" class="l mut">`+[...src.map(x=>x[1]),'Орбы душ','Пассив и прочее'].map((n,i)=>`<span class="tag" style="background:${cols[i]}"></span>${n}`).join(' &nbsp; ')+'</td></tr>'})();
+</script></body></html>

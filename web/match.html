@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Deadlock · отчёт по матчу</title>
+  <link id="uplot-css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uPlot/1.6.31/uPlot.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uPlot/1.6.31/uPlot.iife.min.js"></script>
+  <script type="module" src="/js/match.js"></script>
+</head>
+<body>
+<main>
+  <nav><a href="/">← Все матчи</a><span>DEADLOCK / СТАТИСТИКА</span></nav>
+  <header><h1>Отчёт по матчу</h1><p id="subtitle" class="mut"></p></header>
+  <p id="status" role="status">Загрузка матча…</p>
+  <div id="report" hidden>
+    <div id="kpis" class="kpis"></div>
+    <section aria-labelledby="timeline-title">
+      <h2 id="timeline-title">Динамика матча</h2>
+      <div class="card">
+        <div class="toolbar">
+          <label>Метрика <select id="metric" aria-label="Метрика"><option value="netWorth">Нетворс</option><option value="gpm">GPM по времени</option><option value="kills">Убийства</option><option value="heroDamage">Урон</option><option value="level">Уровень</option></select></label>
+          <div class="buttons"><button data-team="Amber">Amber</button><button data-team="Sapphire">Sapphire</button><button data-team="all">Все</button><button id="team-totals" aria-pressed="false">Суммы команд</button></div>
+        </div>
+        <div id="player-legend" class="player-legend"></div>
+        <div id="timeline" class="chart" aria-label="График динамики матча"></div>
+        <div id="timeline-tooltip" class="chart-tooltip" role="status" hidden></div>
+        <p class="mut small">Наведите курсор или коснитесь графика для сравнения. GPM — средний доход с начала матча. Нажмите на имя, чтобы открыть карточку.</p>
+      </div>
+    </section>
+    <section><h2>Игроки</h2><div class="card table-scroll"><table id="players"></table></div></section>
+    <section><h2>Получено золота</h2><div class="card table-scroll"><table id="gold"></table></div>
+      <p class="mut small">Всего — итоговый нетворс. GPM = всего ÷ минуты матча. «Пассив и прочее» — остаток после учтённых источников и орбов.</p>
+      <div class="card"><h3>Накопленное золото по источникам</h3><p class="mut small">Сумма для игроков, выбранных выше. Снимки источников уже накопленные; орбы и пассив отдельно доступны только в итоговой таблице.</p><div id="gold-chart" class="chart" aria-label="График золота по источникам"></div><div id="gold-legend" class="source-legend"></div><div id="gold-tooltip" class="chart-tooltip" hidden></div></div>
+    </section>
+    <div class="grid2">
+      <section><h2>Объекты</h2><div class="card table-scroll"><table id="objectives"></table></div></section>
+      <section><h2>Карта смертей</h2><div class="card"><div id="death-map"></div><p class="mut small">Цвет точки — команда погибшего. Схема координат, не изображение карты.</p></div></section>
+    </div>
+    <section><h2>Урон по героям (кто → кому)</h2><div class="card table-scroll"><table id="damage"></table></div></section>
+    <section><h2>Точность и прочее</h2><div class="card table-scroll"><table id="accuracy"></table></div></section>
+    <section><h2>Билды и прокачка</h2><div class="card" id="builds"></div></section>
+    <section><h2>Хронология убийств</h2><div class="card table-scroll"><table id="kills"></table></div></section>
+    <section><h2>Чат</h2><div class="card table-scroll"><table id="chat"></table></div></section>
+    <section><h2>Скачать данные</h2><div id="downloads" class="buttons"></div></section>
+  </div>
+</main>
+<dialog id="player-card" aria-labelledby="player-title"><div class="dialog-top"><h2 id="player-title"></h2><button id="close-card" aria-label="Закрыть карточку">Закрыть ×</button></div><div id="player-content"></div></dialog>
+</body>
+</html>

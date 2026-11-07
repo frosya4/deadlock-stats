@@ -1,0 +1,7 @@
+.git
+tests/web/node_modules
+tests/web/test-results
+data
+*.dem
+**/__pycache__
+

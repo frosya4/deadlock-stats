@@ -1,0 +1,7987 @@
+{
+"heroes": {
+"0": {
+"code": "hero_base",
+"ru": "hero_base",
+"en": "hero_base"
+},
+"1": {
+"code": "hero_inferno",
+"ru": "Инфернус",
+"en": "Infernus"
+},
+"2": {
+"code": "hero_gigawatt",
+"ru": "Семь",
+"en": "Seven"
+},
+"3": {
+"code": "hero_hornet",
+"ru": "Виндикта",
+"en": "Vindicta"
+},
+"4": {
+"code": "hero_ghost",
+"ru": "Леди Гайст",
+"en": "Lady Geist"
+},
+"6": {
+"code": "hero_atlas",
+"ru": "Абрамс",
+"en": "Abrams"
+},
+"7": {
+"code": "hero_wraith",
+"ru": "Тень",
+"en": "Wraith"
+},
+"8": {
+"code": "hero_forge",
+"ru": "Макгиннис",
+"en": "McGinnis"
+},
+"10": {
+"code": "hero_chrono",
+"ru": "Парадокс",
+"en": "Paradox"
+},
+"11": {
+"code": "hero_dynamo",
+"ru": "Динамо",
+"en": "Dynamo"
+},
+"12": {
+"code": "hero_kelvin",
+"ru": "Кельвин",
+"en": "Kelvin"
+},
+"13": {
+"code": "hero_haze",
+"ru": "Пелена",
+"en": "Haze"
+},
+"14": {
+"code": "hero_astro",
+"ru": "Холлидей",
+"en": "Holliday"
+},
+"15": {
+"code": "hero_bebop",
+"ru": "Бибоп",
+"en": "Bebop"
+},
+"16": {
+"code": "hero_nano",
+"ru": "Калико",
+"en": "Calico"
+},
+"17": {
+"code": "hero_orion",
+"ru": "Серый Коготь",
+"en": "Grey Talon"
+},
+"18": {
+"code": "hero_krill",
+"ru": "Мо и Мелкий",
+"en": "Mo & Krill"
+},
+"19": {
+"code": "hero_shiv",
+"ru": "Заточка",
+"en": "Shiv"
+},
+"20": {
+"code": "hero_tengu",
+"ru": "Плющик",
+"en": "Ivy"
+},
+"21": {
+"code": "hero_kali",
+"ru": "Kali",
+"en": "Kali"
+},
+"25": {
+"code": "hero_warden",
+"ru": "Дозорный",
+"en": "Warden"
+},
+"27": {
+"code": "hero_yamato",
+"ru": "Ямато",
+"en": "Yamato"
+},
+"31": {
+"code": "hero_lash",
+"ru": "Хлыст",
+"en": "Lash"
+},
+"35": {
+"code": "hero_viscous",
+"ru": "Вязкус",
+"en": "Viscous"
+},
+"38": {
+"code": "hero_gunslinger",
+"ru": "Gunslinger",
+"en": "Gunslinger"
+},
+"39": {
+"code": "hero_yakuza",
+"ru": "The Boss",
+"en": "The Boss"
+},
+"46": {
+"code": "hero_genericperson",
+"ru": "Generic Person",
+"en": "Generic Person"
+},
+"48": {
+"code": "hero_wrecker",
+"ru": "Крушитель",
+"en": "Wrecker"
+},
+"49": {
+"code": "hero_rutger",
+"ru": "Rutger",
+"en": "Rutger"
+},
+"50": {
+"code": "hero_synth",
+"ru": "Карман",
+"en": "Pocket"
+},
+"51": {
+"code": "hero_thumper",
+"ru": "Thumper",
+"en": "Thumper"
+},
+"52": {
+"code": "hero_mirage",
+"ru": "Мираж",
+"en": "Mirage"
+},
+"53": {
+"code": "hero_slork",
+"ru": "Фатом",
+"en": "Fathom"
+},
+"54": {
+"code": "hero_cadence",
+"ru": "Cadence",
+"en": "Cadence"
+},
+"55": {
+"code": "hero_targetdummy",
+"ru": "Манекен-мишень",
+"en": "TargetDummy"
+},
+"56": {
+"code": "hero_bomber",
+"ru": "Bomber",
+"en": "Bomber"
+},
+"57": {
+"code": "hero_shieldguy",
+"ru": "Shield Guy",
+"en": "Shield Guy"
+},
+"58": {
+"code": "hero_viper",
+"ru": "Гадюка",
+"en": "Vyper"
+},
+"59": {
+"code": "hero_vandal",
+"ru": "Vandal",
+"en": "Vandal"
+},
+"60": {
+"code": "hero_magician",
+"ru": "Синклер",
+"en": "Sinclair"
+},
+"61": {
+"code": "hero_trapper",
+"ru": "Ловец",
+"en": "Trapper"
+},
+"62": {
+"code": "hero_operative",
+"ru": "Ворон",
+"en": "Raven"
+},
+"63": {
+"code": "hero_vampirebat",
+"ru": "Мина",
+"en": "Mina"
+},
+"64": {
+"code": "hero_drifter",
+"ru": "Скиталец",
+"en": "Drifter"
+},
+"65": {
+"code": "hero_priest",
+"ru": "Венатор",
+"en": "Venator"
+},
+"66": {
+"code": "hero_frank",
+"ru": "Виктор",
+"en": "Victor"
+},
+"67": {
+"code": "hero_bookworm",
+"ru": "Пейдж",
+"en": "Paige"
+},
+"68": {
+"code": "hero_boho",
+"ru": "Boho",
+"en": "Boho"
+},
+"69": {
+"code": "hero_doorman",
+"ru": "Швейцар",
+"en": "The Doorman"
+},
+"70": {
+"code": "hero_skyrunner",
+"ru": "Skyrunner",
+"en": "Skyrunner"
+},
+"71": {
+"code": "hero_swan",
+"ru": "Swan",
+"en": "Swan"
+},
+"72": {
+"code": "hero_punkgoat",
+"ru": "Билли",
+"en": "Billy"
+},
+"73": {
+"code": "hero_druid",
+"ru": "Druid",
+"en": "Druid"
+},
+"74": {
+"code": "hero_graf",
+"ru": "Graf",
+"en": "Graf"
+},
+"75": {
+"code": "hero_fortuna",
+"ru": "Fortuna",
+"en": "Fortuna"
+},
+"76": {
+"code": "hero_necro",
+"ru": "Грейвс",
+"en": "Graves"
+},
+"77": {
+"code": "hero_fencer",
+"ru": "Аполлон",
+"en": "Apollo"
+},
+"78": {
+"code": "hero_deadpack",
+"ru": "Дохлый Дэнни",
+"en": "Deadman Danny"
+},
+"79": {
+"code": "hero_familiar",
+"ru": "Дрём",
+"en": "Rem"
+},
+"80": {
+"code": "hero_werewolf",
+"ru": "Сильвер",
+"en": "Silver"
+},
+"81": {
+"code": "hero_unicorn",
+"ru": "Селеста",
+"en": "Celeste"
+},
+"82": {
+"code": "hero_opera",
+"ru": "Opera",
+"en": "Opera"
+},
+"83": {
+"code": "hero_testhero",
+"ru": "hero_testhero",
+"en": "hero_testhero"
+},
+"84": {
+"code": "hero_ratking",
+"ru": "Крысиный король",
+"en": "Rat King"
+},
+"85": {
+"code": "hero_chessmaster",
+"ru": "Соломон",
+"en": "Solomon"
+},
+"86": {
+"code": "hero_artist",
+"ru": "Виолетта",
+"en": "Violet"
+},
+"87": {
+"code": "hero_nurse",
+"ru": "Сестра Хэрроу",
+"en": "Nurse Harrow"
+},
+"88": {
+"code": "hero_baba",
+"ru": "Буся",
+"en": "Baba"
+}
+},
+"items": {
+"2521299219": {
+"code": "ability_golden_idol",
+"ru": "Урна душ",
+"en": "Soul Urn",
+"class": "ability_golden_idol",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Held"
+},
+"2641680935": {
+"code": "ability_item_pickup_effects",
+"ru": "ability_item_pickup_effects",
+"en": "ability_item_pickup_effects",
+"class": "rejuv_tracking_projectile",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Item"
+},
+"2573821048": {
+"code": "citadel_ability_zip_line",
+"ru": "Падение с зиплайна",
+"en": "Knocked off Zipline",
+"class": "citadel_ability_zip_line",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"875395762": {
+"code": "citadel_ability_zipline_boost",
+"ru": "citadel_ability_zipline_boost",
+"en": "citadel_ability_zipline_boost",
+"class": "citadel_ability_zipline_boost",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"4109126631": {
+"code": "citadel_ability_mantle",
+"ru": "Преодоление препятствия",
+"en": "Mantle",
+"class": "citadel_ability_mantle",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"4261702459": {
+"code": "citadel_ability_climb_rope",
+"ru": "citadel_ability_climb_rope",
+"en": "citadel_ability_climb_rope",
+"class": "citadel_ability_climb_rope",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1466127517": {
+"code": "citadel_ability_jump",
+"ru": "Прыжок",
+"en": "Jump",
+"class": "citadel_ability_jump",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1443159618": {
+"code": "citadel_ability_sprint",
+"ru": "citadel_ability_sprint",
+"en": "citadel_ability_sprint",
+"class": "citadel_ability_sprint",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"2207638101": {
+"code": "citadel_ability_dash",
+"ru": "Рывок",
+"en": "Dash",
+"class": "citadel_ability_dash",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"2335418656": {
+"code": "citadel_ability_slide",
+"ru": "Скольжение",
+"en": "Slide",
+"class": "citadel_ability_slide",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"664285540": {
+"code": "citadel_ability_melee_parry",
+"ru": "Парирование",
+"en": "Parry",
+"class": "citadel_ability_melee_parry",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"2276686724": {
+"code": "common_properties",
+"ru": "common_properties",
+"en": "common_properties",
+"class": "citadel_ability_empty",
+"slot": null,
+"tier": null,
+"atype": null
+},
+"2621064780": {
+"code": "weapon_info_base",
+"ru": "weapon_info_base",
+"en": "weapon_info_base",
+"class": null,
+"slot": null,
+"tier": null,
+"atype": null
+},
+"4048126189": {
+"code": "invis_base",
+"ru": "invis_base",
+"en": "invis_base",
+"class": null,
+"slot": null,
+"tier": null,
+"atype": null
+},
+"1113896001": {
+"code": "ability_trigger_base",
+"ru": "ability_trigger_base",
+"en": "ability_trigger_base",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"46922526": {
+"code": "inherent_base",
+"ru": "inherent_base",
+"en": "inherent_base",
+"class": "citadel_ability_empty",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"3764360584": {
+"code": "held_base",
+"ru": "held_base",
+"en": "held_base",
+"class": "citadel_ability_empty",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Held"
+},
+"3396600226": {
+"code": "npc_base",
+"ru": "npc_base",
+"en": "npc_base",
+"class": "citadel_ability_empty",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2636226819": {
+"code": "npc_ultimate_base",
+"ru": "npc_ultimate_base",
+"en": "npc_ultimate_base",
+"class": "citadel_ability_empty",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3080889384": {
+"code": "signature_base",
+"ru": "signature_base",
+"en": "signature_base",
+"class": "citadel_ability_empty",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2952062675": {
+"code": "ultimate_base",
+"ru": "ultimate_base",
+"en": "ultimate_base",
+"class": "citadel_ability_empty",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"139875686": {
+"code": "melee_base",
+"ru": "melee_base",
+"en": "melee_base",
+"class": null,
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"768565940": {
+"code": "weapon_base",
+"ru": "weapon_base",
+"en": "weapon_base",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2413562093": {
+"code": "hero_weapon_base",
+"ru": "hero_weapon_base",
+"en": "hero_weapon_base",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2690571895": {
+"code": "hero_shotgun_base",
+"ru": "hero_shotgun_base",
+"en": "hero_shotgun_base",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3152711215": {
+"code": "citadel_hold_melee",
+"ru": "citadel_hold_melee",
+"en": "citadel_hold_melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"384715776": {
+"code": "citadel_ability_melee_genericperson",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2826225210": {
+"code": "weapon_alternative_rmb_activate",
+"ru": "weapon_alternative_rmb_activate",
+"en": "weapon_alternative_rmb_activate",
+"class": "citadel_ability_empty",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1165827104": {
+"code": "citadel_base_lockon_ability",
+"ru": "citadel_base_lockon_ability",
+"en": "citadel_base_lockon_ability",
+"class": "citadel_base_lockon_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3483755040": {
+"code": "citadel_base_tiered_lockon_ability",
+"ru": "citadel_base_tiered_lockon_ability",
+"en": "citadel_base_tiered_lockon_ability",
+"class": "citadel_base_tiered_lockon_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2470199706": {
+"code": "citadel_weapon_rutger_set",
+"ru": "citadel_weapon_rutger_set",
+"en": "citadel_weapon_rutger_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1115497205": {
+"code": "citadel_weapon_kali_set",
+"ru": "citadel_weapon_kali_set",
+"en": "citadel_weapon_kali_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2790538565": {
+"code": "citadel_weapon_gunslinger_set",
+"ru": "citadel_weapon_gunslinger_set",
+"en": "citadel_weapon_gunslinger_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2772141905": {
+"code": "citadel_weapon_yakuza_set",
+"ru": "citadel_weapon_yakuza_set",
+"en": "citadel_weapon_yakuza_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3033433915": {
+"code": "citadel_weapon_architect_set",
+"ru": "citadel_weapon_architect_set",
+"en": "citadel_weapon_architect_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2914777625": {
+"code": "citadel_weapon_thumper_set",
+"ru": "citadel_weapon_thumper_set",
+"en": "citadel_weapon_thumper_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"677666973": {
+"code": "ability_melee_butcher",
+"ru": "ability_melee_butcher",
+"en": "ability_melee_butcher",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2950623773": {
+"code": "citadel_ability_melee_kali",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"755819616": {
+"code": "citadel_ability_melee_butcher",
+"ru": "citadel_ability_melee_butcher",
+"en": "citadel_ability_melee_butcher",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3299584775": {
+"code": "citadel_ability_melee_gunslinger",
+"ru": "citadel_ability_melee_gunslinger",
+"en": "citadel_ability_melee_gunslinger",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3571834135": {
+"code": "citadel_ability_melee_yakuza",
+"ru": "citadel_ability_melee_yakuza",
+"en": "citadel_ability_melee_yakuza",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1208692244": {
+"code": "citadel_ability_melee_thumper",
+"ru": "citadel_ability_melee_thumper",
+"en": "citadel_ability_melee_thumper",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3123925900": {
+"code": "citadel_ability_melee_architect",
+"ru": "citadel_ability_melee_architect",
+"en": "citadel_ability_melee_architect",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"4182904284": {
+"code": "rutger_rocket",
+"ru": "rutger_rocket",
+"en": "rutger_rocket",
+"class": "rutger_rocket",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"639385332": {
+"code": "rutger_force_field",
+"ru": "rutger_force_field",
+"en": "rutger_force_field",
+"class": "rutger_force_field",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1613872264": {
+"code": "rutger_cheat_death",
+"ru": "rutger_cheat_death",
+"en": "rutger_cheat_death",
+"class": "rutger_cheat_death",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"363299194": {
+"code": "rutger_pulse",
+"ru": "rutger_pulse",
+"en": "rutger_pulse",
+"class": "rutger_pulse",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"4260284622": {
+"code": "citadel_ability_kali_spinning_blade",
+"ru": "citadel_ability_kali_spinning_blade",
+"en": "citadel_ability_kali_spinning_blade",
+"class": "citadel_ability_kali_spinning_blade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"21628267": {
+"code": "ability_kali_dust_storm",
+"ru": "ability_kali_dust_storm",
+"en": "ability_kali_dust_storm",
+"class": "ability_kali_dust_storm",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3219375905": {
+"code": "citadel_ability_kali_disruptive_charge",
+"ru": "citadel_ability_kali_disruptive_charge",
+"en": "citadel_ability_kali_disruptive_charge",
+"class": "citadel_ability_kali_disruptive_charge",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"488392205": {
+"code": "ability_kali_trappers_bolo",
+"ru": "ability_kali_trappers_bolo",
+"en": "ability_kali_trappers_bolo",
+"class": "ability_kali_trappers_bolo",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2219528978": {
+"code": "gunslinger_rapid_fire",
+"ru": "gunslinger_rapid_fire",
+"en": "gunslinger_rapid_fire",
+"class": "gunslinger_rapid_fire",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"809682515": {
+"code": "gunslinger_rocket_launcher",
+"ru": "gunslinger_rocket_launcher",
+"en": "gunslinger_rocket_launcher",
+"class": "gunslinger_rocket_launcher",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3359246481": {
+"code": "gunslinger_tenacity",
+"ru": "gunslinger_tenacity",
+"en": "gunslinger_tenacity",
+"class": "gunslinger_tenacity",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"948328221": {
+"code": "gunslinger_sleep_bomb",
+"ru": "gunslinger_sleep_bomb",
+"en": "gunslinger_sleep_bomb",
+"class": "gunslinger_sleep_bomb",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2984400727": {
+"code": "yakuza_kobun",
+"ru": "yakuza_kobun",
+"en": "yakuza_kobun",
+"class": "yakuza_kobun",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3577477084": {
+"code": "yakuza_shakedown_target",
+"ru": "yakuza_shakedown_target",
+"en": "yakuza_shakedown_target",
+"class": "yakuza_shakedown_target",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3108273022": {
+"code": "yakuza_shakedown",
+"ru": "yakuza_shakedown",
+"en": "yakuza_shakedown",
+"class": "yakuza_shakedown",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"3908497730": {
+"code": "yakuza_setting_sun",
+"ru": "yakuza_setting_sun",
+"en": "yakuza_setting_sun",
+"class": "yakuza_setting_sun",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2250508707": {
+"code": "yakuza_gang_activity",
+"ru": "yakuza_gang_activity",
+"en": "yakuza_gang_activity",
+"class": "yakuza_gang_activity",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1685078091": {
+"code": "yakuza_gang_activity_cancel",
+"ru": "yakuza_gang_activity_cancel",
+"en": "yakuza_gang_activity_cancel",
+"class": "yakuza_gang_activity_cancel",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"523691429": {
+"code": "yakuza_summon_gangster",
+"ru": "yakuza_summon_gangster",
+"en": "yakuza_summon_gangster",
+"class": "yakuza_summon_gangster",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2340315673": {
+"code": "yakuza_teleport_to_gangster",
+"ru": "yakuza_teleport_to_gangster",
+"en": "yakuza_teleport_to_gangster",
+"class": "yakuza_teleport_to_gangster",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3176860010": {
+"code": "yakuza_fealty",
+"ru": "yakuza_fealty",
+"en": "yakuza_fealty",
+"class": "yakuza_fealty",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1584495732": {
+"code": "yakuza_protection_racket",
+"ru": "yakuza_protection_racket",
+"en": "yakuza_protection_racket",
+"class": "yakuza_protection_racket",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"348689004": {
+"code": "thumper_ability_1",
+"ru": "thumper_ability_1",
+"en": "thumper_ability_1",
+"class": "thumper_ability_1",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2086284285": {
+"code": "thumper_ability_2",
+"ru": "thumper_ability_2",
+"en": "thumper_ability_2",
+"class": "thumper_ability_2",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2489807574": {
+"code": "thumper_ability_3",
+"ru": "thumper_ability_3",
+"en": "thumper_ability_3",
+"class": "thumper_ability_3",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2563620507": {
+"code": "thumper_ability_4",
+"ru": "thumper_ability_4",
+"en": "thumper_ability_4",
+"class": "thumper_ability_4",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1755130750": {
+"code": "citadel_weapon_base_defense_turret",
+"ru": "citadel_weapon_base_defense_turret",
+"en": "citadel_weapon_base_defense_turret",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2976789773": {
+"code": "citadel_weapon_bosstier2_set",
+"ru": "citadel_weapon_bosstier2_set",
+"en": "citadel_weapon_bosstier2_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3317486525": {
+"code": "citadel_weapon_bosstier3_set",
+"ru": "citadel_weapon_bosstier3_set",
+"en": "citadel_weapon_bosstier3_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1889173382": {
+"code": "ability_medic_trooper_heal",
+"ru": "ability_medic_trooper_heal",
+"en": "ability_medic_trooper_heal",
+"class": "ability_medic_trooper_heal",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1880975512": {
+"code": "super_neutral_shield",
+"ru": "super_neutral_shield",
+"en": "super_neutral_shield",
+"class": "super_neutral_shield",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3500436034": {
+"code": "super_neutral_charge",
+"ru": "Заряд центрального босса",
+"en": "Mid Boss Charge",
+"class": "super_neutral_charge",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3145617851": {
+"code": "trooper_grenade",
+"ru": "trooper_grenade",
+"en": "trooper_grenade",
+"class": "trooper_grenade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"44956743": {
+"code": "trooper_boss_grenade",
+"ru": "Оглушающая граната",
+"en": "Stun Grenade",
+"class": "trooper_boss_grenade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1751980904": {
+"code": "citadel_ability_trooper_zip_line",
+"ru": "citadel_ability_trooper_zip_line",
+"en": "citadel_ability_trooper_zip_line",
+"class": "citadel_ability_trooper_zip_line",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1792983333": {
+"code": "citadel_ability_tier2boss_rocket_barrage",
+"ru": "Шквал ракет",
+"en": "Rocket Barrage",
+"class": "citadel_ability_tier2boss_rocket_barrage",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"4101890370": {
+"code": "citadel_ability_tier2boss_laser_beam",
+"ru": "Лазер",
+"en": "Laser",
+"class": "citadel_ability_tier2boss_laser_beam",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1233550373": {
+"code": "citadel_ability_tier2boss_stomp",
+"ru": "Топот",
+"en": "Stomp",
+"class": "citadel_ability_tier2boss_stomp",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1083734528": {
+"code": "citadel_ability_tier2boss_aoe_wave",
+"ru": "citadel_ability_tier2boss_aoe_wave",
+"en": "citadel_ability_tier2boss_aoe_wave",
+"class": "citadel_ability_tier2boss_aoe_wave",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"337723920": {
+"code": "citadel_ability_tier3boss_laser_beam",
+"ru": "Лазер покровителя",
+"en": "Patron Laser",
+"class": "citadel_ability_tier3boss_laser_beam",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1440185561": {
+"code": "citadel_ability_tier3boss_aoe_wave",
+"ru": "Покровитель",
+"en": "Patron",
+"class": "citadel_ability_tier3boss_aoe_wave",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"10116178": {
+"code": "citadel_ability_tier3boss_drop_bombs",
+"ru": "Покровитель",
+"en": "Patron",
+"class": "citadel_ability_tier3boss_drop_bombs",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1681330920": {
+"code": "citadel_ability_tier3boss_rocket_barrage",
+"ru": "Покровитель",
+"en": "Patron",
+"class": "citadel_ability_tier3boss_rocket_barrage",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"239553513": {
+"code": "vanguard_aoe_buff",
+"ru": "vanguard_aoe_buff",
+"en": "vanguard_aoe_buff",
+"class": "vanguard_aoe_buff",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2073346996": {
+"code": "ability_npc_shield",
+"ru": "ability_npc_shield",
+"en": "ability_npc_shield",
+"class": "ability_npc_shield",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2082220949": {
+"code": "citadel_weapon_astro_set",
+"ru": "То, что Док прописал",
+"en": "Doc's Orders",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"519260576": {
+"code": "ability_melee_astro",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1235098866": {
+"code": "ability_explosive_barrel",
+"ru": "Пороховая бочка",
+"en": "Powder Keg",
+"class": "ability_explosive_barrel",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2240607294": {
+"code": "ability_bounce_pad",
+"ru": "Трамплин",
+"en": "Bounce Pad",
+"class": "ability_bounce_pad",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3190606822": {
+"code": "ability_gravity_lasso",
+"ru": "Спиритическое лассо",
+"en": "Spirit Lasso",
+"class": "ability_gravity_lasso",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"4179229681": {
+"code": "ability_crackshot",
+"ru": "Меткий глаз",
+"en": "Crackshot",
+"class": "ability_crackshot",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3609948706": {
+"code": "citadel_weapon_bull_set",
+"ru": "citadel_weapon_bull_set",
+"en": "citadel_weapon_bull_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3415298717": {
+"code": "citadel_ability_melee_bull",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2824119765": {
+"code": "citadel_ability_bull_charge",
+"ru": "Плечом вперёд",
+"en": "Shoulder Charge",
+"class": "citadel_ability_bull_charge",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"715762406": {
+"code": "citadel_ability_passive_beefy",
+"ru": "Адская устойчивость",
+"en": "Infernal Resilience",
+"class": "citadel_ability_passive_beefy",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"509856396": {
+"code": "citadel_ability_bull_leap",
+"ru": "Сейсмический удар",
+"en": "Seismic Impact",
+"class": "citadel_ability_bull_leap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"4072270083": {
+"code": "citadel_ability_bull_heal",
+"ru": "Переливание жизни",
+"en": "Siphon Life",
+"class": "citadel_ability_bull_heal",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3764085067": {
+"code": "citadel_weapon_bebop_set",
+"ru": "Глоток смирения",
+"en": "Humble Pie",
+"class": "citadel_ability_primary_weapon_bebop",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2373292985": {
+"code": "citadel_ability_melee_bebop",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3089858203": {
+"code": "citadel_ability_uppercut",
+"ru": "Взрывной апперкот",
+"en": "Exploding Uppercut",
+"class": "citadel_ability_uppercut",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2521902222": {
+"code": "citadel_ability_sticky_bomb",
+"ru": "Бомба-липучка",
+"en": "Sticky Bomb",
+"class": "citadel_ability_sticky_bomb",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3832675871": {
+"code": "citadel_ability_bebop_laser_beam",
+"ru": "Гиперлуч",
+"en": "Hyper Beam",
+"class": "citadel_ability_bebop_laser_beam",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1928108461": {
+"code": "citadel_ability_hook",
+"ru": "Рука-захват",
+"en": "Grapple Arm",
+"class": "citadel_ability_hook",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3303049331": {
+"code": "ability_bebop_stickybomb2",
+"ru": "Бомба-липучка",
+"en": "Sticky Bomb",
+"class": "ability_bebop_stickybomb2",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2605652378": {
+"code": "citadel_weapon_bomber_set",
+"ru": "citadel_weapon_bomber_set",
+"en": "citadel_weapon_bomber_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1759542823": {
+"code": "ability_melee_bomber",
+"ru": "ability_melee_bomber",
+"en": "ability_melee_bomber",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3338528319": {
+"code": "ability_charged_bomb",
+"ru": "ability_charged_bomb",
+"en": "ability_charged_bomb",
+"class": "ability_charged_bomb",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"511336372": {
+"code": "ability_charged_bomb_throw",
+"ru": "ability_charged_bomb_throw",
+"en": "ability_charged_bomb_throw",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"3875361929": {
+"code": "ability_bomber_ability02",
+"ru": "ability_bomber_ability02",
+"en": "ability_bomber_ability02",
+"class": "ability_bomber_ability02",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"4081662205": {
+"code": "ability_bomber_ability03",
+"ru": "ability_bomber_ability03",
+"en": "ability_bomber_ability03",
+"class": "ability_bomber_ability03",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3232290270": {
+"code": "ability_bomber_ult",
+"ru": "ability_bomber_ult",
+"en": "ability_bomber_ult",
+"class": "ability_bomber_ult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3155417712": {
+"code": "citadel_weapon_cadence_set",
+"ru": "citadel_weapon_cadence_set",
+"en": "citadel_weapon_cadence_set",
+"class": "citadel_ability_primary_weapon_cadence",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"852374872": {
+"code": "citadel_ability_melee_cadence",
+"ru": "citadel_ability_melee_cadence",
+"en": "citadel_ability_melee_cadence",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1157620447": {
+"code": "cadence_ability_anthem",
+"ru": "cadence_ability_anthem",
+"en": "cadence_ability_anthem",
+"class": "cadence_ability_anthem",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"957095276": {
+"code": "cadence_ability_lullaby",
+"ru": "cadence_ability_lullaby",
+"en": "cadence_ability_lullaby",
+"class": "cadence_ability_lullaby",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"421275722": {
+"code": "cadence_ability_silencecontraptions",
+"ru": "cadence_ability_silencecontraptions",
+"en": "cadence_ability_silencecontraptions",
+"class": "cadence_ability_silencecontraptions",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3356256357": {
+"code": "cadence_ability_grandfinale",
+"ru": "cadence_ability_grandfinale",
+"en": "cadence_ability_grandfinale",
+"class": "cadence_ability_grandfinale",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"599532073": {
+"code": "cadence_ability_crescendo",
+"ru": "cadence_ability_crescendo",
+"en": "cadence_ability_crescendo",
+"class": "cadence_ability_crescendo",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2390964381": {
+"code": "citadel_weapon_chrono_set",
+"ru": "Секрет фирмы",
+"en": "Trade Secret",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3672737523": {
+"code": "citadel_ability_melee_chrono",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"58655583": {
+"code": "citadel_ability_chrono_pulse_grenade",
+"ru": "Пульсирующая граната",
+"en": "Pulse Grenade",
+"class": "citadel_ability_chrono_pulse_grenade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1366719170": {
+"code": "citadel_ability_chrono_time_wall",
+"ru": "Стена времени",
+"en": "Time Wall",
+"class": "citadel_ability_chrono_time_wall",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1128670012": {
+"code": "citadel_ability_chrono_kinetic_carbine",
+"ru": "Кинетический карабин",
+"en": "Kinetic Carbine",
+"class": "citadel_ability_chrono_kinetic_carbine",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2917891787": {
+"code": "citadel_ability_chrono_swap",
+"ru": "Парадоксальная перестановка",
+"en": "Paradoxical Swap",
+"class": "citadel_ability_chrono_swap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"602440127": {
+"code": "citadel_weapon_sumo_set",
+"ru": "citadel_weapon_sumo_set",
+"en": "citadel_weapon_sumo_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"855695370": {
+"code": "citadel_ability_melee_sumo",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3760705623": {
+"code": "citadel_ability_stomp",
+"ru": "Кинетический импульс",
+"en": "Kinetic Pulse",
+"class": "citadel_ability_stomp",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2031714424": {
+"code": "citadel_ability_void_sphere",
+"ru": "Квантовое запутывание",
+"en": "Quantum Entanglement",
+"class": "citadel_ability_void_sphere",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3954890388": {
+"code": "citadel_ability_charged_tackle",
+"ru": "citadel_ability_charged_tackle",
+"en": "citadel_ability_charged_tackle",
+"class": "citadel_ability_charged_tackle",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"492030745": {
+"code": "citadel_ability_nikuman",
+"ru": "Восстановительное сияние",
+"en": "Rejuvenating Aurora",
+"class": "citadel_ability_nikuman",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"249410288": {
+"code": "citadel_ability_self_vacuum",
+"ru": "Сингулярность",
+"en": "Singularity",
+"class": "citadel_ability_self_vacuum",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1975078202": {
+"code": "citadel_weapon_engineer_set",
+"ru": "citadel_weapon_engineer_set",
+"en": "citadel_weapon_engineer_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2660222379": {
+"code": "citadel_ability_melee_engineer",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2142734020": {
+"code": "citadel_ability_mobile_resupply",
+"ru": "Лечебный призрак",
+"en": "Medicinal Specter",
+"class": "citadel_ability_mobile_resupply",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3133377790": {
+"code": "citadel_ability_shieldedsentry",
+"ru": "Мини-турель",
+"en": "Mini Turret",
+"class": "citadel_ability_shieldedsentry",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1725685134": {
+"code": "citadel_ability_fissure_wall",
+"ru": "Призрачная стена",
+"en": "Spectral Wall",
+"class": "citadel_ability_fissure_wall",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"318567870": {
+"code": "citadel_ability_fissure_wall_trigger",
+"ru": "citadel_ability_fissure_wall_trigger",
+"en": "citadel_ability_fissure_wall_trigger",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1690335039": {
+"code": "citadel_ability_fissure_wall_cancel",
+"ru": "citadel_ability_fissure_wall_cancel",
+"en": "citadel_ability_fissure_wall_cancel",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"3503044146": {
+"code": "citadel_ability_rocket_barrage",
+"ru": "Тяжёлый обстрел",
+"en": "Heavy Barrage",
+"class": "citadel_ability_rocket_barrage",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1150061901": {
+"code": "citadel_weapon_genericperson_set",
+"ru": "citadel_weapon_genericperson_set",
+"en": "citadel_weapon_genericperson_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1087935946": {
+"code": "genericperson_ability_1",
+"ru": "genericperson_ability_1",
+"en": "genericperson_ability_1",
+"class": "genericperson_ability_1",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"451176394": {
+"code": "genericperson_ability_2",
+"ru": "genericperson_ability_2",
+"en": "genericperson_ability_2",
+"class": "genericperson_ability_2",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2046089634": {
+"code": "genericperson_ability_3",
+"ru": "genericperson_ability_3",
+"en": "genericperson_ability_3",
+"class": "genericperson_ability_3",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1254152082": {
+"code": "genericperson_ability_4",
+"ru": "genericperson_ability_4",
+"en": "genericperson_ability_4",
+"class": "genericperson_ability_4",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1875978329": {
+"code": "citadel_weapon_targetdummy_set",
+"ru": "Оружие манекена",
+"en": "Dummy Gun",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3134673014": {
+"code": "citadel_ability_melee_targetdummy",
+"ru": "citadel_ability_melee_targetdummy",
+"en": "citadel_ability_melee_targetdummy",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3433393074": {
+"code": "targetdummy_ability_1",
+"ru": "targetdummy_ability_1",
+"en": "targetdummy_ability_1",
+"class": "targetdummy_ability_1",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1420202211": {
+"code": "targetdummy_ability_2",
+"ru": "targetdummy_ability_2",
+"en": "targetdummy_ability_2",
+"class": "targetdummy_ability_2",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"983726794": {
+"code": "targetdummy_ability_3",
+"ru": "targetdummy_ability_3",
+"en": "targetdummy_ability_3",
+"class": "targetdummy_ability_3",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3440874880": {
+"code": "targetdummy_ability_4",
+"ru": "targetdummy_ability_4",
+"en": "targetdummy_ability_4",
+"class": "targetdummy_ability_4",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1558668879": {
+"code": "citadel_weapon_ghost_set",
+"ru": "Подарок Иоганна",
+"en": "Johann's Gift",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2500675101": {
+"code": "ability_melee_ghost",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"715325746": {
+"code": "ability_blood_bomb",
+"ru": "Бомба квинтэссенции",
+"en": "Essence Bomb",
+"class": "ability_blood_bomb",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3230530872": {
+"code": "ability_blood_shards",
+"ru": "Порча",
+"en": "Malice",
+"class": "ability_blood_shards",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"218284420": {
+"code": "ability_life_drain",
+"ru": "Высасывание жизни",
+"en": "Life Drain",
+"class": "ability_life_drain",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2364803451": {
+"code": "ability_death_tax",
+"ru": "ability_death_tax",
+"en": "ability_death_tax",
+"class": "ability_death_tax",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1307289689": {
+"code": "ability_health_swap",
+"ru": "Обмен душами",
+"en": "Soul Exchange",
+"class": "ability_health_swap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2695625322": {
+"code": "citadel_weapon_gigawatt_set",
+"ru": "Холодный расчёт",
+"en": "Cold Calculus",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2372182196": {
+"code": "citadel_ability_melee_gigawatt",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1065103387": {
+"code": "citadel_ability_lightning_ball",
+"ru": "Шаровая молния",
+"en": "Lightning Ball",
+"class": "citadel_ability_lightning_ball",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1074714947": {
+"code": "citadel_ability_static_charge",
+"ru": "Статический заряд",
+"en": "Static Charge",
+"class": "citadel_ability_static_charge",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1939833676": {
+"code": "citadel_ability_static_charge_v2",
+"ru": "Статический заряд",
+"en": "Static Charge",
+"class": "citadel_ability_static_charge_v2",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3534969709": {
+"code": "citadel_ability_chain_lightning",
+"ru": "citadel_ability_chain_lightning",
+"en": "citadel_ability_chain_lightning",
+"class": "citadel_ability_empty",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"539192269": {
+"code": "ability_power_surge",
+"ru": "Скачок напряжения",
+"en": "Power Surge",
+"class": "ability_power_surge",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2061574352": {
+"code": "citadel_ability_storm_cloud",
+"ru": "Грозовое облако",
+"en": "Storm Cloud",
+"class": "citadel_ability_storm_cloud",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2679155647": {
+"code": "citadel_weapon_haze_set",
+"ru": "Осуждение и искупление",
+"en": "Censure & Penance",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3104292528": {
+"code": "ability_melee_haze",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2948410412": {
+"code": "ability_sleep_dagger",
+"ru": "Усыпляющий кинжал",
+"en": "Sleep Dagger",
+"class": "ability_sleep_dagger",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2414191464": {
+"code": "ability_smoke_bomb",
+"ru": "Дымовая шашка",
+"en": "Smoke Bomb",
+"class": "ability_smoke_bomb",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1080948381": {
+"code": "ability_stacking_damage",
+"ru": "Пристальный взгляд",
+"en": "Fixation",
+"class": "ability_stacking_damage",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"731943444": {
+"code": "ability_bullet_flurry",
+"ru": "Танец пуль",
+"en": "Bullet Dance",
+"class": "ability_bullet_flurry",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3510968490": {
+"code": "citadel_weapon_hornet_set",
+"ru": "Месть тихони",
+"en": "Wallflower's Revenge",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1619999260": {
+"code": "citadel_ability_melee_hornet",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"537527508": {
+"code": "citadel_ability_hornet_chain",
+"ru": "Кол",
+"en": "Stake",
+"class": "citadel_ability_hornet_chain",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1796564033": {
+"code": "citadel_ability_hornet_leap",
+"ru": "Полёт",
+"en": "Flight",
+"class": "citadel_ability_hornet_leap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2048438176": {
+"code": "citadel_ability_hornet_sting",
+"ru": "Ворон-фамильяр",
+"en": "Crow Familiar",
+"class": "citadel_ability_hornet_sting",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"775377419": {
+"code": "citadel_ability_hornet_snipe",
+"ru": "Контрольный выстрел",
+"en": "Assassinate",
+"class": "citadel_ability_hornet_snipe",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"556186193": {
+"code": "citadel_weapon_inferno_set",
+"ru": "Разжигатель споров",
+"en": "Incendiary Remarks",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"750371308": {
+"code": "ability_melee_inferno",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1142270357": {
+"code": "ability_fire_bomb",
+"ru": "Сотрясающий взрыв",
+"en": "Concussive Combustion",
+"class": "ability_fire_bomb",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3516947824": {
+"code": "ability_flame_dash",
+"ru": "Пламенный рывок",
+"en": "Flame Dash",
+"class": "ability_flame_dash",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"491391007": {
+"code": "ability_incendiary_projectile",
+"ru": "Напалм",
+"en": "Napalm",
+"class": "ability_incendiary_projectile",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1593133799": {
+"code": "ability_afterburn",
+"ru": "Тление",
+"en": "Afterburn",
+"class": "ability_afterburn",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3576988085": {
+"code": "citadel_weapon_kelvin_set",
+"ru": "Крах экспедиции",
+"en": "Expedition's End",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3403409980": {
+"code": "ability_melee_kelvin",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2351041382": {
+"code": "ability_icebeam",
+"ru": "Арктический луч",
+"en": "Arctic Beam",
+"class": "ability_icebeam",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1963397252": {
+"code": "ability_icepath",
+"ru": "Ледяная дорожка",
+"en": "Ice Path",
+"class": "ability_icepath",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"18921423": {
+"code": "ability_ice_grenade",
+"ru": "Леденящая граната",
+"en": "Frost Grenade",
+"class": "ability_ice_grenade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3826390464": {
+"code": "ability_ice_dome",
+"ru": "Ледяное укрытие",
+"en": "Frozen Shelter",
+"class": "ability_ice_dome",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"852962635": {
+"code": "ability_ice_dome_trigger",
+"ru": "Ледяное укрытие",
+"en": "Frozen Shelter",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"2896288811": {
+"code": "citadel_weapon_lash_set",
+"ru": "Боксёрские габариты",
+"en": "Tale of The Tape",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3283820257": {
+"code": "ability_melee_lash",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2670099061": {
+"code": "citadel_ability_lash",
+"ru": "Сцепка",
+"en": "Grapple",
+"class": "citadel_ability_lash",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3561817145": {
+"code": "citadel_ability_lash_down_strike",
+"ru": "Удар по земле",
+"en": "Ground Strike",
+"class": "citadel_ability_lash_down_strike",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"397010810": {
+"code": "citadel_ability_lash_ultimate",
+"ru": "Смертельный бросок",
+"en": "Death Slam",
+"class": "citadel_ability_lash_ultimate",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"519124136": {
+"code": "ability_lash_flog",
+"ru": "Порка",
+"en": "Flog",
+"class": "ability_lash_flog",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2942562744": {
+"code": "citadel_weapon_mirage_set",
+"ru": "Сдержанные обещания",
+"en": "Promises Kept",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"511524160": {
+"code": "ability_melee_mirage",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1336069669": {
+"code": "mirage_tornado",
+"ru": "Пылевой дьявол",
+"en": "Dust Devil",
+"class": "mirage_tornado",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2221949202": {
+"code": "mirage_sand_phantom",
+"ru": "Метка джинна",
+"en": "Djinn's Mark",
+"class": "mirage_sand_phantom",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3733594387": {
+"code": "mirage_fire_beetles",
+"ru": "Огненные скарабеи",
+"en": "Fire Scarabs",
+"class": "mirage_fire_beetles",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2604653402": {
+"code": "mirage_teleport",
+"ru": "Путник",
+"en": "Traveler",
+"class": "mirage_teleport",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1895060499": {
+"code": "citadel_weapon_digger_set",
+"ru": "citadel_weapon_digger_set",
+"en": "citadel_weapon_digger_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"597292183": {
+"code": "ability_digger_entertunnel",
+"ru": "Рою...",
+"en": "Digging...",
+"class": "ability_digger_entertunnel",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1400683724": {
+"code": "ability_melee_digger",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1454278799": {
+"code": "ability_intimidate",
+"ru": "Презрение",
+"en": "Scorn",
+"class": "ability_intimidate",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2406758797": {
+"code": "ability_burrow",
+"ru": "Зарывание",
+"en": "Burrow",
+"class": "ability_burrow",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1914797280": {
+"code": "ability_throw_sand",
+"ru": "Песочная волна",
+"en": "Sand Blast",
+"class": "ability_throw_sand",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1917840730": {
+"code": "ability_ult_combo",
+"ru": "Комбо",
+"en": "Combo",
+"class": "ability_ult_combo",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1273162367": {
+"code": "citadel_weapon_digger_set2",
+"ru": "citadel_weapon_digger_set2",
+"en": "citadel_weapon_digger_set2",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3108987282": {
+"code": "citadel_weapon_nano_set",
+"ru": "Сладчайшая ложь",
+"en": "Sweetest Lie",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3386449071": {
+"code": "citadel_weapon_nano_alt",
+"ru": "citadel_weapon_nano_alt",
+"en": "citadel_weapon_nano_alt",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3861289372": {
+"code": "ability_melee_nano",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3377867107": {
+"code": "ability_perched_predator",
+"ru": "Дух Сехмета",
+"en": "Sekhmet's Spirit",
+"class": "ability_perched_predator",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3380228790": {
+"code": "ability_perched_predator_trigger",
+"ru": "ability_perched_predator_trigger",
+"en": "ability_perched_predator_trigger",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1565699451": {
+"code": "ability_rolling_fireball",
+"ru": "ability_rolling_fireball",
+"en": "ability_rolling_fireball",
+"class": "ability_rolling_fireball",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3467292895": {
+"code": "ability_nano_pounce",
+"ru": "Наскок",
+"en": "Pounce",
+"class": "ability_nano_pounce",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1430464147": {
+"code": "ability_nano_pounce_instant",
+"ru": "ability_nano_pounce_instant",
+"en": "ability_nano_pounce_instant",
+"class": "ability_nano_pounce_instant",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"755723302": {
+"code": "ability_nano_proximity_ritual",
+"ru": "Страж-нэкомата",
+"en": "Nekomata Ward",
+"class": "ability_nano_proximity_ritual",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"4081368554": {
+"code": "ability_nano_shadow_step",
+"ru": "Королева теней",
+"en": "Queen of Shadows",
+"class": "ability_nano_shadow_step",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1009029159": {
+"code": "ability_nano_catform",
+"ru": "Ава",
+"en": "Ava",
+"class": "ability_nano_catform",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"847436099": {
+"code": "ability_nano_catform_trigger",
+"ru": "ability_nano_catform_trigger",
+"en": "ability_nano_catform_trigger",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"3975527743": {
+"code": "ability_nano_catform_pounce",
+"ru": "ability_nano_catform_pounce",
+"en": "ability_nano_catform_pounce",
+"class": "ability_nano_catform_pounce",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"4131517918": {
+"code": "ability_nano_clustergrenade",
+"ru": "Бомбы мрака",
+"en": "Gloom Bombs",
+"class": "citadel_ability_nano_clustergrenade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2054144742": {
+"code": "ability_nano_shadow_pulse",
+"ru": "Возвращение в тени",
+"en": "Return to Shadows",
+"class": "shadow_pulse",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1426567660": {
+"code": "ability_nano_dash",
+"ru": "Рассекающий рывок",
+"en": "Leaping Slash",
+"class": "citadel_ability_nano_dash",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2402901451": {
+"code": "citadel_weapon_archer_set",
+"ru": "citadel_weapon_archer_set",
+"en": "citadel_weapon_archer_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"4220996204": {
+"code": "ability_melee_archer",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"548943648": {
+"code": "ability_charged_shot",
+"ru": "Заряженный выстрел",
+"en": "Charged Shot",
+"class": "ability_charged_shot",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3452399392": {
+"code": "ability_power_jump",
+"ru": "Дождь из стрел",
+"en": "Rain of Arrows",
+"class": "ability_power_jump",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"512733154": {
+"code": "ability_immobilize_trap",
+"ru": "Спиритическая ловушка",
+"en": "Spirit Snare",
+"class": "ability_immobilize_trap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3242902780": {
+"code": "ability_guided_arrow",
+"ru": "Управляемая сова",
+"en": "Guided Owl",
+"class": "ability_guided_arrow",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3121968594": {
+"code": "citadel_weapon_shiv_set",
+"ru": "Дохлый номер",
+"en": "Busted Flush",
+"class": "citadel_weapon_shiv",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"225271804": {
+"code": "citadel_weapon_shiv_alt",
+"ru": "citadel_weapon_shiv_alt",
+"en": "citadel_weapon_shiv_alt",
+"class": "citadel_ability_primary_weapon_scaling_altfire",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"11664367": {
+"code": "citadel_ability_melee_shiv",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2460791803": {
+"code": "citadel_ability_shiv_dagger",
+"ru": "Зазубренные ножи",
+"en": "Serrated Knives",
+"class": "citadel_ability_shiv_dagger",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1458044103": {
+"code": "citadel_ability_shiv_dash",
+"ru": "Режущий рывок",
+"en": "Slice and Dice",
+"class": "citadel_ability_shiv_dash",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1537272748": {
+"code": "citadel_ability_shiv_defer_damage",
+"ru": "Кровопускание",
+"en": "Bloodletting",
+"class": "citadel_ability_shiv_defer_damage",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1835738020": {
+"code": "citadel_ability_shiv_killing_blow",
+"ru": "Добивающий удар",
+"en": "Killing Blow",
+"class": "citadel_ability_shiv_killing_blow",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"215719738": {
+"code": "citadel_weapon_shieldguy_set",
+"ru": "citadel_weapon_shieldguy_set",
+"en": "citadel_weapon_shieldguy_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"17949280": {
+"code": "ability_melee_shieldguy",
+"ru": "ability_melee_shieldguy",
+"en": "ability_melee_shieldguy",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2935955509": {
+"code": "ability_shieldguy_ability01",
+"ru": "ability_shieldguy_ability01",
+"en": "ability_shieldguy_ability01",
+"class": "ability_shieldguy_ability01",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2322200384": {
+"code": "ability_shieldguy_ability02",
+"ru": "ability_shieldguy_ability02",
+"en": "ability_shieldguy_ability02",
+"class": "ability_shieldguy_ability02",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1105433407": {
+"code": "ability_shieldguy_ability03",
+"ru": "ability_shieldguy_ability03",
+"en": "ability_shieldguy_ability03",
+"class": "ability_shieldguy_ability03",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2824729668": {
+"code": "ability_shieldguy_ult",
+"ru": "ability_shieldguy_ult",
+"en": "ability_shieldguy_ult",
+"class": "ability_shieldguy_ult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2080724972": {
+"code": "citadel_weapon_slork_set",
+"ru": "Разрывное течение",
+"en": "Riptide",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"347080770": {
+"code": "fathom_scalding_spray",
+"ru": "Жгучие брызги",
+"en": "Scalding Spray",
+"class": "citadel_ability_bull_heal",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2732213553": {
+"code": "fathom_breach",
+"ru": "Прорыв",
+"en": "Breach",
+"class": "fathom_breach",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2611201292": {
+"code": "fathom_defer_damage",
+"ru": "fathom_defer_damage",
+"en": "fathom_defer_damage",
+"class": "citadel_ability_shiv_defer_damage",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1898352041": {
+"code": "fathom_reefdweller_harpoon",
+"ru": "Рифовый гарпун",
+"en": "Reefdweller Harpoon",
+"class": "fathom_reefdweller_harpoon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1851171544": {
+"code": "fathom_lurkers_ambush",
+"ru": "Засада",
+"en": "Lurker's Ambush",
+"class": "fathom_lurkers_ambush",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3383556212": {
+"code": "citadel_weapon_synth_set",
+"ru": "Белая ворона",
+"en": "The Black Sheep",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1976701714": {
+"code": "synth_plasma_flux",
+"ru": "Летающий плащ",
+"en": "Flying Cloak",
+"class": "synth_plasma_flux",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"15584241": {
+"code": "synth_plasma_flux_trigger",
+"ru": "synth_plasma_flux_trigger",
+"en": "synth_plasma_flux_trigger",
+"class": "synth_plasma_flux_trigger",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"3747867012": {
+"code": "synth_pulse",
+"ru": "Чемодан заклинателя",
+"en": "Enchanter's Satchel",
+"class": "synth_pulse",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"938149308": {
+"code": "synth_barrage",
+"ru": "Шквал",
+"en": "Barrage",
+"class": "synth_barrage",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2954330093": {
+"code": "synth_affliction",
+"ru": "Недуг",
+"en": "Affliction",
+"class": "synth_affliction",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1961353863": {
+"code": "citadel_weapon_tengu_set",
+"ru": "Рука защитника",
+"en": "Protector's Hand",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2840115251": {
+"code": "citadel_ability_melee_tengu",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1531378655": {
+"code": "citadel_ability_tangotether",
+"ru": "Кудзу-связь",
+"en": "Kudzu Connection",
+"class": "citadel_ability_tangotether",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3491113888": {
+"code": "citadel_ability_tangotether_trigger",
+"ru": "citadel_ability_tangotether_trigger",
+"en": "citadel_ability_tangotether_trigger",
+"class": "citadel_ability_tangotether_trigger",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"4111222521": {
+"code": "citadel_ability_tengu_urn",
+"ru": "Опутывающие терния",
+"en": "Entangling Thorns",
+"class": "citadel_ability_tengu_urn",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3642273386": {
+"code": "citadel_ability_tengu_stone_form",
+"ru": "Каменный облик",
+"en": "Stone Form",
+"class": "citadel_ability_tengu_stone_form",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1247583368": {
+"code": "citadel_ability_tengu_airlift",
+"ru": "Поддержка с воздуха",
+"en": "Air Drop",
+"class": "citadel_ability_tengu_airlift",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3413773852": {
+"code": "citadel_weapon_viscous_set",
+"ru": "Толкователь глубин",
+"en": "Deep Sea Interpreter",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3819944797": {
+"code": "citadel_weapon_viscous_set_2",
+"ru": "citadel_weapon_viscous_set_2",
+"en": "citadel_weapon_viscous_set_2",
+"class": "citadel_ability_primary_weapon_scaling_altfire",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3914911135": {
+"code": "ability_melee_viscous",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3247040238": {
+"code": "viscous_goo_grenade",
+"ru": "Брызги",
+"en": "Splatter",
+"class": "viscous_goo_grenade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3788152387": {
+"code": "viscous_restorative_goo",
+"ru": "Куб",
+"en": "The Cube",
+"class": "viscous_restorative_goo",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"4206531918": {
+"code": "viscous_goo_bowling_ball",
+"ru": "Шар из слизи",
+"en": "Goo Ball",
+"class": "viscous_goo_bowling_ball",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1020817390": {
+"code": "viscous_telepunch",
+"ru": "Удар из лужи",
+"en": "Puddle Punch",
+"class": "viscous_telepunch",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"816395058": {
+"code": "citadel_weapon_warden_set",
+"ru": "Цена свободы",
+"en": "Freedom's Cost",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3433765565": {
+"code": "citadel_ability_melee_warden",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1656913918": {
+"code": "ability_warden_lock_down",
+"ru": "Сковывающее слово",
+"en": "Binding Word",
+"class": "ability_warden_lock_down",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2751689917": {
+"code": "ability_warden_high_alert",
+"ru": "Сила воли",
+"en": "Willpower",
+"class": "ability_warden_high_alert",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2656490109": {
+"code": "ability_warden_crowd_control",
+"ru": "Алхимическая колба",
+"en": "Alchemical Flask",
+"class": "ability_warden_crowd_control",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2702908623": {
+"code": "ability_warden_riot_protocol",
+"ru": "Последний бой",
+"en": "Last Stand",
+"class": "ability_warden_riot_protocol",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1427059555": {
+"code": "citadel_weapon_wraith_set",
+"ru": "Рейк",
+"en": "The Rake",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1192327851": {
+"code": "citadel_ability_melee_wraith",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2981692841": {
+"code": "citadel_ability_psychic_lift",
+"ru": "Телекинез",
+"en": "Telekinesis",
+"class": "citadel_ability_psychic_lift",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"4147641675": {
+"code": "citadel_ability_projectmind",
+"ru": "Проекция разума",
+"en": "Project Mind",
+"class": "citadel_ability_projectmind",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1842576017": {
+"code": "citadel_ability_wraith_rapidfire",
+"ru": "Сверхбыстрая стрельба",
+"en": "Full Auto",
+"class": "citadel_ability_wraith_rapidfire",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1999680326": {
+"code": "citadel_ability_card_toss",
+"ru": "Карточный трюк",
+"en": "Card Trick",
+"class": "citadel_ability_card_toss",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"495487721": {
+"code": "citadel_weapon_wrecker_set",
+"ru": "Рука мясника",
+"en": "The Butcher's Hand",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2697859853": {
+"code": "ability_melee_wrecker",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"4062064977": {
+"code": "ability_wrecking_ball",
+"ru": "Разрушительный шар",
+"en": "Wrecking Ball",
+"class": "ability_wrecking_ball",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"4016285240": {
+"code": "ability_wrecking_ball_throw",
+"ru": "ability_wrecking_ball_throw",
+"en": "ability_wrecking_ball_throw",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"208809857": {
+"code": "ability_wrecker_salvage",
+"ru": "Поглощение",
+"en": "Consume",
+"class": "ability_wrecker_salvage",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3422822440": {
+"code": "ability_scrap_blast",
+"ru": "Биовзрыв",
+"en": "Bio Blast",
+"class": "ability_scrap_blast",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"100068731": {
+"code": "ability_wrecker_ultimate",
+"ru": "Магнитный поток",
+"en": "Magnetic Flux",
+"class": "ability_wrecker_ultimate",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2493171901": {
+"code": "ability_wrecker_teleport",
+"ru": "Астральная прогулка",
+"en": "Astral Walk",
+"class": "ability_wrecker_teleport",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3426178920": {
+"code": "citadel_ability_wrecker_garbage_suck",
+"ru": "Перегрузка",
+"en": "Overload",
+"class": "citadel_ability_wrecker_garbage_suck",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2153275594": {
+"code": "citadel_ability_wrecker_bouldergrenade",
+"ru": "Разрушительный шар",
+"en": "Wrecking Ball",
+"class": "citadel_ability_wrecker_bouldergrenade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"440716503": {
+"code": "citadel_weapon_yamato_set",
+"ru": "Плач сестры",
+"en": "Sister's Lament",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2725537392": {
+"code": "citadel_weapon_yamato_alt",
+"ru": "citadel_weapon_yamato_alt",
+"en": "citadel_weapon_yamato_alt",
+"class": "citadel_ability_primary_weapon_scaling_altfire",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3334760137": {
+"code": "ability_melee_yamato",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3255651252": {
+"code": "citadel_ability_power_slash",
+"ru": "Мощное рассечение",
+"en": "Power Slash",
+"class": "citadel_ability_power_slash",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2566573207": {
+"code": "citadel_ability_flying_strike",
+"ru": "Рассечение в полёте",
+"en": "Flying Slash",
+"class": "citadel_ability_flying_strike",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2366960452": {
+"code": "citadel_ability_healing_slash",
+"ru": "Багровое рассечение",
+"en": "Crimson Slash",
+"class": "citadel_ability_healing_slash",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3319782965": {
+"code": "citadel_ability_infinity_slash",
+"ru": "Превращение в тень",
+"en": "Shadow Transformation",
+"class": "ability_infinity_slash",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"988091080": {
+"code": "citadel_weapon_viper_set",
+"ru": "Трещотка",
+"en": "The Rattler",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1015591692": {
+"code": "ability_melee_viper",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1322882622": {
+"code": "ability_viper_hookdagger",
+"ru": "Крюк-лезвие",
+"en": "Hook Blade",
+"class": "ability_viper_hookblade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1469918191": {
+"code": "ability_viper_snakedash",
+"ru": "Ползание",
+"en": "Slither",
+"class": "ability_snake_dash",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3428732129": {
+"code": "ability_viper_venom",
+"ru": "Смертельный яд",
+"en": "Lethal Venom",
+"class": "ability_viper_venom",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2052252881": {
+"code": "ability_viper_ult",
+"ru": "Окаменение",
+"en": "Petrify",
+"class": "ability_viper_ult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"726306979": {
+"code": "ability_viper_slide",
+"ru": "ability_viper_slide",
+"en": "ability_viper_slide",
+"class": "citadel_ability_slide",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"645773760": {
+"code": "ability_viper_debuffdagger",
+"ru": "Вертящийся кинжал",
+"en": "Screwjab Dagger",
+"class": "ability_viper_debuffdagger",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1594727071": {
+"code": "ability_viper_petrifybola",
+"ru": "Бола окаменения",
+"en": "Petrifying Bola",
+"class": "ability_viper_petrifybola",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2207852489": {
+"code": "citadel_weapon_vandal_set",
+"ru": "citadel_weapon_vandal_set",
+"en": "citadel_weapon_vandal_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2067539397": {
+"code": "ability_melee_vandal",
+"ru": "ability_melee_vandal",
+"en": "ability_melee_vandal",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1288133032": {
+"code": "citadel_ability_vandal_surge",
+"ru": "citadel_ability_vandal_surge",
+"en": "citadel_ability_vandal_surge",
+"class": "citadel_ability_vandal_surge",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2833514487": {
+"code": "ability_vandal_pillar",
+"ru": "ability_vandal_pillar",
+"en": "ability_vandal_pillar",
+"class": "ability_vandal_pillar",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"371372145": {
+"code": "ability_haunt",
+"ru": "ability_haunt",
+"en": "ability_haunt",
+"class": "ability_vandal_ability03",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"916959628": {
+"code": "citadel_ability_vandal_overflow",
+"ru": "citadel_ability_vandal_overflow",
+"en": "citadel_ability_vandal_overflow",
+"class": "citadel_ability_vandal_overflow",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2014234803": {
+"code": "citadel_weapon_magician_set",
+"ru": "Престиж",
+"en": "The Prestige",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3610020756": {
+"code": "ability_melee_magician",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3156905386": {
+"code": "ability_magician_magicbolt",
+"ru": "Досаждающий заряд",
+"en": "Vexing Bolt",
+"class": "ability_magician_magicbolt",
+"slot": "EItemSlotType_Invalid",
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3706135393": {
+"code": "citadel_ability_magewalk",
+"ru": "Дезориентация",
+"en": "Misdirection",
+"class": "citadel_ability_magewalk",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"994831172": {
+"code": "ability_magician_animalcurse",
+"ru": "Кроличий сглаз",
+"en": "Rabbit Hex",
+"class": "ability_magician_animalcurse",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2524015798": {
+"code": "ability_magician_shadowclone",
+"ru": "Великий гомункул!",
+"en": "The Great Homunculus!",
+"class": "ability_magician_shadowclone",
+"slot": "EItemSlotType_Invalid",
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"28521455": {
+"code": "ability_magician_magicbolt_trigger",
+"ru": "ability_magician_magicbolt_trigger",
+"en": "ability_magician_magicbolt_trigger",
+"class": "citadel_base_trigger_ability",
+"slot": "EItemSlotType_Invalid",
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"12456023": {
+"code": "ability_magician_cloneturret",
+"ru": "Призрачный помощник",
+"en": "Spectral Assistant",
+"class": "citadel_ability_turretclone",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"653642027": {
+"code": "ability_magician_cloneturret_trigger",
+"ru": "Призрачный помощник",
+"en": "Spectral Assistant",
+"class": "ability_magician_cloneturret_trigger",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1410779535": {
+"code": "ability_magician_stage",
+"ru": "Невольный зритель",
+"en": "Captive Audience",
+"class": "ability_ice_dome",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3113315799": {
+"code": "ability_magician_bigbolt",
+"ru": "Гранд-финал!",
+"en": "Grand Finale!",
+"class": "ability_magician_bigbolt",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"895140205": {
+"code": "ability_magician_escape",
+"ru": "Эскаполог",
+"en": "Escape Artist",
+"class": "ability_magician_escape",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"191022746": {
+"code": "ability_magician_copyult",
+"ru": "Участие аудитории",
+"en": "Audience Participation",
+"class": "ability_magician_copyult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2142213586": {
+"code": "ability_magician_animalhexarea",
+"ru": "Кроличий сглаз",
+"en": "Rabbit Hex",
+"class": "ability_magician_animalhexarea",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2390247986": {
+"code": "citadel_weapon_trapper_set",
+"ru": "Госслужащий",
+"en": "Civil Servant",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"4050229048": {
+"code": "ability_melee_trapper",
+"ru": "ability_melee_trapper",
+"en": "ability_melee_trapper",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2675680636": {
+"code": "ability_trapper_poisonjar",
+"ru": "Фантазмицид в банке",
+"en": "Bottled Phantasmicide",
+"class": "citadel_ability_trapper_poisonjar",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2876116869": {
+"code": "ability_trapper_spiderwave",
+"ru": "Ползучая чума",
+"en": "Crawling Plague",
+"class": "ability_trapper_spiderjar",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3322902852": {
+"code": "ability_trapper_spidershield",
+"ru": "Вредительный барьер",
+"en": "Pest Barrier",
+"class": "ability_trapper_spidershield",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1289909147": {
+"code": "ability_trapper_fear",
+"ru": "Призрачный шёлк",
+"en": "Spectral Silk",
+"class": "ability_trapper_fear",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3360792911": {
+"code": "ability_trapper_webwall",
+"ru": "Шёлковая ловушка",
+"en": "Silktrap",
+"class": "ability_trapper_webwall",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1502050181": {
+"code": "ability_trapper_fear1",
+"ru": "ability_trapper_fear1",
+"en": "ability_trapper_fear1",
+"class": "ability_trapper_fear",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3294175151": {
+"code": "citadel_weapon_operative_set",
+"ru": "Пушка-зонт",
+"en": "Umbrella Gun",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"4210991587": {
+"code": "operative_umbrella_maneuver",
+"ru": "Манёвр с зонтом",
+"en": "Umbrella Maneuver",
+"class": "operative_umbrella_maneuver",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1773588524": {
+"code": "operative_blindside",
+"ru": "Удар исподтишка",
+"en": "Blindside",
+"class": "operative_blindside",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1101238302": {
+"code": "operative_revelation",
+"ru": "Откровение",
+"en": "Revelation",
+"class": "operative_revelation",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3318975115": {
+"code": "citadel_weapon_gunslinger2_set",
+"ru": "citadel_weapon_gunslinger2_set",
+"en": "citadel_weapon_gunslinger2_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2995140627": {
+"code": "ability_gunslinger_spreadingfire",
+"ru": "Огненный бес",
+"en": "Flame Imp",
+"class": "ability_gunslinger_spreadingfire",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2610344982": {
+"code": "ability_empowerbullet",
+"ru": "Ловкость рук",
+"en": "Sleight of Hand",
+"class": "ability_empower_bullet",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1224888294": {
+"code": "ability_gunslinger_demon_carbine",
+"ru": "Залп адского огня",
+"en": "Hellfire Salvo",
+"class": "citadel_ability_gunslinger_demon_carbine",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3248109871": {
+"code": "ability_gunslinger_salvo",
+"ru": "Демонический залп",
+"en": "Demontrigger Blitz",
+"class": "gunslinger_salvo",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2839987102": {
+"code": "gunslinger_demonMark",
+"ru": "Адское клеймо",
+"en": "Infernal Brand",
+"class": "ability_demonmark",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"289749826": {
+"code": "gunslinger_knockbackblast",
+"ru": "gunslinger_knockbackblast",
+"en": "gunslinger_knockbackblast",
+"class": "ability_gunslinger_knockbackblast",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2502155040": {
+"code": "citadel_weapon_vampirebat_set",
+"ru": "Нувориш",
+"en": "New Money",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1372322902": {
+"code": "ability_melee_vampirebat",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2398133749": {
+"code": "ability_vampirebat_batblink",
+"ru": "Багровое отступление",
+"en": "Sanguine Retreat",
+"class": "ability_vampirebat_batblink",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1233782561": {
+"code": "ability_vampirebat_lovebites",
+"ru": "Любовные укусы",
+"en": "Love Bites",
+"class": "ability_vampirebat_lovebites",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3379486147": {
+"code": "ability_vampirebat_batswarm",
+"ru": "Владыка ночи",
+"en": "Nox Nostra",
+"class": "ability_vampirebat_batswarm",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2173193859": {
+"code": "ability_vampirebat_batblink_trigger",
+"ru": "ability_vampirebat_batblink_trigger",
+"en": "ability_vampirebat_batblink_trigger",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"760825750": {
+"code": "ability_vampirebat_batcloud",
+"ru": "ability_vampirebat_batcloud",
+"en": "ability_vampirebat_batcloud",
+"class": "ability_vampirebat_batcloud",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"193508101": {
+"code": "ability_vampirebat_steallife",
+"ru": "Загребание",
+"en": "Rake",
+"class": "ability_vampirebat_steallife",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"57866690": {
+"code": "citadel_weapon_vampirebat_set2",
+"ru": "citadel_weapon_vampirebat_set2",
+"en": "citadel_weapon_vampirebat_set2",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1590129566": {
+"code": "citadel_weapon_boho_set",
+"ru": "citadel_weapon_boho_set",
+"en": "citadel_weapon_boho_set",
+"class": "citadel_ability_boho_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1318429798": {
+"code": "ability_melee_boho",
+"ru": "ability_melee_boho",
+"en": "ability_melee_boho",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"370209602": {
+"code": "ability_boho_damageshare",
+"ru": "ability_boho_damageshare",
+"en": "ability_boho_damageshare",
+"class": "ability_boho_damageshare",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2000761890": {
+"code": "ability_boho_bouncyprojectile",
+"ru": "ability_boho_bouncyprojectile",
+"en": "ability_boho_bouncyprojectile",
+"class": "ability_boho_bouncyprojectile",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3962304265": {
+"code": "ability_boho_doublehit",
+"ru": "ability_boho_doublehit",
+"en": "ability_boho_doublehit",
+"class": "abiilty_boho_doublehit",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"759370291": {
+"code": "ability_boho_channeltether",
+"ru": "ability_boho_channeltether",
+"en": "ability_boho_channeltether",
+"class": "abiilty_boho_channeltether",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1831181190": {
+"code": "ability_boho_skipgrenade",
+"ru": "ability_boho_skipgrenade",
+"en": "ability_boho_skipgrenade",
+"class": "ability_boho_skipgrenade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3793541808": {
+"code": "ability_boho_ability02",
+"ru": "ability_boho_ability02",
+"en": "ability_boho_ability02",
+"class": "ability_boho_ability02",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2674556961": {
+"code": "ability_boho_ability03",
+"ru": "ability_boho_ability03",
+"en": "ability_boho_ability03",
+"class": "ability_boho_ability01",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1069317536": {
+"code": "ability_boho_ability04",
+"ru": "ability_boho_ability04",
+"en": "ability_boho_ability04",
+"class": "ability_boho_ability02",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1815345037": {
+"code": "ability_boho_ridebroom",
+"ru": "ability_boho_ridebroom",
+"en": "ability_boho_ridebroom",
+"class": "citadel_ability_boho_ridebroom",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1761919638": {
+"code": "citadel_weapon_swan_set",
+"ru": "citadel_weapon_swan_set",
+"en": "citadel_weapon_swan_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2605250528": {
+"code": "ability_melee_swan",
+"ru": "ability_melee_swan",
+"en": "ability_melee_swan",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2619369142": {
+"code": "ability_swan_featherboomerang",
+"ru": "ability_swan_featherboomerang",
+"en": "ability_swan_featherboomerang",
+"class": "ability_swan_featherboomerang",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"682591488": {
+"code": "ability_swan_leap",
+"ru": "Жете",
+"en": "Jeté",
+"class": "ability_swan_leap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1418303954": {
+"code": "ability_swan_acrobat",
+"ru": "Акробатика",
+"en": "Acrobat",
+"class": "ability_swan_acrobat",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1048488396": {
+"code": "ability_swan_ult",
+"ru": "ability_swan_ult",
+"en": "ability_swan_ult",
+"class": "ability_swan_ult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3977811669": {
+"code": "citadel_weapon_skyrunner_set",
+"ru": "citadel_weapon_skyrunner_set",
+"en": "citadel_weapon_skyrunner_set",
+"class": "citadel_ability_skyrunner_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1274698030": {
+"code": "ability_melee_skyrunner",
+"ru": "ability_melee_skyrunner",
+"en": "ability_melee_skyrunner",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"228680142": {
+"code": "ability_skyrunner_flakshot",
+"ru": "Зенитный огонь",
+"en": "Flakshot",
+"class": "ability_skyrunner_flakshot",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3449758496": {
+"code": "ability_skyrunner_magic_beam",
+"ru": "ability_skyrunner_magic_beam",
+"en": "ability_skyrunner_magic_beam",
+"class": "citadel_ability_skyrunner_magicbeam",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"201562678": {
+"code": "ability_skyrunner_swingline",
+"ru": "Нить жизни",
+"en": "Lifethread",
+"class": "ability_skyrunner_swingline",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"425769687": {
+"code": "ability_skyrunner_ult",
+"ru": "ability_skyrunner_ult",
+"en": "ability_skyrunner_ult",
+"class": "ability_skyrunner_ult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2330506722": {
+"code": "citadel_weapon_skyrunner_alt",
+"ru": "citadel_weapon_skyrunner_alt",
+"en": "citadel_weapon_skyrunner_alt",
+"class": "citadel_ability_skyrunner_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"122168569": {
+"code": "citadel_weapon_druid_set",
+"ru": "citadel_weapon_druid_set",
+"en": "citadel_weapon_druid_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3204148430": {
+"code": "ability_melee_druid",
+"ru": "ability_melee_druid",
+"en": "ability_melee_druid",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3923533266": {
+"code": "ability_druid_leech_seed",
+"ru": "ability_druid_leech_seed",
+"en": "ability_druid_leech_seed",
+"class": "ability_druid_leech_seed",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2082403219": {
+"code": "ability_druid_helicopter_seeds",
+"ru": "ability_druid_helicopter_seeds",
+"en": "ability_druid_helicopter_seeds",
+"class": "ability_druid_helicopter_seeds",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2800600819": {
+"code": "ability_druid_sprout",
+"ru": "ability_druid_sprout",
+"en": "ability_druid_sprout",
+"class": "ability_druid_sprout",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2510227556": {
+"code": "ability_druid_ult",
+"ru": "ability_druid_ult",
+"en": "ability_druid_ult",
+"class": "ability_druid_ult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1931915135": {
+"code": "ability_druid_base_plant",
+"ru": "ability_druid_base_plant",
+"en": "ability_druid_base_plant",
+"class": "ability_druid_base_plant",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3679258313": {
+"code": "ability_druid_plant_invis_bush",
+"ru": "ability_druid_plant_invis_bush",
+"en": "ability_druid_plant_invis_bush",
+"class": "ability_druid_plant_invis_bush",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"609857027": {
+"code": "ability_druid_plant_branch_wall",
+"ru": "ability_druid_plant_branch_wall",
+"en": "ability_druid_plant_branch_wall",
+"class": "ability_druid_plant_branch_wall",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"308607838": {
+"code": "ability_druid_plant_healing_tree",
+"ru": "ability_druid_plant_healing_tree",
+"en": "ability_druid_plant_healing_tree",
+"class": "ability_druid_plant_healing_tree",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3828288251": {
+"code": "ability_druid_plant_something",
+"ru": "ability_druid_plant_something",
+"en": "ability_druid_plant_something",
+"class": "ability_druid_plant_something",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"581038282": {
+"code": "citadel_weapon_graf_set",
+"ru": "citadel_weapon_graf_set",
+"en": "citadel_weapon_graf_set",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2614530871": {
+"code": "ability_melee_graf",
+"ru": "ability_melee_graf",
+"en": "ability_melee_graf",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2627122290": {
+"code": "ability_graf_ability01",
+"ru": "ability_graf_ability01",
+"en": "ability_graf_ability01",
+"class": "ability_graf_ability01",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"4197612718": {
+"code": "ability_graf_ability02",
+"ru": "ability_graf_ability02",
+"en": "ability_graf_ability02",
+"class": "ability_graf_ability02",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2949458312": {
+"code": "ability_graf_ability03",
+"ru": "ability_graf_ability03",
+"en": "ability_graf_ability03",
+"class": "ability_graf_ability03",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2561043068": {
+"code": "ability_graf_ult",
+"ru": "ability_graf_ult",
+"en": "ability_graf_ult",
+"class": "ability_graf_ult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3877402249": {
+"code": "citadel_weapon_fortuna_set",
+"ru": "citadel_weapon_fortuna_set",
+"en": "citadel_weapon_fortuna_set",
+"class": "citadel_ability_fortuna_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1388731643": {
+"code": "ability_melee_fortuna",
+"ru": "ability_melee_fortuna",
+"en": "ability_melee_fortuna",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"309803113": {
+"code": "ability_fortuna_ability01",
+"ru": "ability_fortuna_ability01",
+"en": "ability_fortuna_ability01",
+"class": "ability_fortuna_ability01",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3803152704": {
+"code": "ability_fortuna_ability02",
+"ru": "ability_fortuna_ability02",
+"en": "ability_fortuna_ability02",
+"class": "ability_fortuna_ability02",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"620778714": {
+"code": "ability_fortuna_ability03",
+"ru": "ability_fortuna_ability03",
+"en": "ability_fortuna_ability03",
+"class": "ability_fortuna_ability03",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3632058121": {
+"code": "ability_fortuna_ult",
+"ru": "ability_fortuna_ult",
+"en": "ability_fortuna_ult",
+"class": "ability_fortuna_ult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2079380905": {
+"code": "citadel_weapon_frank_set2",
+"ru": "citadel_weapon_frank_set2",
+"en": "citadel_weapon_frank_set2",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3745177128": {
+"code": "ability_melee_frank",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3727084744": {
+"code": "ability_frank_selfzap",
+"ru": "Прикуривание",
+"en": "Jumpstart",
+"class": "ability_frank_selfzap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1472593493": {
+"code": "ability_frank_painaura",
+"ru": "Аура страдания",
+"en": "Aura of Suffering",
+"class": "ability_frank_painaura",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3493884851": {
+"code": "ability_frank_revive",
+"ru": "Шоковая реанимация",
+"en": "Shocking Reanimation",
+"class": "ability_frank_revive",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2043074967": {
+"code": "ability_frank_shocktarget2",
+"ru": "Батарея боли",
+"en": "Pain Battery",
+"class": "ability_frank_shocktarget2",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"353851685": {
+"code": "citadel_weapon_bookworm_set",
+"ru": "Конец главы",
+"en": "Chapter's End",
+"class": "citadel_ability_bookworm_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3850113264": {
+"code": "ability_melee_bookworm",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"604448162": {
+"code": "ability_bookworm_dragonfire",
+"ru": "Книжный змей",
+"en": "Bookwyrm",
+"class": "ability_bookworm_dragonfire",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3054993162": {
+"code": "ability_bookworm_aoemagic",
+"ru": "Пленяющее чтиво",
+"en": "Captivating Read",
+"class": "ability_bookworm_aoemagic",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3553292912": {
+"code": "ability_bookworm_knightbarrier",
+"ru": "Сюжетная броня",
+"en": "Plot Armor",
+"class": "ability_bookworm_knightbarrier",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1841901343": {
+"code": "ability_bookworm_knightcharge",
+"ru": "Единящее наступление",
+"en": "Rallying Charge",
+"class": "citadel_ability_bookworm_knightcharge",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"4260448939": {
+"code": "citadel_weapon_bookworm_set2",
+"ru": "citadel_weapon_bookworm_set2",
+"en": "citadel_weapon_bookworm_set2",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3409956698": {
+"code": "citadel_weapon_doorman_set",
+"ru": "Приветливый сервис",
+"en": "Service With A Smile",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"4144812912": {
+"code": "citadel_weapon_doorman_alt",
+"ru": "citadel_weapon_doorman_alt",
+"en": "citadel_weapon_doorman_alt",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2903891855": {
+"code": "ability_melee_doorman",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"109766091": {
+"code": "ability_doorman_doorway",
+"ru": "Дверной портал",
+"en": "Doorway",
+"class": "ability_doorman_doorway",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3720109443": {
+"code": "ability_doorman_doorway_close",
+"ru": "Закрыть двери",
+"en": "Close Doors",
+"class": "ability_doorman_doorway_trigger",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1719512318": {
+"code": "ability_doorman_luggage_cart",
+"ru": "Багажная тележка",
+"en": "Luggage Cart",
+"class": "ability_doorman_luggage_cart",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"103496908": {
+"code": "ability_doorman_bomb",
+"ru": "Звонок для вызова",
+"en": "Call Bell",
+"class": "ability_doorman_bomb",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1703045691": {
+"code": "ability_doorman_hotel",
+"ru": "Постоялец отеля",
+"en": "Hotel Guest",
+"class": "ability_doorman_hotel",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3395613043": {
+"code": "citadel_weapon_punkgoat_set",
+"ru": "Бикетт",
+"en": "Biquette",
+"class": "citadel_ability_punkgoat_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3152475531": {
+"code": "ability_punkgoat_slide",
+"ru": "ability_punkgoat_slide",
+"en": "ability_punkgoat_slide",
+"class": "citadel_ability_slide",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"3023323617": {
+"code": "ability_melee_punkgoat",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3296031213": {
+"code": "ability_punkgoat_blasted",
+"ru": "В стельку",
+"en": "Blasted",
+"class": "ability_punkgoat_blasted",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3762861984": {
+"code": "ability_punkgoat_tether",
+"ru": "Цепная банда",
+"en": "Chain Gang",
+"class": "ability_punkgoat_tether",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1792773251": {
+"code": "ability_punkgoat_goatflip",
+"ru": "Рогатый таран",
+"en": "Rising Ram",
+"class": "ability_punkgoat_goatflip",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1841661392": {
+"code": "ability_punkgoat_ult",
+"ru": "Разгром",
+"en": "Bashdown",
+"class": "ability_punkgoat_ult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"160782216": {
+"code": "citadel_weapon_drifter_set",
+"ru": "Багровый хват",
+"en": "Crimson Grasp",
+"class": "citadel_ability_drifter_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2201766712": {
+"code": "citadel_weapon_drifter_alt",
+"ru": "Альт. оружие Скитальца",
+"en": "Drifter Alt Weapon",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1184405291": {
+"code": "ability_melee_drifter",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3120550633": {
+"code": "drifter_blood_blast",
+"ru": "Раздирание",
+"en": "Rend",
+"class": "drifter_blood_blast",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1264175662": {
+"code": "drifter_shadow_mark",
+"ru": "Метка преследователя",
+"en": "Stalker's Mark",
+"class": "drifter_shadow_mark",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3534684567": {
+"code": "drifter_shadow_mark_teleport",
+"ru": "Засада",
+"en": "Ambush",
+"class": "drifter_shadow_mark_teleport",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1033019133": {
+"code": "ability_drifter_hunger",
+"ru": "Запах крови",
+"en": "Bloodscent",
+"class": "ability_drifter_hunger",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1168182161": {
+"code": "drifter_darkness",
+"ru": "Вечная ночь",
+"en": "Eternal Night",
+"class": "drifter_darkness",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1866303329": {
+"code": "citadel_weapon_opera_set",
+"ru": "Opera Gun",
+"en": "Opera Gun",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3326957253": {
+"code": "ability_melee_opera",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"808611817": {
+"code": "ability_opera_ability01",
+"ru": "ability_opera_ability01",
+"en": "ability_opera_ability01",
+"class": "ability_opera_ability01",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1777250969": {
+"code": "ability_opera_ability02",
+"ru": "ability_opera_ability02",
+"en": "ability_opera_ability02",
+"class": "ability_opera_ability02",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3819597066": {
+"code": "ability_opera_ability03",
+"ru": "ability_opera_ability03",
+"en": "ability_opera_ability03",
+"class": "ability_opera_ability03",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"463497510": {
+"code": "ability_opera_ult",
+"ru": "ability_opera_ult",
+"en": "ability_opera_ult",
+"class": "ability_opera_ult",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"4113832715": {
+"code": "upgrade_base",
+"ru": "upgrade_base",
+"en": "upgrade_base",
+"class": "citadel_item",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Item"
+},
+"3020681099": {
+"code": "tier1_base",
+"ru": "tier1_base",
+"en": "tier1_base",
+"class": null,
+"slot": null,
+"tier": "EModTier_1",
+"atype": null
+},
+"2224331653": {
+"code": "tier2_base",
+"ru": "tier2_base",
+"en": "tier2_base",
+"class": null,
+"slot": null,
+"tier": "EModTier_2",
+"atype": null
+},
+"2298962668": {
+"code": "tier3_base",
+"ru": "tier3_base",
+"en": "tier3_base",
+"class": null,
+"slot": null,
+"tier": "EModTier_3",
+"atype": null
+},
+"3918242009": {
+"code": "tier4_base",
+"ru": "tier4_base",
+"en": "tier4_base",
+"class": null,
+"slot": null,
+"tier": "EModTier_4",
+"atype": null
+},
+"2014232268": {
+"code": "tier5_base",
+"ru": "tier5_base",
+"en": "tier5_base",
+"class": null,
+"slot": null,
+"tier": "EModTier_5",
+"atype": null
+},
+"4225582829": {
+"code": "armor_upgrade_base",
+"ru": "armor_upgrade_base",
+"en": "armor_upgrade_base",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": null,
+"atype": "EAbilityType_Item"
+},
+"4049908402": {
+"code": "armor_upgrade_t1",
+"ru": "armor_upgrade_t1",
+"en": "armor_upgrade_t1",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2484189167": {
+"code": "armor_upgrade_t2",
+"ru": "armor_upgrade_t2",
+"en": "armor_upgrade_t2",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3162468251": {
+"code": "armor_upgrade_t3",
+"ru": "armor_upgrade_t3",
+"en": "armor_upgrade_t3",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2366847482": {
+"code": "armor_upgrade_t4",
+"ru": "armor_upgrade_t4",
+"en": "armor_upgrade_t4",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1851590806": {
+"code": "armor_upgrade_t5",
+"ru": "armor_upgrade_t5",
+"en": "armor_upgrade_t5",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"4130874468": {
+"code": "weapon_upgrade_base",
+"ru": "weapon_upgrade_base",
+"en": "weapon_upgrade_base",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": null,
+"atype": "EAbilityType_Item"
+},
+"10546756": {
+"code": "weapon_upgrade_t1",
+"ru": "weapon_upgrade_t1",
+"en": "weapon_upgrade_t1",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"1620942471": {
+"code": "weapon_upgrade_t2",
+"ru": "weapon_upgrade_t2",
+"en": "weapon_upgrade_t2",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"506109244": {
+"code": "weapon_upgrade_t3",
+"ru": "weapon_upgrade_t3",
+"en": "weapon_upgrade_t3",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"361904051": {
+"code": "weapon_upgrade_t4",
+"ru": "weapon_upgrade_t4",
+"en": "weapon_upgrade_t4",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"349524508": {
+"code": "weapon_upgrade_t5",
+"ru": "weapon_upgrade_t5",
+"en": "weapon_upgrade_t5",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"2981063858": {
+"code": "tech_upgrade_base",
+"ru": "tech_upgrade_base",
+"en": "tech_upgrade_base",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": null,
+"atype": "EAbilityType_Item"
+},
+"1239500246": {
+"code": "tech_upgrade_t1",
+"ru": "tech_upgrade_t1",
+"en": "tech_upgrade_t1",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2938348616": {
+"code": "tech_upgrade_t2",
+"ru": "tech_upgrade_t2",
+"en": "tech_upgrade_t2",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"562994648": {
+"code": "tech_upgrade_t3",
+"ru": "tech_upgrade_t3",
+"en": "tech_upgrade_t3",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2729670681": {
+"code": "tech_upgrade_t4",
+"ru": "tech_upgrade_t4",
+"en": "tech_upgrade_t4",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"4121208447": {
+"code": "tech_upgrade_t5",
+"ru": "tech_upgrade_t5",
+"en": "tech_upgrade_t5",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"264187235": {
+"code": "item_projectile_test_01",
+"ru": "item_projectile_test_01",
+"en": "item_projectile_test_01",
+"class": "item_projectile_test_01",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"1014700451": {
+"code": "item_projectile_test_02",
+"ru": "item_projectile_test_02",
+"en": "item_projectile_test_02",
+"class": "item_projectile_test_02",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2414315232": {
+"code": "item_projectile_test_03",
+"ru": "item_projectile_test_03",
+"en": "item_projectile_test_03",
+"class": "item_projectile_test_02",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"3418358054": {
+"code": "item_projectile_test_04",
+"ru": "item_projectile_test_04",
+"en": "item_projectile_test_04",
+"class": "item_projectile_test_04",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"3130661899": {
+"code": "item_projectile_test_05",
+"ru": "item_projectile_test_05",
+"en": "item_projectile_test_05",
+"class": "item_projectile_test_05",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"3744513303": {
+"code": "item_projectile_test_06",
+"ru": "item_projectile_test_06",
+"en": "item_projectile_test_06",
+"class": "item_projectile_test_06",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"1548066885": {
+"code": "upgrade_clip_size",
+"ru": "Увеличенный магазин",
+"en": "Extended Magazine",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"1009965641": {
+"code": "upgrade_non_player_bonus",
+"ru": "Чудовищные патроны",
+"en": "Monster Rounds",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"709540378": {
+"code": "upgrade_non_player_bonus_sacrifice",
+"ru": "Жертвенный ритуал",
+"en": "Cultist Sacrifice",
+"class": "upgrade_non_player_bonus_sacrifice",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1248737459": {
+"code": "upgrade_ammo_scavenger",
+"ru": "Собиратель патронов",
+"en": "Ammo Scavenger",
+"class": "upgrade_ammo_scavenger",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"3535785353": {
+"code": "upgrade_clip_size_fixed",
+"ru": "upgrade_clip_size_fixed",
+"en": "upgrade_clip_size_fixed",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2861048274": {
+"code": "upgrade_clip_size_fixed_t3",
+"ru": "upgrade_clip_size_fixed_t3",
+"en": "upgrade_clip_size_fixed_t3",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"811521119": {
+"code": "upgrade_chain_lightning",
+"ru": "Тесла-пули",
+"en": "Tesla Bullets",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"710436191": {
+"code": "upgrade_capacitor",
+"ru": "Конденсатор",
+"en": "Capacitor",
+"class": "upgrade_capacitor",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3316018900": {
+"code": "upgrade_galvanic_storm",
+"ru": "upgrade_galvanic_storm",
+"en": "upgrade_galvanic_storm",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2678489038": {
+"code": "upgrade_hollow_point_rounds",
+"ru": "Разрывник",
+"en": "Hollow Point",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2064029594": {
+"code": "upgrade_pristine_emblem",
+"ru": "Вскрывающие патроны",
+"en": "Opening Rounds",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1544322593": {
+"code": "upgrade_stabilizer",
+"ru": "upgrade_stabilizer",
+"en": "upgrade_stabilizer",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"3077079169": {
+"code": "upgrade_high_velocity_mag",
+"ru": "Скоростные патроны",
+"en": "High-Velocity Rounds",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"1437614329": {
+"code": "upgrade_lifestrike_gauntlets",
+"ru": "Ударная кража здоровья",
+"en": "Melee Lifesteal",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"4204808176": {
+"code": "upgrade_melee_rebuttal",
+"ru": "Отпор",
+"en": "Rebuttal",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"1414025773": {
+"code": "upgrade_counterspell",
+"ru": "Контрчары",
+"en": "Counterspell",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3791587546": {
+"code": "upgrade_weighted_shots",
+"ru": "Утяжелённые выстрелы",
+"en": "Weighted Shots",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"4238249888": {
+"code": "upgrade_ancient_shield",
+"ru": "Древний щит",
+"en": "Ancient Shield",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"1342610602": {
+"code": "upgrade_close_range",
+"ru": "Ближняя дистанция",
+"en": "Close Quarters",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"3331811235": {
+"code": "upgrade_long_range",
+"ru": "Дальняя дистанция",
+"en": "Long Range",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"393974127": {
+"code": "upgrade_slowing_bullets",
+"ru": "Замедляющие пули",
+"en": "Slowing Bullets",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2037039379": {
+"code": "upgrade_inhibitor",
+"ru": "Ограничитель",
+"en": "Inhibitor",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1889400890": {
+"code": "upgrade_small_attack_speed",
+"ru": "upgrade_small_attack_speed",
+"en": "upgrade_small_attack_speed",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"1144549437": {
+"code": "upgrade_tech_defense_shredders",
+"ru": "Душегубные пули",
+"en": "Spirit Shredder",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1109351073": {
+"code": "upgrade_attack_speed_1",
+"ru": "upgrade_attack_speed_1",
+"en": "upgrade_attack_speed_1",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1100809516": {
+"code": "upgrade_nearby_enemy_boost",
+"ru": "upgrade_nearby_enemy_boost",
+"en": "upgrade_nearby_enemy_boost",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2108215830": {
+"code": "upgrade_dps_aura",
+"ru": "Героическая аура",
+"en": "Heroic Aura",
+"class": "upgrade_dps_aura",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"775925321": {
+"code": "upgrade_weapon_detention_ammo",
+"ru": "upgrade_weapon_detention_ammo",
+"en": "upgrade_weapon_detention_ammo",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"619484391": {
+"code": "upgrade_targeted_silence",
+"ru": "Волна безмолвия",
+"en": "Silence Wave",
+"class": "upgrade_silence_glyph",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3927044172": {
+"code": "upgrade_haunting_scream",
+"ru": "Терзающий крик",
+"en": "Haunting Scream",
+"class": "upgrade_haunting_scream",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"1113837674": {
+"code": "upgrade_proc_silence",
+"ru": "Глушитель",
+"en": "Silencer",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3133167885": {
+"code": "upgrade_silencer",
+"ru": "Глушитель",
+"en": "Silencer",
+"class": "upgrade_self_buff_modifier",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1503218332": {
+"code": "upgrade_proc_disarm",
+"ru": "upgrade_proc_disarm",
+"en": "upgrade_proc_disarm",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1414319208": {
+"code": "upgrade_berserker",
+"ru": "Берсерк",
+"en": "Berserker",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"339443430": {
+"code": "upgrade_fervor",
+"ru": "Ярость",
+"en": "Frenzy",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1282141666": {
+"code": "upgrade_siphon_bullets",
+"ru": "Вытягивающие пули",
+"en": "Siphon Bullets",
+"class": "upgrade_weapon_siphon_bullets",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2010028405": {
+"code": "upgrade_headshot_booster",
+"ru": "Усилитель выстрелов в голову",
+"en": "Headshot Booster",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"1770441818": {
+"code": "upgrade_headshot_booster2",
+"ru": "Ослабляющий выстрел в голову",
+"en": "Weakening Headshot",
+"class": "upgrade_headshot_damage",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2152872419": {
+"code": "upgrade_sharpshooter",
+"ru": "Прицельная стрельба",
+"en": "Sharpshooter",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"4053935515": {
+"code": "upgrade_headhunter",
+"ru": "Охотник за головами",
+"en": "Headhunter",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"4075861416": {
+"code": "upgrade_spellslinger_headshots",
+"ru": "Спиритический разрыв",
+"en": "Spirit Rend",
+"class": "upgrade_spellslinger_headshots",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3884003354": {
+"code": "upgrade_banshee_slugs",
+"ru": "Калечащий выстрел в голову",
+"en": "Crippling Headshot",
+"class": "upgrade_headshot_damage",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"184951197": {
+"code": "upgrade_proc_tech_damage",
+"ru": "upgrade_proc_tech_damage",
+"en": "upgrade_proc_tech_damage",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"395867183": {
+"code": "upgrade_crackshot",
+"ru": "Мистический выстрел",
+"en": "Mystic Shot",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1396247347": {
+"code": "upgrade_critshot",
+"ru": "Удачный выстрел",
+"en": "Lucky Shot",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2095565695": {
+"code": "upgrade_close_quarter_combat",
+"ru": "Стрельба в упор",
+"en": "Point Blank",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"4284855775": {
+"code": "upgrade_clip_size_2",
+"ru": "upgrade_clip_size_2",
+"en": "upgrade_clip_size_2",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3449296332": {
+"code": "upgrade_clip_size_3",
+"ru": "upgrade_clip_size_3",
+"en": "upgrade_clip_size_3",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3696726732": {
+"code": "upgrade_toxic_bullets",
+"ru": "Токсичные пули",
+"en": "Toxic Bullets",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3791295884": {
+"code": "upgrade_attack_speed_2",
+"ru": "upgrade_attack_speed_2",
+"en": "upgrade_attack_speed_2",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"4190165534": {
+"code": "upgrade_drum_magazine",
+"ru": "upgrade_drum_magazine",
+"en": "upgrade_drum_magazine",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2480592370": {
+"code": "upgrade_ricochet",
+"ru": "Рикошет",
+"en": "Ricochet",
+"class": "upgrade_ricochet",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"4149380528": {
+"code": "upgrade_apex_combat",
+"ru": "Вершина боя",
+"en": "Apex Combat",
+"class": "upgrade_apex_combat",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"3633614685": {
+"code": "upgrade_health",
+"ru": "Добавочное здоровье",
+"en": "Extra Health",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2858617477": {
+"code": "upgrade_health_2",
+"ru": "Твёрдость",
+"en": "Toughness",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1448361452": {
+"code": "upgrade_toughness_3",
+"ru": "upgrade_toughness_3",
+"en": "upgrade_toughness_3",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3713423303": {
+"code": "upgrade_bullet_armor",
+"ru": "Пулевая броня",
+"en": "Bullet Armor",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"223594321": {
+"code": "upgrade_tech_armor",
+"ru": "Спиритическая броня",
+"en": "Spirit Armor",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1575167590": {
+"code": "upgrade_health_regen_1",
+"ru": "upgrade_health_regen_1",
+"en": "upgrade_health_regen_1",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"499683006": {
+"code": "upgrade_vampire",
+"ru": "Пулевая кража здоровья",
+"en": "Bullet Lifesteal",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"790496977": {
+"code": "upgrade_double_jump",
+"ru": "upgrade_double_jump",
+"en": "upgrade_double_jump",
+"class": "upgrade_double_jump",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"3321728133": {
+"code": "upgrade_health_regen_aura",
+"ru": "upgrade_health_regen_aura",
+"en": "upgrade_health_regen_aura",
+"class": "upgrade_health_regen_aura",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1047818222": {
+"code": "upgrade_debuff_reducer",
+"ru": "Уменьшитель эффектов",
+"en": "Debuff Reducer",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3731635960": {
+"code": "upgrade_reduce_debuff_duration",
+"ru": "Развеивание магии",
+"en": "Dispel Magic",
+"class": "upgrade_reduce_debuff_duration",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1825391146": {
+"code": "upgrade_high_impact_armor",
+"ru": "upgrade_high_impact_armor",
+"en": "upgrade_high_impact_armor",
+"class": "upgrade_high_impact_armor",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1711193274": {
+"code": "upgrade_slow_immunity",
+"ru": "upgrade_slow_immunity",
+"en": "upgrade_slow_immunity",
+"class": "upgrade_slow_immunity",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"471704443": {
+"code": "upgrade_weapon_power_and_health_drain",
+"ru": "upgrade_weapon_power_and_health_drain",
+"en": "upgrade_weapon_power_and_health_drain",
+"class": "upgrade_weapon_power_and_health_drain",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1319649491": {
+"code": "upgrade_active_bullet_shield",
+"ru": "upgrade_active_bullet_shield",
+"en": "upgrade_active_bullet_shield",
+"class": "upgrade_active_bullet_shield",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2163598980": {
+"code": "upgrade_tech_purge",
+"ru": "Спиритическая стойкость",
+"en": "Spirit Resilience",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3140772621": {
+"code": "upgrade_improved_bullet_armor",
+"ru": "Пулевая стойкость",
+"en": "Bullet Resilience",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1378931225": {
+"code": "upgrade_metal_skin",
+"ru": "Металлическая кожа",
+"en": "Metal Skin",
+"class": "upgrade_metal_skin",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2566692615": {
+"code": "upgrade_healing_booster",
+"ru": "Усилитель лечения",
+"en": "Healing Booster",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3585132399": {
+"code": "upgrade_chonky",
+"ru": "Выдержка",
+"en": "Fortitude",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"865846625": {
+"code": "upgrade_damage_recycler",
+"ru": "Кровопийца",
+"en": "Leech",
+"class": "upgrade_damage_recycler",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1298427343": {
+"code": "upgrade_bullet_damage_reduction_aura",
+"ru": "upgrade_bullet_damage_reduction_aura",
+"en": "upgrade_bullet_damage_reduction_aura",
+"class": "citadel_item_aura_base",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3399065363": {
+"code": "upgrade_sprint_booster",
+"ru": "Беговые ботинки",
+"en": "Sprint Boots",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"3074274290": {
+"code": "upgrade_trophy_collector",
+"ru": "Собиратель трофеев",
+"en": "Trophy Collector",
+"class": "upgrade_trophy_collector",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2447176615": {
+"code": "upgrade_cardio_calibrator",
+"ru": "Скоростная стойкость",
+"en": "Enduring Speed",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"334300056": {
+"code": "upgrade_superior_stamina",
+"ru": "Превосходная выносливость",
+"en": "Stamina Mastery",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"564937160": {
+"code": "upgrade_aerial_supremacy",
+"ru": "Воздушное превосходство",
+"en": "Aerial Supremacy",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"668299740": {
+"code": "upgrade_rapid_rounds",
+"ru": "Спешная стрельба",
+"en": "Rapid Rounds",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"4139877411": {
+"code": "upgrade_improved_stamina",
+"ru": "Добавочная выносливость",
+"en": "Extra Stamina",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2481177645": {
+"code": "upgrade_bullet_armor_reduction_aura",
+"ru": "Аура охотника",
+"en": "Hunter's Aura",
+"class": "upgrade_bullet_armor_reduction_aura",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1962740586": {
+"code": "upgrade_camouflage",
+"ru": "upgrade_camouflage",
+"en": "upgrade_camouflage",
+"class": "upgrade_camouflage",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3038950099": {
+"code": "upgrade_regenerative_armor",
+"ru": "upgrade_regenerative_armor",
+"en": "upgrade_regenerative_armor",
+"class": "upgrade_regenerative_armor",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1672893796": {
+"code": "upgrade_grit",
+"ru": "Крепость",
+"en": "Grit",
+"class": "upgrade_grit",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"805079544": {
+"code": "upgrade_weapon_shielding",
+"ru": "Оружейная защита",
+"en": "Weapon Shielding",
+"class": "upgrade_weapon_shielding",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"112198670": {
+"code": "upgrade_spirit_bubble",
+"ru": "Спиритическая защита",
+"en": "Spirit Shielding",
+"class": "upgrade_spirit_bubble",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1235347618": {
+"code": "upgrade_regenerating_bullet_shield",
+"ru": "Боевой жилет",
+"en": "Battle Vest",
+"class": "upgrade_regenerating_bullet_shield",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3970837787": {
+"code": "upgrade_magic_shield",
+"ru": "Эмблема заклинателя",
+"en": "Enchanter's Emblem",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"968099481": {
+"code": "upgrade_improved_spirit",
+"ru": "Добавочный спиритизм",
+"en": "Extra Spirit",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"1439347412": {
+"code": "upgrade_mystic_regeneration",
+"ru": "Мистическое восстановление",
+"en": "Mystic Regeneration",
+"class": "upgrade_mystic_regeneration",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"7409189": {
+"code": "upgrade_soaring_spirit",
+"ru": "Улучшенный спиритизм",
+"en": "Improved Spirit",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2226497419": {
+"code": "upgrade_tech_overflow",
+"ru": "Спиритическое переполнение",
+"en": "Spiritual Overflow",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3361075077": {
+"code": "upgrade_return_fire",
+"ru": "Обратный огонь",
+"en": "Return Fire",
+"class": "upgrade_return_fire",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1193964439": {
+"code": "upgrade_tech_range",
+"ru": "Усиленное расширение",
+"en": "Greater Expansion",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"754480263": {
+"code": "upgrade_magic_reach",
+"ru": "Мистическое расширение",
+"en": "Mystic Expansion",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"3776945997": {
+"code": "upgrade_extra_charge",
+"ru": "Добавочные заряды",
+"en": "Extra Charge",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"876563814": {
+"code": "upgrade_health_stealing_magic",
+"ru": "Спиритическая кража здоровья",
+"en": "Spirit Lifesteal",
+"class": "upgrade_ability_vampire",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2645639421": {
+"code": "upgrade_disarm",
+"ru": "upgrade_disarm",
+"en": "upgrade_disarm",
+"class": "upgrade_disarm",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2971868509": {
+"code": "upgrade_bullet_resist_shredder",
+"ru": "Измельчитель пулестойкости",
+"en": "Bullet Resist Shredder",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3577481646": {
+"code": "upgrade_mystic_reverb",
+"ru": "Мистический отзвук",
+"en": "Mystic Reverb",
+"class": "upgrade_mystic_reverb",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1998374645": {
+"code": "upgrade_magic_burst",
+"ru": "Мистический импульс",
+"en": "Mystic Burst",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2121044373": {
+"code": "upgrade_magic_shock",
+"ru": "Гроза танков",
+"en": "Tankbuster",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1052584266": {
+"code": "upgrade_arcane_medallion",
+"ru": "upgrade_arcane_medallion",
+"en": "upgrade_arcane_medallion",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2081037738": {
+"code": "upgrade_magic_vulnerability",
+"ru": "Мистическая уязвимость",
+"en": "Mystic Vulnerability",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2603935618": {
+"code": "upgrade_healbane",
+"ru": "Гроза целителей",
+"en": "Healbane",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1102081447": {
+"code": "upgrade_magic_slow",
+"ru": "Мистическое замедление",
+"en": "Mystic Slow",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3005970438": {
+"code": "upgrade_escalating_exposure",
+"ru": "Растущее воздействие",
+"en": "Escalating Exposure",
+"class": "upgrade_ability_vampire",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"787198704": {
+"code": "upgrade_rapid_recharge",
+"ru": "Спешные заряды",
+"en": "Rapid Recharge",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"424779525": {
+"code": "upgrade_omnicharge_pendant",
+"ru": "Всезарядная печать",
+"en": "Omnicharge Signet",
+"class": "upgrade_omnicharge_pendant",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"380806748": {
+"code": "upgrade_magic_tempo",
+"ru": "Сжатая перезарядка умения",
+"en": "Compress Cooldown",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3261353684": {
+"code": "upgrade_cooldown_reduction",
+"ru": "Превосходная перезарядка умений",
+"en": "Superior Cooldown",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"915014646": {
+"code": "upgrade_transcendent_cooldown",
+"ru": "Трансцендентная перезарядка",
+"en": "Transcendent Cooldown",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3893702034": {
+"code": "upgrade_timeless_emblem",
+"ru": "Вневременная эмблема",
+"en": "Timeless Emblem",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"3456645009": {
+"code": "upgrade_shadow_step",
+"ru": "Теневая поступь",
+"en": "Shadow Step",
+"class": "upgrade_shadow_step",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"3789823638": {
+"code": "upgrade_duration_extender",
+"ru": "upgrade_duration_extender",
+"en": "upgrade_duration_extender",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3013879715": {
+"code": "upgrade_slowing_tech",
+"ru": "upgrade_slowing_tech",
+"en": "upgrade_slowing_tech",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"1813726886": {
+"code": "upgrade_containment",
+"ru": "Замедляющие чары",
+"en": "Slowing Hex",
+"class": "upgrade_containment",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1219329868": {
+"code": "upgrade_spirit_sap",
+"ru": "Спиритическое истощение",
+"en": "Spirit Sap",
+"class": "upgrade_spirit_sap",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2142980412": {
+"code": "upgrade_focus_lens",
+"ru": "Фокусная линза",
+"en": "Focus Lens",
+"class": "upgrade_focus_lens",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2922054143": {
+"code": "upgrade_withering_whip",
+"ru": "Ржавый ствол",
+"en": "Rusted Barrel",
+"class": "upgrade_withering_whip",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2061878743": {
+"code": "upgrade_greater_withering_whip",
+"ru": "Чары обезоруживания",
+"en": "Disarming Hex",
+"class": "upgrade_greater_withering_whip",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1804594021": {
+"code": "upgrade_rescue_beam",
+"ru": "Спасательный луч",
+"en": "Rescue Beam",
+"class": "upgrade_rescue_beam",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2329546537": {
+"code": "upgrade_personal_rejuvenator",
+"ru": "Перерождение",
+"en": "Rebirth",
+"class": "upgrade_personal_rejuvenator",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"4003032160": {
+"code": "upgrade_rebirth",
+"ru": "Перерождение души",
+"en": "Soul Rebirth",
+"class": "upgrade_personal_rejuvenator",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1993213427": {
+"code": "upgrade_long_range_slowing_tech",
+"ru": "upgrade_long_range_slowing_tech",
+"en": "upgrade_long_range_slowing_tech",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3064545951": {
+"code": "upgrade_full_spectrum",
+"ru": "upgrade_full_spectrum",
+"en": "upgrade_full_spectrum",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"4249800570": {
+"code": "upgrade_tech_cleave",
+"ru": "upgrade_tech_cleave",
+"en": "upgrade_tech_cleave",
+"class": "upgrade_tech_cleave",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1288322878": {
+"code": "upgrade_bonus_ability_charge_3",
+"ru": "upgrade_bonus_ability_charge_3",
+"en": "upgrade_bonus_ability_charge_3",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"4245766497": {
+"code": "upgrade_charge_mastery",
+"ru": "upgrade_charge_mastery",
+"en": "upgrade_charge_mastery",
+"class": "upgrade_charge_mastery",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3144988365": {
+"code": "upgrade_rupture",
+"ru": "Разложение",
+"en": "Decay",
+"class": "upgrade_tracking_projectile_apply_modifier",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2417568017": {
+"code": "upgrade_discord",
+"ru": "Кара",
+"en": "Scourge",
+"class": "upgrade_tracking_projectile_apply_modifier",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"776145721": {
+"code": "upgrade_aoe_tech_shield",
+"ru": "upgrade_aoe_tech_shield",
+"en": "upgrade_aoe_tech_shield",
+"class": "upgrade_aoe_tech_shield",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1254091416": {
+"code": "upgrade_target_stun",
+"ru": "Нокдаун",
+"en": "Knockdown",
+"class": "upgrade_target_stun",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1371725689": {
+"code": "upgrade_phantom_strike",
+"ru": "Фантомный удар",
+"en": "Phantom Strike",
+"class": "upgrade_phantom_strike",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3270001687": {
+"code": "upgrade_warp_stone",
+"ru": "Камень переноса",
+"en": "Warp Stone",
+"class": "upgrade_warp_stone",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1152158042": {
+"code": "upgrade_aoe_root",
+"ru": "Паутинный вихрь",
+"en": "Vortex Web",
+"class": "upgrade_aoe_root",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"677738769": {
+"code": "upgrade_ability_refresher",
+"ru": "Обновитель",
+"en": "Refresher",
+"class": "upgrade_ability_refresher",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"630839635": {
+"code": "upgrade_ability_power_shard",
+"ru": "Осколок эха",
+"en": "Echo Shard",
+"class": "upgrade_ability_power_shard",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"395944548": {
+"code": "upgrade_tech_damage_pulse",
+"ru": "Терзающий пульс",
+"en": "Torment Pulse",
+"class": "upgrade_tech_damage_pulse",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3361811174": {
+"code": "upgrade_cheat_death",
+"ru": "Обман смерти",
+"en": "Cheat Death",
+"class": "upgrade_cheat_death",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3276909180": {
+"code": "upgrade_reload_speed",
+"ru": "upgrade_reload_speed",
+"en": "upgrade_reload_speed",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2560018361": {
+"code": "upgrade_cloaking_device",
+"ru": "upgrade_cloaking_device",
+"en": "upgrade_cloaking_device",
+"class": "upgrade_cloaking_device",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1798666702": {
+"code": "upgrade_cloaking_device_active",
+"ru": "Сплетение теней",
+"en": "Shadow Weave",
+"class": "upgrade_cloaking_device_active",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3662153307": {
+"code": "upgrade_fire_rate_aura",
+"ru": "upgrade_fire_rate_aura",
+"en": "upgrade_fire_rate_aura",
+"class": "upgrade_fire_rate_aura",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"607292868": {
+"code": "upgrade_weapon_overdrive_clip",
+"ru": "upgrade_weapon_overdrive_clip",
+"en": "upgrade_weapon_overdrive_clip",
+"class": "upgrade_weapon_overdrive_clip",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3830846077": {
+"code": "upgrade_rocket_boots",
+"ru": "Грациозный скачок — отключён",
+"en": "Majestic Leap - Disabled",
+"class": "upgrade_rocket_boots",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"600033864": {
+"code": "upgrade_rocket_booster",
+"ru": "Грациозный скачок",
+"en": "Majestic Leap",
+"class": "upgrade_rocket_booster",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"271801138": {
+"code": "upgrade_aerial_assault",
+"ru": "upgrade_aerial_assault",
+"en": "upgrade_aerial_assault",
+"class": "upgrade_aerial_assault",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2956256701": {
+"code": "upgrade_health_nova",
+"ru": "Вспышка исцеления",
+"en": "Healing Nova",
+"class": "upgrade_health_nova",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2059712766": {
+"code": "upgrade_restorative_locket",
+"ru": "Живительный медальон",
+"en": "Restorative Locket",
+"class": "upgrade_restorative_locket",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1710079648": {
+"code": "upgrade_health_stimpak",
+"ru": "Обряд лечения",
+"en": "Healing Rite",
+"class": "upgrade_health_stimpak",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"4121584236": {
+"code": "upgrade_shrink_ray",
+"ru": "Луч уменьшения",
+"en": "Shrink Ray",
+"class": "upgrade_shrink_ray",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"1797283378": {
+"code": "upgrade_infuser",
+"ru": "Насытитель",
+"en": "Infuser",
+"class": "upgrade_infuser",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"857669956": {
+"code": "upgrade_guardian_ward",
+"ru": "Заслон стража",
+"en": "Guardian Ward",
+"class": "upgrade_guardian_ward",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1662311306": {
+"code": "upgrade_divine_barrier",
+"ru": "Божественный барьер",
+"en": "Divine Barrier",
+"class": "upgrade_divine_barrier",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"937242723": {
+"code": "upgrade_aoe_smoke_bomb",
+"ru": "upgrade_aoe_smoke_bomb",
+"en": "upgrade_aoe_smoke_bomb",
+"class": "upgrade_aoe_smoke_bomb",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1932939246": {
+"code": "upgrade_thermal_detonator",
+"ru": "Алхимический огонь",
+"en": "Alchemical Fire",
+"class": "base_upgrade_projectile_aoe_modifier",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"989206714": {
+"code": "upgrade_blood_tribute",
+"ru": "Кровавая дань",
+"en": "Blood Tribute",
+"class": "upgrade_blood_tribute",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3403085434": {
+"code": "upgrade_fleetfoot_boots",
+"ru": "Проворная поступь",
+"en": "Fleetfoot",
+"class": "upgrade_fleetfoot_boots",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3977876567": {
+"code": "upgrade_kinetic_sash",
+"ru": "Кинетический рывок",
+"en": "Kinetic Dash",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1150006784": {
+"code": "upgrade_arcane_surge",
+"ru": "Колдовской порыв",
+"en": "Arcane Surge",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"389243496": {
+"code": "upgrade_weapon_eater",
+"ru": "upgrade_weapon_eater",
+"en": "upgrade_weapon_eater",
+"class": "upgrade_weapon_eater",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"315518818": {
+"code": "upgrade_weapon_instant_reload",
+"ru": "upgrade_weapon_instant_reload",
+"en": "upgrade_weapon_instant_reload",
+"class": "upgrade_weapon_instant_reload",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3357231760": {
+"code": "upgrade_unstoppable",
+"ru": "Неудержимость",
+"en": "Unstoppable",
+"class": "upgrade_self_buff_modifier",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2407781327": {
+"code": "upgrade_colossus",
+"ru": "Колосс",
+"en": "Colossus",
+"class": "upgrade_colossus",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1976391348": {
+"code": "upgrade_cold_front",
+"ru": "Холодный фронт",
+"en": "Cold Front",
+"class": "upgrade_cold_front",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3812615317": {
+"code": "upgrade_arctic_blast",
+"ru": "Арктический взрыв",
+"en": "Arctic Blast",
+"class": "upgrade_arctic_blast",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"486220748": {
+"code": "upgrade_aoe_silence",
+"ru": "upgrade_aoe_silence",
+"en": "upgrade_aoe_silence",
+"class": "base_upgrade_projectile_aoe_modifier",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2533252781": {
+"code": "upgrade_self_bubble",
+"ru": "Развоплощение",
+"en": "Ethereal Shift",
+"class": "upgrade_self_bubble",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"385745034": {
+"code": "upgrade_stasis_bomb",
+"ru": "upgrade_stasis_bomb",
+"en": "upgrade_stasis_bomb",
+"class": "upgrade_stasis_bomb",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1641353616": {
+"code": "upgrade_quarantine",
+"ru": "upgrade_quarantine",
+"en": "upgrade_quarantine",
+"class": "upgrade_tracking_projectile_apply_modifier",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2617435668": {
+"code": "upgrade_glitch",
+"ru": "Проклятая реликвия",
+"en": "Cursed Relic",
+"class": "upgrade_tracking_projectile_apply_modifier",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1959600032": {
+"code": "upgrade_imbued_ability",
+"ru": "upgrade_imbued_ability",
+"en": "upgrade_imbued_ability",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2951612397": {
+"code": "upgrade_arcane_extension",
+"ru": "Увеличитель длительности",
+"en": "Duration Extender",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2717651715": {
+"code": "upgrade_imbued_duration_extender",
+"ru": "Превосходная длительность",
+"en": "Superior Duration",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"365620721": {
+"code": "upgrade_glass_cannon",
+"ru": "Стеклянная пушка",
+"en": "Glass Cannon",
+"class": "upgrade_glass_cannon",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1409190604": {
+"code": "upgrade_fury_trance",
+"ru": "Яростный экстаз",
+"en": "Fury Trance",
+"class": "upgrade_fury_trance",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1055679805": {
+"code": "upgrade_surging_power",
+"ru": "Порыв вампиризма",
+"en": "Vampiric Burst",
+"class": "upgrade_surging_power",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"481022061": {
+"code": "upgrade_mod_disruptor",
+"ru": "upgrade_mod_disruptor",
+"en": "upgrade_mod_disruptor",
+"class": "upgrade_mod_disruptor",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2039312305": {
+"code": "upgrade_frenzy",
+"ru": "upgrade_frenzy",
+"en": "upgrade_frenzy",
+"class": "upgrade_frenzy",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"253917113": {
+"code": "upgrade_burst_fire_actuator",
+"ru": "upgrade_burst_fire_actuator",
+"en": "upgrade_burst_fire_actuator",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1252627263": {
+"code": "upgrade_boxing_glove",
+"ru": "Витальный удар",
+"en": "Lifestrike",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"465043967": {
+"code": "upgrade_acolytes_glove",
+"ru": "Спиритический удар",
+"en": "Spirit Strike",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"3190916303": {
+"code": "upgrade_spirit_snatch",
+"ru": "Похищение спиритизма",
+"en": "Spirit Snatch",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"26002154": {
+"code": "upgrade_melee_charge",
+"ru": "Удар с зарядом",
+"en": "Melee Charge",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"800008313": {
+"code": "upgrade_crushing_fists",
+"ru": "Сокрушительные кулаки",
+"en": "Crushing Fists",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3572021243": {
+"code": "upgrade_charmed_wraps",
+"ru": "upgrade_charmed_wraps",
+"en": "upgrade_charmed_wraps",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1326137213": {
+"code": "upgrade_belt_fed_magazine",
+"ru": "upgrade_belt_fed_magazine",
+"en": "upgrade_belt_fed_magazine",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2820116164": {
+"code": "upgrade_diviners_kevlar",
+"ru": "Доспех прорицателя",
+"en": "Diviner's Kevlar",
+"class": "upgrade_diviners_kevlar",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2947183272": {
+"code": "upgrade_resonant_healing",
+"ru": "Сияющее восстановление",
+"en": "Radiant Regeneration",
+"class": "upgrade_resonant_healing",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2519598785": {
+"code": "upgrade_boundless_spirit",
+"ru": "Безграничный спиритизм",
+"en": "Boundless Spirit",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2739107182": {
+"code": "upgrade_burst_fire",
+"ru": "Шквальный огонь",
+"en": "Burst Fire",
+"class": "upgrade_burst_fire",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"558396679": {
+"code": "upgrade_resilience",
+"ru": "Спиритическая стойкость",
+"en": "Enduring Spirit",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2829638276": {
+"code": "upgrade_endurance",
+"ru": "Добавочное восстановление",
+"en": "Extra Regen",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2985482185": {
+"code": "upgrade_magic_clarity",
+"ru": "upgrade_magic_clarity",
+"en": "upgrade_magic_clarity",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"1292979587": {
+"code": "upgrade_magic_storm",
+"ru": "Прилив мощи",
+"en": "Surge of Power",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1925087134": {
+"code": "upgrade_suppressor",
+"ru": "Подавитель",
+"en": "Suppressor",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"84321454": {
+"code": "upgrade_quick_silver",
+"ru": "Ртутная перезарядка",
+"en": "Quicksilver Reload",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3919289022": {
+"code": "upgrade_ethereal_bullets",
+"ru": "Ртутный Магнум",
+"en": "Mercurial Magnum",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2717142638": {
+"code": "upgrade_arcane_eater",
+"ru": "upgrade_arcane_eater",
+"en": "upgrade_arcane_eater",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2574520834": {
+"code": "upgrade_predator_precision",
+"ru": "upgrade_predator_precision",
+"en": "upgrade_predator_precision",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2407033488": {
+"code": "upgrade_intensifying_clip",
+"ru": "Усиливающий магазин",
+"en": "Intensifying Magazine",
+"class": "upgrade_intensifying_clip",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2463960640": {
+"code": "upgrade_reinforcing_casings",
+"ru": "Растущая стойкость",
+"en": "Escalating Resilience",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"4104549924": {
+"code": "upgrade_blitz_bullets",
+"ru": "Быстрый стрелок",
+"en": "Swift Striker",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"865958998": {
+"code": "upgrade_veil_walker",
+"ru": "Незримый покров",
+"en": "Veil Walker",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1644605047": {
+"code": "upgrade_vex_barrier",
+"ru": "Барьерная реакция",
+"en": "Reactive Barrier",
+"class": "upgrade_vex_barrier",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"951866250": {
+"code": "upgrade_auto_cleanse",
+"ru": "Непреклонность",
+"en": "Indomitable",
+"class": "upgrade_auto_cleanse",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3862866912": {
+"code": "upgrade_medic_bullets",
+"ru": "Живительный выстрел",
+"en": "Restorative Shot",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2356412290": {
+"code": "upgrade_titan_round",
+"ru": "Титанический магазин",
+"en": "Titanic Magazine",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"3647584222": {
+"code": "upgrade_split_shot",
+"ru": "Веерный выстрел",
+"en": "Split Shot",
+"class": "upgrade_split_shot",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"381961617": {
+"code": "upgrade_active_reload",
+"ru": "Активная перезарядка",
+"en": "Active Reload",
+"class": "upgrade_active_reload",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2800629741": {
+"code": "upgrade_magic_carpet",
+"ru": "Ковёр-самолёт",
+"en": "Magic Carpet",
+"class": "upgrade_magic_carpet",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1200177229": {
+"code": "upgrade_spellshield",
+"ru": "Шестилистный заслон",
+"en": "Hexafoil Ward",
+"class": "upgrade_spellshield",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"2331566268": {
+"code": "upgrade_superacolytes_glove",
+"ru": "Заколдованные кастеты",
+"en": "Hex-Sealed Knuckles",
+"class": "upgrade_superacolytegloves",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"194116661": {
+"code": "upgrade_magic_missile",
+"ru": "Призыв ракет",
+"en": "Conjure Missiles",
+"class": "upgrade_glass_cannon",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"138320648": {
+"code": "upgrade_heal_on_level",
+"ru": "Лечение покровителя",
+"en": "Patron's Healing",
+"class": "upgrade_healonlevel",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"343572757": {
+"code": "upgrade_spirit_burn",
+"ru": "Спиритический ожог",
+"en": "Spirit Burn",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"493591231": {
+"code": "upgrade_ultimate_burst",
+"ru": "Свиток молнии",
+"en": "Lightning Scroll",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3913864662": {
+"code": "upgrade_corpse_explosion",
+"ru": "Взрыв души",
+"en": "Soul Explosion",
+"class": "upgrade_corpse_explosion",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"3028234315": {
+"code": "upgrade_absorbing_armor",
+"ru": "Ведьмовской доспех",
+"en": "Witchmail",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1427630806": {
+"code": "upgrade_healbuff",
+"ru": "Целебный темп",
+"en": "Healing Tempo",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3346798998": {
+"code": "upgrade_infinitemagazine",
+"ru": "Бесконечный магазин",
+"en": "Endless Magazine",
+"class": "upgrade_infinitemagazine",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1497973293": {
+"code": "upgrade_glass_cannon2",
+"ru": "Стеклянная пушка, вер. 2",
+"en": "Glass Cannon v2",
+"class": "upgrade_glass_cannon",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"673001892": {
+"code": "upgrade_aprounds",
+"ru": "Бронебой",
+"en": "Armor Piercer",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"3269957497": {
+"code": "upgrade_infinite_rounds",
+"ru": "Бесконечные патроны",
+"en": "Infinite Rounds",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"3491236900": {
+"code": "upgrade_deflecting_armor",
+"ru": "Латная броня",
+"en": "Plated Armor",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1955841979": {
+"code": "upgrade_spellbreaker",
+"ru": "Разрушитель чар",
+"en": "Spellbreaker",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"1250307611": {
+"code": "upgrade_juggernaut",
+"ru": "Громила",
+"en": "Juggernaut",
+"class": "citadel_item_aura_base",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"2221211450": {
+"code": "upgrade_enchanted_holsters",
+"ru": "Метатель чар",
+"en": "Spellslinger",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_4",
+"atype": "EAbilityType_Item"
+},
+"98582110": {
+"code": "upgrade_weapon_backstabber",
+"ru": "Преследователь",
+"en": "Stalker",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"690458959": {
+"code": "upgrade_express_shot",
+"ru": "Экспресс-выстрел",
+"en": "Express Shot",
+"class": "upgrade_express_shot",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1736094134": {
+"code": "upgrade_icarus_wings",
+"ru": "Крылья серафима",
+"en": "Seraphim Wings",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"2054088113": {
+"code": "upgrade_mystical_piano",
+"ru": "Мистическое фортепиано",
+"en": "Mystical Piano",
+"class": "base_upgrade_projectile_aoe_modifier",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"3949773228": {
+"code": "upgrade_nullification_aura",
+"ru": "Обнуляющий импульс",
+"en": "Nullification Burst",
+"class": "upgrade_nullification_aura",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"3729138568": {
+"code": "upgrade_celestial_guidance",
+"ru": "Небесное благословение",
+"en": "Celestial Blessing",
+"class": "upgrade_celestial_guidance",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"230297145": {
+"code": "upgrade_eternal_gift",
+"ru": "Вечный дар",
+"en": "Eternal Gift",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"4050602737": {
+"code": "upgrade_patrons_blessing",
+"ru": "Мистическая связь",
+"en": "Mystic Conduit",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"3568217437": {
+"code": "upgrade_eldritch_shot",
+"ru": "Терзающий выстрел",
+"en": "Haunting Shot",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"3523480953": {
+"code": "upgrade_cloak_of_opportunity",
+"ru": "Плащ возможностей",
+"en": "Cloak of Opportunity",
+"class": "citadel_item",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"64550694": {
+"code": "upgrade_runed_gauntlets",
+"ru": "Рунные рукавицы",
+"en": "Runed Gauntlets",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"1825399334": {
+"code": "upgrade_electric_slippers",
+"ru": "Электротапки",
+"en": "Electric Slippers",
+"class": "upgrade_electric_slippers",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"1132564516": {
+"code": "upgrade_prism_blast",
+"ru": "Призматический взрыв",
+"en": "Prism Blast",
+"class": "upgrade_prism_blast",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"1558545403": {
+"code": "upgrade_unstable_concoction",
+"ru": "Нестабильный отвар",
+"en": "Unstable Concoction",
+"class": "upgrade_self_buff_modifier",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"2068250483": {
+"code": "upgrade_shivas_bracelet",
+"ru": "Морозящий амулет",
+"en": "Frostbite Charm",
+"class": "citadel_item",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"2319629810": {
+"code": "upgrade_shadow_strike",
+"ru": "Теневой удар",
+"en": "Shadow Strike",
+"class": "upgrade_shadow_strike",
+"slot": "EItemSlotType_Armor",
+"tier": "EModTier_5",
+"atype": "EAbilityType_Item"
+},
+"3294954488": {
+"code": "upgrade_bulletshredimbue",
+"ru": "Баллистические чары",
+"en": "Ballistic Enchantment",
+"class": "citadel_item",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_3",
+"atype": "EAbilityType_Item"
+},
+"1763073141": {
+"code": "upgrade_rechargingbullets",
+"ru": "Прилив зарядов",
+"en": "Recharging Rush",
+"class": "upgrade_recharging_bullets",
+"slot": "EItemSlotType_WeaponMod",
+"tier": "EModTier_2",
+"atype": "EAbilityType_Item"
+},
+"2462046703": {
+"code": "upgrade_goose_egg",
+"ru": "Золотое гусиное яйцо",
+"en": "Golden Goose Egg",
+"class": "upgrade_goose_egg",
+"slot": "EItemSlotType_Tech",
+"tier": "EModTier_1",
+"atype": "EAbilityType_Item"
+},
+"2148720612": {
+"code": "cosmetic_base",
+"ru": "cosmetic_base",
+"en": "cosmetic_base",
+"class": "citadel_ability_empty",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Cosmetic"
+},
+"2253088558": {
+"code": "cosmetic_ability_snowball",
+"ru": "Снежок",
+"en": "Snowball",
+"class": "cosmetic_snowball",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Cosmetic"
+},
+"616118051": {
+"code": "seasonal_ability_eat_halloween_candy",
+"ru": "Поедание конфет",
+"en": "Eat Candy",
+"class": "seasonal_eat_halloween_candy",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Cosmetic"
+},
+"2885754951": {
+"code": "cosmetic_ability_voting_poster",
+"ru": "cosmetic_ability_voting_poster",
+"en": "cosmetic_ability_voting_poster",
+"class": "cosmetic_voting_poster",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Cosmetic"
+},
+"186380338": {
+"code": "cosmetic_ability_emote",
+"ru": "cosmetic_ability_emote",
+"en": "cosmetic_ability_emote",
+"class": "cosmetic_emote",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Cosmetic"
+},
+"2029849853": {
+"code": "citadel_weapon_priest_set",
+"ru": "51:20",
+"en": "51:20",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2559648467": {
+"code": "ability_melee_priest",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1764146857": {
+"code": "ability_priest_knockback",
+"ru": "Разрывной выстрел",
+"en": "Gutshot",
+"class": "ability_priest_knockback",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3093645682": {
+"code": "ability_priest_selfheal",
+"ru": "Сильнодействующий ладан",
+"en": "Potent Vapors",
+"class": "ability_priest_selfheal",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2260066289": {
+"code": "ability_priest_stackingdefense",
+"ru": "Выдержка",
+"en": "Grit",
+"class": "ability_priest_stackingdefense",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"519002049": {
+"code": "citadel_weapon_priest_crossbow",
+"ru": "Гнев Божий",
+"en": "Ira Domini",
+"class": "ability_priest_crossbowweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2918874166": {
+"code": "ability_priest_weaponswap",
+"ru": "Гнев Божий",
+"en": "Ira Domini",
+"class": "ability_priest_weaponswap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"476551004": {
+"code": "ability_priest_smokegrenade",
+"ru": "Слезоточивая граната",
+"en": "Teargas Grenade",
+"class": "ability_priest_smokegrenade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1034605902": {
+"code": "ability_priest_antispiritvest",
+"ru": "Благословенный жилет",
+"en": "Blessed Tac-Vest",
+"class": "ability_priest_antispiritvest",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2443795083": {
+"code": "ability_priest_silencebomb",
+"ru": "Удушающий ладан",
+"en": "Choking Incense",
+"class": "citadel_ability_priest_silencebomb",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"911307831": {
+"code": "ability_priest_flashbang",
+"ru": "Освящающая граната",
+"en": "Consecrating Grenade",
+"class": "priest_flashbang",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"11154161": {
+"code": "ability_priest_beartrap",
+"ru": "Заколдованный капкан",
+"en": "Hex-Lined Snap Trap",
+"class": "priest_beartrap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"932332550": {
+"code": "ability_familiar_alt_weapon",
+"ru": "ability_familiar_alt_weapon",
+"en": "ability_familiar_alt_weapon",
+"class": "ability_familiar_alt_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1961336982": {
+"code": "ability_familiar_primary_weapon_bubblegun",
+"ru": "Урон от оружия",
+"en": "Gun Damage",
+"class": "ability_familiar_primary_weapon_bubblegun",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2247993425": {
+"code": "ability_melee_familiar",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3692321247": {
+"code": "ability_familiar_ability02",
+"ru": "Бой подушками",
+"en": "Pillow Toss",
+"class": "ability_familiar_ability02",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2396527575": {
+"code": "ability_familiar_ability01",
+"ru": "Тихий час",
+"en": "Naptime",
+"class": "ability_familiar_ability01",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"536278136": {
+"code": "ability_familiar_helpinghands",
+"ru": "Маленькие помощники",
+"en": "Lil Helpers",
+"class": "ability_familiar_helpinghands",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1568845221": {
+"code": "ability_familiar_attach",
+"ru": "Приятная компания",
+"en": "Tag Along",
+"class": "ability_familiar_attach",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2975289954": {
+"code": "ability_familiar_attach_trigger",
+"ru": "Перепрыгнуть к союзнику",
+"en": "Hop To Ally",
+"class": "ability_familiar_attach_trigger",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1769657144": {
+"code": "citadel_weapon_fencer_set",
+"ru": "Гордость Иксии",
+"en": "Pride of Ixia",
+"class": "citadel_ability_fencer_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1470169038": {
+"code": "citadel_weapon_fencer_alt",
+"ru": "citadel_weapon_fencer_alt",
+"en": "citadel_weapon_fencer_alt",
+"class": "citadel_ability_fencer_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1224118768": {
+"code": "ability_melee_fencer",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"725153709": {
+"code": "ability_fencer_throwblade",
+"ru": "Высвобождающий сигил",
+"en": "Disengaging Sigil",
+"class": "ability_fencer_throwblade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2463759749": {
+"code": "ability_fencer_riposte_target_select",
+"ru": "ability_fencer_riposte_target_select",
+"en": "ability_fencer_riposte_target_select",
+"class": "ability_fencer_riposte_target_select",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"2006773718": {
+"code": "ability_fencer_riposte",
+"ru": "Рипост",
+"en": "Riposte",
+"class": "ability_fencer_riposte",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"147493976": {
+"code": "ability_fencer_lunge",
+"ru": "Безупречное наступление",
+"en": "Flawless Advance",
+"class": "ability_fencer_lunge",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"494112189": {
+"code": "ability_fencer_ultimate",
+"ru": "Итани Ло Сан",
+"en": "Itani Lo Sahn",
+"class": "ability_fencer_ultimate",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2834635521": {
+"code": "citadel_weapon_necro_set",
+"ru": "Учитель",
+"en": "The Teacher",
+"class": "citadel_ability_necro_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"406697186": {
+"code": "ability_melee_necro",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"2001589780": {
+"code": "ability_necro_zombiewall",
+"ru": "Хватка смерти",
+"en": "Grasping Hands",
+"class": "ability_necro_zombiewall",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3214055642": {
+"code": "ability_necro_hauntingskull",
+"ru": "Банка мёртвых",
+"en": "Jar of Dead",
+"class": "ability_necro_hauntingskull",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"4110547059": {
+"code": "ability_necro_gravestone",
+"ru": "Загробный договор",
+"en": "Borrowed Decree",
+"class": "citadel_ability_necro_gravestone",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2750845124": {
+"code": "ability_necro_killsummon",
+"ru": "Заимствование жизни",
+"en": "Borrow Life",
+"class": "ability_necro_killsummon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"152191637": {
+"code": "ability_necro_nukemap",
+"ru": "ability_necro_nukemap",
+"en": "ability_necro_nukemap",
+"class": "ability_necro_nukemap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3708354687": {
+"code": "ability_necro_killsummon_trigger",
+"ru": "ability_necro_killsummon_trigger",
+"en": "ability_necro_killsummon_trigger",
+"class": "ability_necro_killsummon_trigger",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1777769116": {
+"code": "ability_necro_coffin",
+"ru": "Сгинь!",
+"en": "Back Off!",
+"class": "citadel_ability_necro_coffin",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"629925354": {
+"code": "ability_necro_fear",
+"ru": "Хищение эссенции",
+"en": "Essence Theft",
+"class": "ability_necro_fear",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1991038380": {
+"code": "ability_necro_haunt",
+"ru": "Призрачное сопровождение",
+"en": "Haunting Spectres",
+"class": "ability_necro_hauntingspirits",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2462670856": {
+"code": "ability_necro_wither",
+"ru": "Зачахни и умри",
+"en": "Wither & Die",
+"class": "ability_necro_hauntingskull",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2362587754": {
+"code": "ability_melee_werewolf",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3922245490": {
+"code": "citadel_weapon_werewolf_rifle",
+"ru": "citadel_weapon_werewolf_rifle",
+"en": "citadel_weapon_werewolf_rifle",
+"class": "citadel_ability_werewolf_rifle",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3995444919": {
+"code": "citadel_weapon_werewolf_claws",
+"ru": "Когти оборотня",
+"en": "Lycan Claws",
+"class": "citadel_ability_werewolf_clawweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1385849824": {
+"code": "ability_werewolf_unloadgun",
+"ru": "Скоростной огонь",
+"en": "Slam Fire",
+"class": "ability_werewolf_unload_gun2",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2717130900": {
+"code": "ability_werewolf_kickflip",
+"ru": "Пинок",
+"en": "Boot Kick",
+"class": "ability_werewolf_kickflip",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"4009459244": {
+"code": "ability_werewolf_maulingleap",
+"ru": "Калечащий прыжок",
+"en": "Mauling Leap",
+"class": "ability_werewolf_maulingleap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3983754897": {
+"code": "ability_werewolf_netshot",
+"ru": "Опутывающая бола",
+"en": "Entangling Bola",
+"class": "ability_werewolf_netshot",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3117047651": {
+"code": "ability_werewolf_cripplingslash",
+"ru": "Удар хвостом",
+"en": "Tail Whack",
+"class": "ability_werewolf_cripplingslash",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3200615766": {
+"code": "ability_werewolf_trackingbomb",
+"ru": "ability_werewolf_trackingbomb",
+"en": "ability_werewolf_trackingbomb",
+"class": "ability_werewolf_trackingbomb",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"515791019": {
+"code": "ability_werewolf_transformation",
+"ru": "Ликантропия",
+"en": "Lycan Curse",
+"class": "ability_werewolf_transformation",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2074867748": {
+"code": "ability_werewolf_hunt",
+"ru": "ability_werewolf_hunt",
+"en": "ability_werewolf_hunt",
+"class": "ability_werewolf_hunt",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1532069386": {
+"code": "ability_werewolf_passive",
+"ru": "ability_werewolf_passive",
+"en": "ability_werewolf_passive",
+"class": "ability_werewolf_hunt",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2554327994": {
+"code": "ability_werewolf_onthehunt",
+"ru": "Охота",
+"en": "On The Hunt",
+"class": "citadel_ability_werewolf_onthehunt",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"2792879300": {
+"code": "ability_werewolf_transformation_trigger",
+"ru": "Снять проклятие",
+"en": "End the Curse",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"2565763509": {
+"code": "ability_werewolf_frenzy",
+"ru": "Зубами в горло",
+"en": "Go For The Throat",
+"class": "citadel_ability_werewolf_frenzy",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3867044190": {
+"code": "ability_werewolf_leap",
+"ru": "Сокрушительный прыжок",
+"en": "Crushing Leap",
+"class": "ability_werewolf_leap",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"3744272782": {
+"code": "citadel_weapon_unicorn_set",
+"ru": "Карнавал",
+"en": "Carny Life",
+"class": "citadel_ability_unicorn_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3021389868": {
+"code": "ability_melee_unicorn",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3443575800": {
+"code": "ability_unicorn_radiantblast",
+"ru": "Дыхание светом",
+"en": "Light Eater",
+"class": "ability_unicorn_radiantblast",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1950738949": {
+"code": "ability_unicorn_prismaticguard",
+"ru": "Ослепительный трюк",
+"en": "Dazzling Trick",
+"class": "ability_unicorn_prismaticguard",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2590796390": {
+"code": "ability_unicorn_dazzlingorb",
+"ru": "Сияющее чудо",
+"en": "Shining Wonder",
+"class": "ability_unicorn_dazzlingorb",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1011349580": {
+"code": "ability_unicorn_luminousstrike",
+"ru": "Лучезарные кинжалы",
+"en": "Radiant Daggers",
+"class": "ability_unicorn_luminousstrike",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2482363834": {
+"code": "citadel_weapon_artist_set",
+"ru": "Творческий подход",
+"en": "Creative Solutions",
+"class": "citadel_ability_artist_primaryweapon2",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1789967856": {
+"code": "citadel_weapon_artist_projectile",
+"ru": "citadel_weapon_artist_projectile",
+"en": "citadel_weapon_artist_projectile",
+"class": "ability_artist_projectileweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1633429680": {
+"code": "ability_melee_artist",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"836615329": {
+"code": "ability_artist_homingbrush",
+"ru": "Живая тушь",
+"en": "Living Ink",
+"class": "ability_artist_homingbrush",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"815266434": {
+"code": "ability_artist_pullbrush",
+"ru": "Живая тушь",
+"en": "Living Ink",
+"class": "ability_artist_pullbrush",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3389503777": {
+"code": "ability_artist_rollingprojectile",
+"ru": "В потоке",
+"en": "Flow State",
+"class": "ability_artist_rollingprojectile",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"436205884": {
+"code": "ability_artist_rollingprojectile_trigger",
+"ru": "ability_artist_rollingprojectile_trigger",
+"en": "ability_artist_rollingprojectile_trigger",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"3612874202": {
+"code": "ability_artist_tether",
+"ru": "Портрет с натуры",
+"en": "Still Life",
+"class": "ability_artist_tether",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2516700978": {
+"code": "ability_artist_bamboogrove",
+"ru": "Абстрактный пейзаж",
+"en": "Abstract Landscape",
+"class": "citadel_ability_artist_bamboogrove",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"3724628144": {
+"code": "ability_artist_bamboogrove_trigger",
+"ru": "ability_artist_bamboogrove_trigger",
+"en": "ability_artist_bamboogrove_trigger",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"2919934227": {
+"code": "citadel_weapon_baba_set",
+"ru": "Особое угощение",
+"en": "Bunko-Night Special",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2794662248": {
+"code": "ability_melee_baba",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1018021554": {
+"code": "ability_baba_bench_melee",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "ability_baba_bench_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1282689113": {
+"code": "ability_baba_bubbling_brew",
+"ru": "Истощающая нить",
+"en": "Threadsap",
+"class": "ability_baba_bubbling_brew",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3122124161": {
+"code": "ability_baba_bench_run",
+"ru": "Длинноногая бабуся",
+"en": "Granny Long Legs",
+"class": "ability_baba_bench_run",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2003165630": {
+"code": "ability_baba_hexing_brew",
+"ru": "Бусин отвар",
+"en": "Baba's Brew",
+"class": "ability_baba_hexing_brew",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1169498311": {
+"code": "ability_baba_hexing_brew_throw",
+"ru": "ability_baba_hexing_brew_throw",
+"en": "ability_baba_hexing_brew_throw",
+"class": "ability_baba_hexing_brew_throw",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"299875845": {
+"code": "ability_baba_ultimate_2",
+"ru": "Птичий корм",
+"en": "Feed The Birds",
+"class": "ability_baba_ultimate_2",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"963532193": {
+"code": "citadel_weapon_chessmaster_shotgun",
+"ru": "citadel_weapon_chessmaster_shotgun",
+"en": "citadel_weapon_chessmaster_shotgun",
+"class": "citadel_ability_chessmaster_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2344748155": {
+"code": "citadel_weapon_chessmaster_set",
+"ru": "Пушка Алёхина",
+"en": "Alekhine's Gun",
+"class": "citadel_ability_chessmaster_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2613762411": {
+"code": "ability_melee_chessmaster",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3284310919": {
+"code": "ability_chessmaster_movechesspiece",
+"ru": "Ход фигурой",
+"en": "Move Piece",
+"class": "ability_chessmaster_movechesspiece",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"4011110259": {
+"code": "ability_chessmaster_throwbishop",
+"ru": "Поставить слона",
+"en": "Setup Bishop",
+"class": "ability_chessmaster_throwbishop",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"37090126": {
+"code": "ability_chessmaster_throwbishop_trigger",
+"ru": "Поставить слона",
+"en": "Setup Bishop",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"4180486641": {
+"code": "ability_chessmaster_knightbuff",
+"ru": "Королевский конь",
+"en": "Kingside Knight",
+"class": "ability_chessmaster_knightbuff",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2831262884": {
+"code": "ability_chessmaster_knightbuff_trigger",
+"ru": "Ход королём",
+"en": "Move King",
+"class": "ability_chessmaster_movechesspiece",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2424652896": {
+"code": "ability_chessmaster_forkpiece",
+"ru": "Ладейная батарея",
+"en": "Rook Battery",
+"class": "ability_chessmaster_forkpiece",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1566272751": {
+"code": "ability_chessmaster_forkpiece_trigger",
+"ru": "Ладейная батарея",
+"en": "Rook Battery",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1389230689": {
+"code": "ability_chessmaster_queen",
+"ru": "Развить ферзя",
+"en": "Develop Queen",
+"class": "ability_chessmaster_queen",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"2487769573": {
+"code": "ability_chessmaster_queen_trigger",
+"ru": "Развить ферзя",
+"en": "Develop Queen",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"892506099": {
+"code": "ability_deadpack_zip_line",
+"ru": "ability_deadpack_zip_line",
+"en": "ability_deadpack_zip_line",
+"class": "citadel_ability_zip_line",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1366425122": {
+"code": "ability_deadpack_primary_weapon_charge",
+"ru": "ability_deadpack_primary_weapon_charge",
+"en": "ability_deadpack_primary_weapon_charge",
+"class": "ability_deadpack_primary_weapon_charge",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2867233108": {
+"code": "ability_melee_deadpack",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"1904698842": {
+"code": "ability_deadpack_rocketeer",
+"ru": "Химера М1",
+"en": "Chimera Mk1",
+"class": "ability_deadpack_rocketeer",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"2603013853": {
+"code": "ability_deadpack_chargeblast",
+"ru": "Стригийский залп",
+"en": "Strix Salvo",
+"class": "ability_deadpack_chargeblast",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"1026127931": {
+"code": "ability_deadpack_ultimate",
+"ru": "Закрыть сделку",
+"en": "Close The Deal",
+"class": "ability_deadpack_ultimate",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"374042410": {
+"code": "ability_deadpack_flamethrower",
+"ru": "Сброс топлива",
+"en": "Jettison Fuel",
+"class": "ability_deadpack_flamethrower",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"4180982524": {
+"code": "citadel_weapon_nurse_set",
+"ru": "Реаниматор",
+"en": "Code Blue",
+"class": "citadel_ability_primary_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"3018958015": {
+"code": "citadel_weapon_nurse_healing_needles",
+"ru": "citadel_weapon_nurse_healing_needles",
+"en": "citadel_weapon_nurse_healing_needles",
+"class": "ability_nurse_healing_needles_weapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"1312339700": {
+"code": "ability_melee_nurse",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"267712790": {
+"code": "ability_nurse_leech_therapy",
+"ru": "Гирудотерапия",
+"en": "Leech Therapy",
+"class": "ability_nurse_leech_therapy",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3427093887": {
+"code": "ability_nurse_fear",
+"ru": "Затаённые ужасы",
+"en": "Lurking Terrors",
+"class": "ability_nurse_fear",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"683490631": {
+"code": "ability_nurse_healing_needles",
+"ru": "Лечебные иглы",
+"en": "Healing Needles",
+"class": "ability_nurse_healing_needles",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3621314027": {
+"code": "ability_nurse_adrenaline_rush",
+"ru": "Гнусные пары",
+"en": "Wretched Vapors",
+"class": "ability_nurse_adrenaline_rush",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3435805738": {
+"code": "citadel_weapon_ratking_set",
+"ru": "Королевский указ",
+"en": "Sovereign's Decree",
+"class": "citadel_ability_ratking_primaryweapon",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Weapon"
+},
+"2052857081": {
+"code": "ability_melee_ratking",
+"ru": "Ближний бой",
+"en": "Melee",
+"class": "citadel_ability_hold_melee",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Melee"
+},
+"3681399397": {
+"code": "ability_ratking_ratnibble",
+"ru": "Крысиная стая",
+"en": "Rat Swarm",
+"class": "ability_ratking_ratnibble",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"3002308408": {
+"code": "ability_ratking_scrap_grenade",
+"ru": "Хлам-граната",
+"en": "Scrap Grenade",
+"class": "ability_ratking_scrap_grenade",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"690412829": {
+"code": "ability_ratking_ratarmor",
+"ru": "Крысолевская мантия",
+"en": "Royal Pestments",
+"class": "ability_ratking_ratarmor",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Signature"
+},
+"5742079": {
+"code": "ability_ratking_entertunnel",
+"ru": "Протискивание...",
+"en": "Squeezing In...",
+"class": "ability_ratking_entertunnel",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"356935139": {
+"code": "ability_ratking_standard_bearer_trigger",
+"ru": "ability_ratking_standard_bearer_trigger",
+"en": "ability_ratking_standard_bearer_trigger",
+"class": "citadel_base_trigger_ability",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+},
+"1627989937": {
+"code": "ability_ratking_standard_bearer",
+"ru": "Правь, Крысания!",
+"en": "Rule, Ratannia!",
+"class": "ability_ratking_standard_bearer",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Ultimate"
+},
+"1262508092": {
+"code": "citadel_ability_jump_ratking",
+"ru": "Прыжок",
+"en": "Jump",
+"class": "citadel_ability_jump",
+"slot": null,
+"tier": null,
+"atype": "EAbilityType_Innate"
+}
+}
+}
