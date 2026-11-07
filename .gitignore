@@ -9,3 +9,4 @@ target/
 tests/web/node_modules/
 tests/web/test-results/
 **/__pycache__/
+.superpowers/
