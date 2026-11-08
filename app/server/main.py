@@ -15,6 +15,7 @@ from fastapi.staticfiles import StaticFiles
 from app.server.jobs import Jobs
 from app.server.limits import HourlyLimit, body_chunks, client_ip
 from app.server.storage import Storage
+from app.pipeline.enrich import enrich
 
 WEB = Path(__file__).resolve().parents[2] / 'web'
 
@@ -181,7 +182,21 @@ def create_app():
 
     @app.get('/api/matches/{match_id}')
     def match(match_id: str):
-        return match_file(match_id, 'match.json')
+        response = match_file(match_id, 'match.json')
+        if not isinstance(response, FileResponse):
+            return response
+        path = storage.matches / match_id / 'match.json'
+        data = json.loads(path.read_text(encoding='utf-8'))
+        required = {'fantasy', 'rank', 'grade', 'mvp', 'sourceTimeline', 'hsTimeline'}
+        if any(not required.issubset(p) or not isinstance(p.get('lane'), dict)
+               for p in data.get('players', [])):
+            raw_path = path.with_name('postmatch_raw.json')
+            try:
+                postmatch = json.loads(raw_path.read_text(encoding='utf-8'))
+            except (OSError, ValueError):
+                postmatch = {}
+            enrich(data, postmatch)
+        return data
 
     @app.get('/api/matches/{match_id}/files/{name}')
     def files(match_id: str, name: str):

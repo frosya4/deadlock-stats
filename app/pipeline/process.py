@@ -9,6 +9,7 @@ import unicodedata
 from pathlib import Path
 
 from .errors import DemoError
+from .enrich import enrich
 
 # Generated modules use bare sibling imports. Do not regenerate or patch them.
 PROTO_DIR = str(Path(__file__).resolve().parents[1] / "proto")
@@ -562,7 +563,6 @@ def process(raw_dir: Path, header: dict, out_dir: Path) -> dict:
         ]
         for p in meta["players"]
     }
-    write_json(out_dir / "match.json", data)
     with (out_dir / "players.csv").open("w", newline="", encoding="utf-8-sig") as fh:
         cols = [
             "team",
@@ -649,6 +649,8 @@ def process(raw_dir: Path, header: dict, out_dir: Path) -> dict:
             w.writerow([c["time"], c["player"], c["hero"], c["all"], c["text"]])
 
     write_gold(out_dir / "gold.csv", players)
+    enrich(data, meta)
+    write_json(out_dir / "match.json", data)
     return {
         **{k: match[k] for k in ("matchId", "startUTC", "duration", "winner")},
         "heroes": [{k: p[k] for k in ("hero", "team", "name")} for p in players],

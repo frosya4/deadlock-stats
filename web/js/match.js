@@ -1,3 +1,4 @@
+import { setupReport, portrait, enhancePlayer } from './report-v2.js';
 import { setupCharts, goldSources, sourceColors } from './charts.js';
 
 const $ = selector => document.querySelector(selector);
@@ -65,13 +66,14 @@ async function load() {
 
   function playerButton(player, hero = false) {
     const button = el('button', hero ? player.hero : player.name, 'player-link ' + teamClass(player.team));
+    if (hero) button.prepend(portrait(player));
     button.type = 'button'; button.addEventListener('click', () => openPlayer(player));
     return button;
   }
   function named(slot, name) { return bySlot.has(slot) ? playerButton(bySlot.get(slot)) : el('span', name); }
   function openPlayer(player) {
     $('#player-title').textContent = player.name + ' — ' + player.hero;
-    const content = $('#player-content'); content.replaceChildren();
+    const content = $('#player-content'); content.querySelectorAll('.chart').forEach(h => h.plot?.destroy()); content.replaceChildren();
     content.append(el('p', teamName(player.team) + ' · ' + player.kills + '/' + player.deaths + '/' + player.assists + ' · Нетворс ' + format(player.netWorth), 'mut'));
     content.append(el('h3', 'Билд по времени'), chips(player.items || []));
     content.append(el('h3', 'Способности'), chips(player.abilities || [], true));
@@ -87,6 +89,7 @@ async function load() {
     table(damage, ['Игрок', 'Нанесено', 'Получено'], players.filter(p => p.slot !== player.slot).map(p => [playerButton(p), format(data.damageMatrix[player.slot]?.[p.slot]), format(data.damageMatrix[p.slot]?.[player.slot])]));
     wrap.append(damage); content.append(wrap);
     if (!dialog.open) dialog.showModal();
+    enhancePlayer(content, player, m);
     dialog.scrollTop = 0;
   }
 
@@ -105,7 +108,7 @@ async function load() {
   for (const [label, value] of kpis) {
     const card = el('div', '', 'card kpi'); card.append(el('span', label), el('b', value, label === 'Победитель' ? teamClass(m.winner) : '')); $('#kpis').append(card);
   }
-  table($('#players'), ['Игрок', 'Герой', 'Линия', 'Ур.', 'У/С/П', 'КДА', 'Нетворс', 'GPM', 'Добив.', 'Денаи', 'Урон героям', 'Получ. урон', 'Урон объектам', 'Лечение'], players.map(p => [playerButton(p), playerButton(p, true), p.lane, p.level, p.kills + '/' + p.deaths + '/' + p.assists, p.kda, ...['netWorth','gpm','lastHits','denies','heroDamage','damageTaken','objDamage','healing'].map(k => format(p[k]))]));
+  table($('#players'), ['Игрок', 'Герой', 'Линия', 'Ур.', 'У/С/П', 'КДА', 'Нетворс', 'GPM', 'Добив.', 'Денаи', 'Урон героям', 'Получ. урон', 'Урон объектам', 'Лечение'], players.map(p => [playerButton(p), playerButton(p, true), (typeof p.lane === 'object' ? p.lane?.id : p.lane), p.level, p.kills + '/' + p.deaths + '/' + p.assists, p.kda, ...['netWorth','gpm','lastHits','denies','heroDamage','damageTaken','objDamage','healing'].map(k => format(p[k]))]));
 
   const sourceColumns = goldSources.filter(([key]) => key !== 'Other');
   const goldRows = [...players].sort((a, b) => b.netWorth - a.netWorth).map(p => {
@@ -149,6 +152,7 @@ async function load() {
   if (!data.chat.length) $('#chat').after(el('p', 'Сообщений нет', 'mut'));
   const downloads = [['match.json','Матч JSON'], ['postmatch_raw.json','Итоги JSON'], ['players.csv','Игроки CSV'], ['items.csv','Предметы CSV'], ['deaths.csv','Смерти CSV'], ['chat.csv','Чат CSV'], ['gold.csv','Золото CSV']];
   for (const [file, title] of downloads) { const link = el('a', title); link.href = '/api/matches/' + encodeURIComponent(id) + '/files/' + file; link.download = file; $('#downloads').append(link); }
+  setupReport(data, openPlayer);
   $('#report').hidden = false; $('#status').hidden = true;
   if (typeof window.uPlot === 'undefined') {
     // The requested cdnjs URLs currently return 404. Keep the exact version

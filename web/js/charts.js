@@ -1,3 +1,4 @@
+import { setupSources } from './report-v2.js';
 export const goldSources = [
   ['Players', 'Герои'], ['Assists', 'Ассисты'], ['LaneCreeps', 'Крипы линии'],
   ['Neutrals', 'Нейтралы'], ['Bosses', 'Боссы/объекты'], ['Treasure', 'Сокровища'],
@@ -31,7 +32,7 @@ function sum(values, index) {
   return known.length ? known.reduce((a, b) => a + b, 0) : null;
 }
 
-function createPlot(host, tooltip, series, data) {
+export function createPlot(host, tooltip, series, data, raw = null) {
   if (host.plot) host.plot.destroy();
   tooltip.hidden = true;
   tooltip.replaceChildren();
@@ -48,12 +49,12 @@ function createPlot(host, tooltip, series, data) {
       { stroke: foreground, grid: { stroke: grid }, values: (_, values) => values.map(number), size: 64 },
     ],
     cursor: { drag: { x: false, y: false }, y: false, points: { show: false } },
-    hooks: { setCursor: [chart => {
+    hooks: { destroy: [], setCursor: [chart => {
       const index = chart.cursor.idx;
       if (index == null || chart.cursor.left < 0) { tooltip.hidden = true; return; }
       const title = document.createElement('strong'); title.textContent = minutes(chart.data[0][index]);
       const rows = document.createElement('div'); rows.className = 'tooltip-values';
-      chart.series.slice(1).map((s, i) => ({ series: s, value: chart.data[i + 1][index] }))
+      chart.series.slice(1).map((s, i) => ({ series: s, value: (raw || chart.data)[i + 1][index] }))
         .filter(row => row.series.show && row.value != null)
         .sort((a, b) => b.value - a.value)
         .forEach(({ series: s, value }) => {
@@ -74,6 +75,7 @@ function createPlot(host, tooltip, series, data) {
 
 export function setupCharts(data, playerButton) {
   const players = data.players;
+  const hasSources = players.some(p => p.sourceTimeline?.length);
   const selected = new Set(players.map(p => p.slot));
   const main = document.querySelector('#timeline');
   const gold = document.querySelector('#gold-chart');
@@ -136,7 +138,8 @@ export function setupCharts(data, playerButton) {
   function render() {
     totals.setAttribute('aria-pressed', String(teamMode));
     for (const [slot, checkbox] of inputs) checkbox.checked = selected.has(slot);
-    renderMain(); renderGold();
+    renderMain();
+    if (!hasSources) renderGold();
   }
   metric.addEventListener('change', renderMain);
   totals.addEventListener('click', () => { teamMode = !teamMode; render(); });
@@ -153,6 +156,7 @@ export function setupCharts(data, playerButton) {
     }
   });
   observer.observe(main); observer.observe(gold);
-  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', render);
+  document.addEventListener('themechange', render);
   render();
+  if (hasSources) setupSources(data);
 }

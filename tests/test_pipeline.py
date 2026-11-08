@@ -131,7 +131,9 @@ def test_matches_prototype(processed):
         (FIXTURES / "133162474.expected.json").read_text(encoding="utf-8")
     )
     assert [
-        {k: v for k, v in p.items() if k != "gpm"} for p in data["players"]
+        {k: (v["id"] if k == "lane" else v) for k, v in p.items()
+         if k not in {"gpm", "fantasy", "grade", "rank", "mvp", "hsTimeline", "sourceTimeline"}}
+        for p in data["players"]
     ] == expected["players"]
     for key in ("objectives", "damageMatrix"):
         assert data[key] == expected[key]

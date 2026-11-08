@@ -3,8 +3,14 @@ import { test, expect } from '@playwright/test';
 test('gold uses cumulative snapshots and follows the selected players', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
-  await page.goto('/m/133162474');
-  await expect(page.locator('#gold-chart .u-over')).toBeVisible();
+  await page.route('**/api/matches/133162474', async route => {
+    const response = await route.fetch(); const data = await response.json();
+    for (const p of data.players) for (const key of ['sourceTimeline','hsTimeline','fantasy','grade','rank','mvp']) delete p[key];
+    delete data.match.mvpSlot; delete data.match.hsAverage;
+    await route.fulfill({json:data});
+  });
+  await page.goto('/m/133162474#players');
+  await expect(page.locator('#timeline .u-over')).toBeVisible();
   for (const checkbox of await page.locator('#player-legend input').all()) await checkbox.uncheck();
   await expect(page.locator('#gold-legend')).toContainText('Выберите хотя бы одного игрока');
   await page.getByRole('checkbox', { name: 'Линия Игрок 1', exact: true }).check();
@@ -56,7 +62,7 @@ test('drag and drop handles duplicate result and server upload rejection', async
 
 test('dark mobile layout fits after resizing and a missing match shows API error', async ({ page }) => {
   await page.emulateMedia({ colorScheme: 'dark' });
-  await page.goto('/m/133162474');
+  await page.goto('/m/133162474#players');
   await expect(page.locator('#timeline .u-over')).toBeVisible();
   await page.setViewportSize({ width: 390, height: 844 });
   await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth)).toBe(390);
@@ -75,6 +81,6 @@ test('network failures use Russian recovery messages', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('#list-status')).toHaveText('Не удалось загрузить список матчей. Проверьте подключение и обновите страницу.');
   await page.route('**/api/matches/133162474', route => route.abort('failed'));
-  await page.goto('/m/133162474');
+  await page.goto('/m/133162474#players');
   await expect(page.getByRole('status')).toHaveText('Не удалось загрузить матч. Проверьте подключение и обновите страницу.');
 });
