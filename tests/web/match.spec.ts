@@ -84,6 +84,7 @@ test('upload shows progress then redirects', async ({ page }) => {
   await expect(page).toHaveURL(/\/m\/u[0-9a-f]{12}$/, { timeout: 30000 });
   await expect(page.locator('#players tbody tr')).toHaveCount(12);
   await expect(page.getByRole('link', { name: 'Официальная версия: /m/133162474' })).toHaveAttribute('href', '/m/133162474');
+  await page.route('**/api/fetch', r => r.fulfill({json:{matchId:'133162474',duplicate:true}}));
   const officialRequest = page.waitForRequest(request => request.url().endsWith('/api/fetch') && request.method() === 'POST');
   await page.getByRole('button', { name: 'Скачать официальную запись у Valve' }).click();
   expect((await officialRequest).postDataJSON()).toEqual({ matchId: '133162474' });

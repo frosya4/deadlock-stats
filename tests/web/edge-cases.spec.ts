@@ -70,8 +70,9 @@ test('dark mobile layout fits after resizing and a missing match shows API error
     const host = document.querySelector('#timeline') as any;
     return Math.abs(host.plot.width - host.clientWidth);
   })).toBeLessThanOrEqual(1);
+  await page.route('**/api/remote/999999999', r => r.fulfill({status:503,json:{error:'API временно недоступен'}}));
   await page.goto('/m/999999999');
-  await expect(page.getByRole('status')).toHaveText('Файл не найден');
+  await expect(page.getByRole('status')).toHaveText('API временно недоступен');
   await page.goto('/');
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(390);
 });

@@ -1,3 +1,5 @@
+import { remoteMatch } from './profile.js';
+import { link } from './auth.js';
 import { setupReport, portrait, enhancePlayer } from './report-v2.js';
 import { setupCharts, goldSources, sourceColors } from './charts.js';
 
@@ -56,6 +58,7 @@ function chips(items, abilities = false) {
 async function load() {
   const id = location.pathname.split('/').filter(Boolean).pop();
   const response = await fetch('/api/matches/' + encodeURIComponent(id));
+  if (response.status === 404 && /^\d+$/.test(id)) { await remoteMatch(id); return; }
   const data = await response.json();
   if (!response.ok) throw new Error(data.error || 'Не удалось загрузить матч');
   const m = data.match, players = data.players;
@@ -68,6 +71,9 @@ async function load() {
     const button = el('button', hero ? player.hero : player.name, 'player-link ' + teamClass(player.team));
     if (hero) button.prepend(portrait(player));
     button.type = 'button'; button.addEventListener('click', () => openPlayer(player));
+    if (!hero && player.accountId) {
+      const wrap = el('span'); wrap.append(link(player.name, '/p/' + player.accountId), document.createTextNode(' · '), button); button.textContent = 'Карточка'; button.setAttribute('aria-label', player.name); return wrap;
+    }
     return button;
   }
   function named(slot, name) { return bySlot.has(slot) ? playerButton(bySlot.get(slot)) : el('span', name); }

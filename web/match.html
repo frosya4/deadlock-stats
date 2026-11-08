@@ -10,10 +10,10 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uPlot/1.6.31/uPlot.iife.min.js"></script>
   <script defer src="/js/theme.js"></script>
   <script type="module" src="/js/match.js"></script>
-</head>
+<script type="module" src="/js/auth.js"></script></head>
 <body>
 <main>
-  <nav><a href="/">← Все матчи</a><span>DEADLOCK / СТАТИСТИКА</span><button id="theme-toggle" type="button">Светлая тема</button></nav>
+  <nav><a href="/">← Все матчи</a><span>DEADLOCK / СТАТИСТИКА</span><button id="theme-toggle" type="button">Светлая тема</button><div data-auth></div></nav>
   <header><h1>Отчёт по матчу</h1><p id="subtitle" class="mut"></p></header>
   <p id="status" role="status">Загрузка матча…</p>
   <div id="report" hidden>

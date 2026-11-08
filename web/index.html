@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="ru">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Deadlock · разбор матчей</title><link rel="stylesheet" href="/css/style.css"><script defer src="/js/theme.js"></script></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Deadlock · разбор матчей</title><link rel="stylesheet" href="/css/style.css"><script defer src="/js/theme.js"></script><script type="module" src="/js/auth.js"></script></head>
 <body><main>
-  <nav><span>DEADLOCK / СТАТИСТИКА</span><span>Разбор демозаписей</span><button id="theme-toggle" type="button">Светлая тема</button></nav>
+  <nav><span>DEADLOCK / СТАТИСТИКА</span><span>Разбор демозаписей</span><button id="theme-toggle" type="button">Светлая тема</button><div data-auth></div></nav>
+  <form id="search-form"><label for="search">Матч или профиль Steam</label><input id="search" required placeholder="Номер матча, Steam ID или ссылка"><button>Найти</button><p id="search-status" aria-live="polite"></p></form>
   <header class="intro"><h1>Каждый матч — в деталях</h1><p class="mut">Загрузите демозапись Deadlock: сравните игроков, проследите экономику и изучите билды.</p></header>
   <section class="card drop-zone" id="drop-zone" aria-label="Загрузка демозаписи">
     <h2>Перетащите .dem сюда</h2><label class="file-label" for="file">или выберите файл</label><input class="file-input" id="file" type="file" accept=".dem" aria-label="Демозапись Deadlock">
@@ -14,6 +15,13 @@
   <section><h2>Разобранные матчи</h2><p id="list-status" class="mut">Загрузка списка…</p><div id="matches" class="match-list"></div></section>
 </main>
 <script type="module">
+document.querySelector('#search-form').addEventListener('submit', async event => {
+  event.preventDefault(); const status = document.querySelector('#search-status'); status.textContent = 'Поиск…';
+  try { const data = await jsonResponse(await fetch('/api/search?q=' + encodeURIComponent(document.querySelector('#search').value.trim())));
+    if (!/^\/(m|p)\/\d+$/.test(data.redirect)) throw new Error('Неверный адрес результата');
+    location.assign(data.redirect);
+  } catch (e) { status.textContent = e.message; status.setAttribute('role','alert'); }
+});
 const fileInput = document.querySelector('#file');
 const drop = document.querySelector('#drop-zone');
 const progress = document.querySelector('#progress');
