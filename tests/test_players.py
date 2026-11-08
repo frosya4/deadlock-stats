@@ -121,16 +121,19 @@ def test_remote_shape_and_cache(player_client):
     client, calls = player_client
     async def get(url):
         calls.append(url)
+        if '/players/steam' in url:
+            return 200, json.dumps([{'account_id': ACCOUNT, 'personaname': 'Игрок'}]).encode()
         return 200, json.dumps({'match_info': {'duration_s': 1800, 'winning_team': 1,
             'players': [{'account_id': ACCOUNT, 'hero_id': 6, 'team': 0, 'kills': 3,
                          'deaths': 2, 'assists': 1, 'net_worth': 20000, 'ignore': 42}]}, 'ignore': 42}).encode()
     client.app.state.http_get = get
     expected = {'duration': 1800, 'winningTeam': 1, 'players': [
         {'accountId': ACCOUNT, 'heroId': 6, 'team': 0, 'kills': 3,
-         'deaths': 2, 'assists': 1, 'netWorth': 20000}]}
+         'deaths': 2, 'assists': 1, 'netWorth': 20000, 'name': 'Игрок'}]}
     assert client.get('/api/remote/1').json() == expected
     assert client.get('/api/remote/1').json() == expected
-    assert calls == ['https://api.deadlock-api.com/v1/matches/1/metadata']
+    assert calls == ['https://api.deadlock-api.com/v1/matches/1/metadata',
+                     f'https://api.deadlock-api.com/v1/players/steam?account_ids={ACCOUNT}']
 
 
 @pytest.mark.parametrize('value', ['abc', '-1', '9' * 21])

@@ -73,7 +73,7 @@ async function load() {
                 line.append(portrait({heroId:q.heroId,hero:heroName(q.heroId)}),link(q.name||String(q.accountId),'/p/'+q.accountId),el('span',[q.kills,q.deaths,q.assists].join('/'),'mut small')); col.append(line); }
               box.append(col); } }
           catch(e) { box.textContent='Не удалось загрузить игроков: '+e.message; } } };
-      row.lastElementChild.prepend(more); list.append(row,box);
+      result.append(more); list.append(row,box);
       if(m.state==='queued') watchQueued(row,p.accountId,m.matchId);
     }
   } catch {
