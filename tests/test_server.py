@@ -197,7 +197,7 @@ def test_fetch_flow(client, remote_http):
     assert client.post('/api/fetch', json={'matchId': '133162474'}).json()['duplicate']
 
 
-@pytest.mark.parametrize('mode,message', [('missing', 'Матч не найден или запись уже удалена Valve'), ('down', 'Сервис deadlock-api недоступен, попробуйте позже или загрузите файл')])
+@pytest.mark.parametrize('mode,message', [('missing', 'Запись матча ещё не готова у Valve (обычно появляется через 10–60 минут после игры) или уже удалена. Попробуйте позже.'), ('down', 'Сервис deadlock-api недоступен, попробуйте позже или загрузите файл')])
 def test_fetch_remote_errors(client, remote_http, mode, message):
     remote_http(mode)
     result = done(client, client.post('/api/fetch', json={'matchId': '133162474'}).json()['job'])

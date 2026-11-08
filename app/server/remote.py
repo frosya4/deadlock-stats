@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 import httpx
 from app.pipeline.errors import DemoError
 
-NOT_FOUND = 'Матч не найден или запись уже удалена Valve'
+NOT_FOUND = 'Запись матча ещё не готова у Valve (обычно появляется через 10–60 минут после игры) или уже удалена. Попробуйте позже.'
 API_DOWN = 'Сервис deadlock-api недоступен, попробуйте позже или загрузите файл'
 
 async def salts(match_id):
