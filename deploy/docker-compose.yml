@@ -10,6 +10,7 @@ services:
       DATA_DIR: /data
       PUBLIC_URL: https://${SITE_HOST}
       PER_ACCOUNT_FETCH_PER_HOUR: 2
+      ADMIN_ACCOUNTS: ${ADMIN_ACCOUNTS:-}
     volumes:
       - ./data:/data
     dns:

@@ -111,3 +111,9 @@ def logout(request: Request):
 def me(request: Request):
     account = current_account(request)
     return {'accountId': None} if account is None else {'accountId': account, 'steamId': str(STEAM_BASE + account)}
+
+
+def is_admin(account):
+    """Accounts in ADMIN_ACCOUNTS (comma-separated account ids) skip per-user limits."""
+    admins = {a.strip() for a in os.environ.get('ADMIN_ACCOUNTS', '').split(',') if a.strip()}
+    return account is not None and str(account) in admins

@@ -100,3 +100,10 @@ def test_upload_stays_anonymous(client):
     from test_server import upload, done
     client.cookies.clear()
     assert done(client, upload(client).json()['job'])['state'] == 'done'
+
+
+def test_admin_skips_account_limit(client, remote_http, monkeypatch):
+    monkeypatch.setenv('ADMIN_ACCOUNTS', '39734273')
+    login(client)
+    codes = [fetch(client, str(500 + i)).status_code for i in range(3)]
+    assert 429 not in codes

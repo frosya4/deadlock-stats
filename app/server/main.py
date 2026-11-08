@@ -103,6 +103,8 @@ def create_app():
             return JSONResponse({'error': 'Недостаточно свободного места на сервере, попробуйте позже'}, status_code=507)
         if storage.size() >= float(os.environ.get('MAX_STORAGE_GB', '20')) * 1024**3:
             return JSONResponse({'error': 'Хранилище матчей заполнено, попробуйте позже'}, status_code=507)
+        if auth.is_admin(auth.current_account(request)):
+            return None
         retry = per_ip.take(client_ip(request), int(os.environ.get('PER_IP_JOBS_PER_HOUR', '10')))
         if retry:
             return limited('Слишком много задач с вашего IP, попробуйте позже', retry)
@@ -172,7 +174,7 @@ def create_app():
             return rejection
         # No await between account reservation and submit: parallel requests cannot bypass it.
         limit = int(os.environ.get('PER_ACCOUNT_FETCH_PER_HOUR', '2'))
-        retry = storage.take_account(account, limit)
+        retry = 0 if auth.is_admin(account) else storage.take_account(account, limit)
         if retry:
             return limited(f'Лимит: {limit} обработки в час, попробуйте через {(retry + 59) // 60} мин', retry)
         retry = upstream.take('fetch', int(os.environ.get('FETCH_PER_HOUR', '60')), count=2)

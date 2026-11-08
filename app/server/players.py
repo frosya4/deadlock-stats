@@ -8,7 +8,7 @@ import httpx
 from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 
-from app.server.auth import STEAM_BASE, current_account
+from app.server.auth import STEAM_BASE, current_account, is_admin
 from app.server.limits import HourlyLimit
 
 router = APIRouter()
@@ -129,7 +129,7 @@ async def refresh(id: str, request: Request):
         return JSONResponse({'error': str(exc)}, status_code=400)
     if not hasattr(request.app.state, 'refresh_limit'):
         request.app.state.refresh_limit = HourlyLimit()
-    retry = request.app.state.refresh_limit.take('force_refetch', 1)
+    retry = 0 if is_admin(current_account(request)) else request.app.state.refresh_limit.take('force_refetch', 1)
     if retry:
         return JSONResponse({'error': f'Обновить из Steam можно раз в час на весь сайт, попробуйте через {max(1, retry // 60)} мин'},
                             status_code=429, headers={'Retry-After': str(retry)})
