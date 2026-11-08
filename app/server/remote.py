@@ -18,6 +18,10 @@ async def salts(match_id):
             response = await client.get(f'https://api.deadlock-api.com/v1/matches/{match_id}/salts')
             if response.status_code in (404, 410):
                 raise DemoError(NOT_FOUND)
+            if response.status_code in (429, 503):
+                wait = response.headers.get('retry-after', '')
+                minutes = f' через {max(1, int(wait) // 60)} мин' if wait.isdigit() else ' позже'
+                raise DemoError('deadlock-api ограничивает новые матчи: 3 в час на наш сервер. Попробуйте' + minutes)
             response.raise_for_status()
             data = response.json()
             cluster = str(data.get('cluster_id', data.get('cluster', '')))
