@@ -65,7 +65,8 @@ def test_stalled_body_releases_reservation(client, monkeypatch, endpoint, limit_
             sent.append(message)
         await client.app({'type': 'http', 'asgi': {'version': '3.0'}, 'http_version': '1.1',
                           'method': 'POST', 'scheme': 'http', 'path': endpoint, 'raw_path': endpoint.encode(),
-                          'query_string': b'', 'headers': [(b'content-type', b'application/octet-stream')],
+                          'query_string': b'', 'headers': [(b'content-type', b'application/octet-stream'),
+                              (b'cookie', ('dls_session=' + client.cookies.get('dls_session')).encode())],
                           'client': ('8.8.8.8', 1), 'server': ('localhost', 80)}, receive, send)
         assert sent[0]['status'] == 408
     asyncio.run(run())

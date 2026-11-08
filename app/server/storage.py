@@ -1,6 +1,8 @@
 import json
 import sqlite3
 import shutil
+import time
+import math
 from pathlib import Path
 from contextlib import contextmanager
 
@@ -25,11 +27,25 @@ class Storage:
         self.index = root / 'index.sqlite'
         with self.connect() as db:
             db.execute('CREATE TABLE IF NOT EXISTS hashes (hash TEXT PRIMARY KEY, id TEXT NOT NULL UNIQUE)')
+            db.execute('CREATE TABLE IF NOT EXISTS account_jobs (account_id INTEGER NOT NULL, ts REAL NOT NULL)')
+            db.execute('CREATE INDEX IF NOT EXISTS account_jobs_account_ts ON account_jobs(account_id, ts)')
         self.prune()
 
     def connect(self):
         # Each operation owns its connection (also safe across FastAPI threads).
         return closing_connection(self.index)
+
+    def take_account(self, account_id: int, limit: int) -> int:
+        with self.connect() as db:
+            db.execute('BEGIN IMMEDIATE')
+            now = time.time()
+            db.execute('DELETE FROM account_jobs WHERE ts <= ?', (now - 3600,))
+            count, first = db.execute('SELECT count(*), min(ts) FROM account_jobs WHERE account_id = ?',
+                                      (account_id,)).fetchone()
+            if count >= limit:
+                return max(1, math.ceil(first + 3600 - now)) if first is not None else 3600
+            db.execute('INSERT INTO account_jobs(account_id, ts) VALUES (?, ?)', (account_id, now))
+        return 0
 
     def size(self):
         return sum(p.stat().st_size for p in self.root.rglob('*') if p.is_file())

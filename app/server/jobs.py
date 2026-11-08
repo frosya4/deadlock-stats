@@ -59,7 +59,7 @@ class Jobs:
             if job.get('_finished', float('inf')) < time.monotonic() - 3600:
                 del self.jobs[key]
 
-    def submit(self, digest, path=None, match_id=None):
+    def submit(self, digest, path=None, match_id=None, requested_by=None):
         self.expire()
         if digest in self.active:
             if path:
@@ -67,6 +67,8 @@ class Jobs:
             return self.active[digest]
         job_id = uuid.uuid4().hex
         self.jobs[job_id] = {'state': 'queued', 'position': 0}
+        if requested_by is not None:
+            self.jobs[job_id]['_requested_by'] = requested_by
         self.active[digest] = job_id
         self.queue.put_nowait((job_id, digest, path, match_id))
         return job_id
@@ -97,7 +99,7 @@ class Jobs:
                                 timeout=float(os.environ.get('FETCH_DEADLINE_S', '300')))
                     if magic != b'PBDEMS2\0':
                         raise DemoError('Это не демка Deadlock')
-                match_id = await self._process(path, digest, requested_id)
+                match_id = await self._process(path, digest, requested_id, job.get('_requested_by'))
                 job.update(state='done', matchId=match_id)
             except TimeoutError:
                 job.update(state='error', error='Превышено время скачивания записи')
@@ -137,7 +139,7 @@ class Jobs:
                 await killer.wait()
             await child.wait()
 
-    async def _process(self, path, digest, requested_id=None):
+    async def _process(self, path, digest, requested_id=None, requested_by=None):
         deadline = time.monotonic() + float(os.environ.get('PARSE_TIMEOUT_S', '240'))
         with tempfile.TemporaryDirectory(dir=self.storage.tmp, prefix='raw-') as raw:
             command = shlex.split(os.environ.get('DLDUMP_BIN', '/usr/local/bin/dldump'))
@@ -166,6 +168,11 @@ class Jobs:
                 report['match'].update(identity)
                 report_path.write_text(json.dumps(report, ensure_ascii=False), encoding='utf-8')
                 (staging / 'summary.json').write_text(json.dumps(summary, ensure_ascii=False), encoding='utf-8')
+                if requested_by is not None:
+                    meta_path = staging / 'meta.json'
+                    meta = json.loads(meta_path.read_text(encoding='utf-8')) if meta_path.exists() else {}
+                    meta['requestedBy'] = requested_by
+                    meta_path.write_text(json.dumps(meta, ensure_ascii=False), encoding='utf-8')
                 target = self.storage.matches / match_id
                 if not target.exists():
                     if self.storage.size() > float(os.environ.get('MAX_STORAGE_GB', '20'))*1024**3:

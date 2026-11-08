@@ -9,6 +9,7 @@ from pathlib import Path
 
 import pytest
 from fastapi.testclient import TestClient
+from auth_helpers import login
 
 ROOT = Path(__file__).resolve().parents[1]
 DEMO = b'PBDEMS2\0' + b'\0' * 8
@@ -24,6 +25,7 @@ def client(tmp_path, monkeypatch):
     monkeypatch.setenv('DLDUMP_BIN', shlex.join([sys.executable, str(fake)]))
     from app.server.main import create_app
     with TestClient(create_app()) as c:
+        login(c)
         yield c
 
 

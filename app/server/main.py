@@ -137,9 +137,9 @@ def create_app():
 
     @app.post('/api/fetch')
     async def fetch_match(request: Request):
-        rejection = admit(request)
-        if rejection:
-            return rejection
+        account = auth.current_account(request)
+        if account is None:
+            return JSONResponse({'error': 'Войдите через Steam, чтобы обработать матч'}, status_code=401)
         jobs.inflight += 1
         try:
             # Bound this small JSON body too; no unbounded request.json().
@@ -155,19 +155,27 @@ def create_app():
                     raise ValueError()
             except (ValueError, KeyError, TypeError):
                 return JSONResponse({'error': 'Неверный номер матча'}, status_code=400)
-            if (storage.matches / match_id / 'match.json').is_file():
-                return {'matchId': match_id, 'duplicate': True}
-            key = 'fetch:' + match_id
-            if key not in jobs.active:
-                # One salts call and one Valve download per new fetch.
-                retry = upstream.take('fetch', int(os.environ.get('FETCH_PER_HOUR', '60')), count=2)
-                if retry:
-                    return limited('Лимит скачиваний у Valve исчерпан, попробуйте позже', retry)
-            return JSONResponse({'job': jobs.submit(key, match_id=match_id)}, status_code=202)
         except TimeoutError:
             return JSONResponse({'error': 'Превышено время передачи запроса'}, status_code=408)
         finally:
             jobs.inflight -= 1
+        if (storage.matches / match_id / 'match.json').is_file():
+            return {'matchId': match_id, 'duplicate': True}
+        key = 'fetch:' + match_id
+        if key in jobs.active:
+            return JSONResponse({'job': jobs.active[key]}, status_code=202)
+        rejection = admit(request)
+        if rejection:
+            return rejection
+        # No await between account reservation and submit: parallel requests cannot bypass it.
+        limit = int(os.environ.get('PER_ACCOUNT_FETCH_PER_HOUR', '2'))
+        retry = storage.take_account(account, limit)
+        if retry:
+            return limited(f'Лимит: {limit} обработки в час, попробуйте через {(retry + 59) // 60} мин', retry)
+        retry = upstream.take('fetch', int(os.environ.get('FETCH_PER_HOUR', '60')), count=2)
+        if retry:
+            return limited('Лимит скачиваний у Valve исчерпан, попробуйте позже', retry)
+        return JSONResponse({'job': jobs.submit(key, match_id=match_id, requested_by=account)}, status_code=202)
 
     @app.get('/api/jobs/{job_id}')
     def job_status(job_id: str):
