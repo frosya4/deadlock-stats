@@ -8,7 +8,8 @@ import httpx
 from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 
-from app.server.auth import STEAM_BASE
+from app.server.auth import STEAM_BASE, current_account
+from app.server.limits import HourlyLimit
 
 router = APIRouter()
 API = 'https://api.deadlock-api.com/v1'
@@ -17,7 +18,7 @@ UPSTREAM_ERRORS = (httpx.HTTPError, TimeoutError, ValueError, TypeError, KeyErro
 
 
 async def http_get(url):
-    async with httpx.AsyncClient(timeout=15) as client:
+    async with httpx.AsyncClient(timeout=90) as client:
         response = await client.get(url)
         return response.status_code, response.content
 
@@ -115,6 +116,36 @@ async def player(id: str, request: Request):
                  else 'queued' if 'fetch:' + match_id in jobs.active else 'available')
         result.append(match | {'state': state})
     return {'accountId': account, 'name': name or steam, 'avatar': avatar, 'matches': result}
+
+
+@router.post('/api/players/{id}/refresh')
+async def refresh(id: str, request: Request):
+    """Ask deadlock-api to re-read history from Steam (force_refetch: 1 req/h per our IP)."""
+    if current_account(request) is None:
+        return JSONResponse({'error': 'Войдите через Steam, чтобы обновить историю'}, status_code=401)
+    try:
+        account = account_id(id)
+    except ValueError as exc:
+        return JSONResponse({'error': str(exc)}, status_code=400)
+    if not hasattr(request.app.state, 'refresh_limit'):
+        request.app.state.refresh_limit = HourlyLimit()
+    retry = request.app.state.refresh_limit.take('force_refetch', 1)
+    if retry:
+        return JSONResponse({'error': f'Обновить из Steam можно раз в час на весь сайт, попробуйте через {max(1, retry // 60)} мин'},
+                            status_code=429, headers={'Retry-After': str(retry)})
+    url = f'{API}/players/{account}/match-history'
+    try:
+        async with asyncio.timeout(90):
+            status, body = await request.app.state.http_get(url + '?force_refetch=true')
+        if status == 429:
+            return JSONResponse({'error': 'deadlock-api временно ограничил обновления, попробуйте позже'}, status_code=429)
+        if status != 200:
+            raise ValueError('Неверный ответ API')
+        matches = parse_history(body)
+    except UPSTREAM_ERRORS:
+        return unavailable()
+    request.app.state.players_cache[url] = (time.monotonic(), matches)
+    return {'ok': True, 'count': len(matches), 'latest': matches[0]['matchId'] if matches else None}
 
 
 @router.get('/api/remote/{match_id}')

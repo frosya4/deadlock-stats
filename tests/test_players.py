@@ -172,3 +172,26 @@ def test_profile_page_route(player_client, monkeypatch, tmp_path):
     (tmp_path / 'profile.html').write_text('<html>Профиль</html>', encoding='utf-8')
     monkeypatch.setattr('app.server.main.WEB', tmp_path)
     assert client.get(f'/p/{ACCOUNT}').text == '<html>Профиль</html>'
+
+
+def test_refresh_requires_login_and_is_limited(player_client):
+    from auth_helpers import login
+    client, calls = player_client
+    assert client.post(f'/api/players/{ACCOUNT}/refresh').status_code == 401
+    login(client, ACCOUNT)
+    client.get(f'/api/players/{ACCOUNT}')
+    response = client.post(f'/api/players/{ACCOUNT}/refresh')
+    assert response.status_code == 200 and response.json()['count'] == 3
+    assert any('force_refetch=true' in url for url in calls)
+    second = client.post(f'/api/players/{ACCOUNT}/refresh')
+    assert second.status_code == 429 and 'раз в час' in second.json()['error']
+
+
+def test_refresh_upstream_failure(player_client):
+    from auth_helpers import login
+    client, _ = player_client
+    login(client, ACCOUNT)
+    async def down(url):
+        return 500, b''
+    client.app.state.http_get = down
+    assert client.post(f'/api/players/{ACCOUNT}/refresh').status_code == 503

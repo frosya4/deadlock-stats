@@ -1,4 +1,4 @@
-import { api, el, link, avatar, processControl } from './auth.js';
+import { api, el, link, avatar, processControl, me } from './auth.js';
 import { portrait } from './report-v2.js';
 import { heroes } from './heroes.js';
 export const duration = s => Math.floor(Number(s || 0) / 60) + ':' + String(Math.floor(Number(s || 0) % 60)).padStart(2,'0');
@@ -28,6 +28,21 @@ function summary(p) {
   if(favorite) chip.prepend(portrait({heroId:favorite[0],hero:heroName(favorite[0])}));
   document.querySelector('#profile-heading').replaceChildren(identity,chips);
 }
+async function refreshControl(p) {
+  const box=el('div','','profile-refresh');
+  box.append(el('span','Нет свежих матчей? deadlock-api обновляет историю с задержкой.','mut small'));
+  const user=await me;
+  if(!user.accountId) { box.append(link('Войти, чтобы обновить из Steam','/auth/login')); }
+  else {
+    const button=el('button','Обновить из Steam'); button.type='button';
+    const note=el('span','','small'); note.setAttribute('role','status');
+    button.onclick=async()=>{ button.disabled=true; note.textContent='Запрашиваю историю у Steam… (до минуты)';
+      try { await api('/api/players/'+p.accountId+'/refresh',{method:'POST'}); note.textContent='Готово'; load(); }
+      catch(e) { note.textContent=e.message; button.disabled=false; } };
+    box.append(button,note);
+  }
+  document.querySelector('#profile-heading').append(box);
+}
 async function load() {
   const list=document.querySelector('#profile-matches'), status=document.querySelector('#profile-status');
   status.className='mut'; status.setAttribute('role','status'); status.textContent='Загрузка профиля…';
@@ -36,7 +51,7 @@ async function load() {
   try {
     const p = await api('/api/players/' + encodeURIComponent(location.pathname.split('/').pop()));
     document.title = 'Deadlock · ' + p.name;
-    summary(p); list.replaceChildren(); status.textContent='';
+    summary(p); refreshControl(p); list.replaceChildren(); status.textContent='';
     document.querySelector('.profile-columns').hidden=!p.matches.length;
     if(!p.matches.length) { const empty=el('div','','profile-empty'); empty.append(el('h3','Матчей пока нет'),el('p','Здесь появится история последних матчей игрока.','mut')); list.append(empty); }
     for (const m of p.matches) {
