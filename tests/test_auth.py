@@ -30,6 +30,7 @@ def callback_params(**changes):
     params = {'openid.mode': 'id_res', 'openid.op_endpoint': 'https://steamcommunity.com/openid/login',
               'openid.claimed_id': f'https://steamcommunity.com/openid/id/{STEAM_ID}',
               'openid.identity': f'https://steamcommunity.com/openid/id/{STEAM_ID}',
+              'openid.signed': 'op_endpoint,claimed_id,identity,return_to,response_nonce,assoc_handle',
               'openid.return_to': ORIGIN + '/auth/callback'}
     return params | changes
 
@@ -79,6 +80,15 @@ def test_callback_rejects_bad_claimed_id(auth_client, field, value):
 def test_callback_rejects_wrong_return_to(auth_client):
     assert auth_client.get('/auth/callback', params=callback_params(**{
         'openid.return_to': 'https://evil.example/auth/callback'})).status_code == 400
+
+
+@pytest.mark.parametrize('missing', ['op_endpoint', 'claimed_id', 'identity', 'return_to'])
+def test_callback_rejects_unsigned_identity_fields(auth_client, missing):
+    signed = ','.join(field for field in callback_params()['openid.signed'].split(',') if field != missing)
+    response = auth_client.get('/auth/callback', params=callback_params(**{'openid.signed': signed}),
+                               follow_redirects=False)
+    assert response.status_code == 400
+    assert 'dls_session' not in auth_client.cookies
 
 
 def test_tampered_cookie_is_logged_out(auth_client):

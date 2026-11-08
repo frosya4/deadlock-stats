@@ -82,6 +82,8 @@ async def callback(request: Request):
              and params.get('openid.op_endpoint') == STEAM_ENDPOINT
              and re.fullmatch(r'https://steamcommunity\.com/openid/id/[0-9]{17}', claimed)
              and params.get('openid.identity') == claimed
+             and {'op_endpoint', 'claimed_id', 'identity', 'return_to'}.issubset(
+                 params.get('openid.signed', '').split(','))
              and params.get('openid.return_to') == callback_url(request))
     account = int(claimed.rsplit('/', 1)[-1]) - STEAM_BASE if valid else -1
     if valid and 0 <= account <= 0xffffffff:
