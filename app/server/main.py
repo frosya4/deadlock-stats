@@ -13,6 +13,7 @@ from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, PlainTex
 from fastapi.staticfiles import StaticFiles
 
 from app.server.jobs import Jobs
+from app.server import auth
 from app.server.limits import HourlyLimit, body_chunks, client_ip
 from app.server.storage import Storage
 from app.pipeline.enrich import enrich
@@ -81,6 +82,11 @@ def create_app():
     app.state.storage = storage
     app.state.per_ip = per_ip
     app.state.upstream = upstream
+    app.state.session_secret = auth.load_secret(storage.root)
+    app.state.public_url = os.environ.get('PUBLIC_URL', 'http://localhost').rstrip('/')
+    app.state.cookie_secure = os.environ.get('COOKIE_INSECURE') != '1'
+    app.state.steam_verify = auth.steam_verify
+    app.include_router(auth.router)
 
     def limited(message, retry=60):
         return JSONResponse({'error': message}, status_code=429, headers={'Retry-After': str(retry)})
