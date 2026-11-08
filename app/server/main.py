@@ -13,7 +13,7 @@ from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, PlainTex
 from fastapi.staticfiles import StaticFiles
 
 from app.server.jobs import Jobs
-from app.server import auth
+from app.server import auth, players
 from app.server.limits import HourlyLimit, body_chunks, client_ip
 from app.server.storage import Storage
 from app.pipeline.enrich import enrich
@@ -87,6 +87,9 @@ def create_app():
     app.state.cookie_secure = os.environ.get('COOKIE_INSECURE') != '1'
     app.state.steam_verify = auth.steam_verify
     app.include_router(auth.router)
+    app.state.http_get = players.http_get
+    app.state.players_cache = {}
+    app.include_router(players.router)
 
     def limited(message, retry=60):
         return JSONResponse({'error': message}, status_code=429, headers={'Retry-After': str(retry)})
@@ -262,6 +265,17 @@ document.querySelector('#official-fetch').addEventListener('click', async functi
 }});
 </script>'''
         return HTMLResponse(path.read_text(encoding='utf-8').replace('<div id="report"', fragment + '<div id="report"', 1))
+
+    @app.get('/p/{id}')
+    def profile_page(id: str):
+        try:
+            players.account_id(id)
+        except ValueError as exc:
+            return JSONResponse({'error': str(exc)}, status_code=400)
+        path = WEB / 'profile.html'
+        if not path.is_file():
+            return JSONResponse({'error': 'Страница не найдена'}, status_code=404)
+        return FileResponse(path)
 
     if WEB.is_dir():
         app.mount('/', StaticFiles(directory=WEB, html=True), name='web')
