@@ -27,18 +27,19 @@ async function header() {
   try { const p = await api('/api/players/' + account); identity.textContent = p.name || user.steamId; identity.prepend(avatar(p.avatar)); } catch {}
 }
 header();
-export function processControl(id, state = 'available') {
+export function processControl(id, state = 'available', compact = false) {
   const host = el('div','','process-control');
-  const done = () => host.replaceChildren(link('Обработан','/m/' + encodeURIComponent(id)));
+  const done = () => { const report=link(compact?'Отчёт':'Обработан','/m/' + encodeURIComponent(id)); report.className='report-link'; host.replaceChildren(...(compact?[el('span','Обработан','processed-label mut small')]:[]),report); };
   if (state === 'processed') { done(); return host; }
-  if (state === 'queued') { host.textContent = 'В очереди / обрабатывается'; return host; }
+  if (state === 'queued') { host.textContent = compact ? 'Обрабатывается' : 'В очереди / обрабатывается'; if(compact) host.classList.add('is-processing'); return host; }
   const button = el('button','Загрузка…'); button.disabled = true; button.type = 'button';
   const status = el('span'); status.setAttribute('aria-live','polite'); host.append(button,status);
-  const update = () => { button.disabled = account == null; button.textContent = account == null ? 'Войдите через Steam, чтобы обработать' : 'Обработать'; };
+  const login=link('Войти, чтобы обработать','/auth/login'); login.className='process-login mut'; if(compact) host.append(login);
+  const update = () => { if(compact) { login.hidden=account!=null; button.hidden=account==null; } button.disabled = account == null; button.textContent = account == null ? 'Войдите через Steam, чтобы обработать' : 'Обработать'; };
   me.then(user => { account = user.accountId; update(); });
   document.addEventListener('auth-logout',update);
   button.onclick = async () => {
-    button.disabled = true; status.removeAttribute('role'); status.textContent = 'Отправка…';
+    button.disabled = true; status.removeAttribute('role'); status.textContent = 'Отправка…'; if(compact) { button.hidden=true; host.classList.add('is-processing'); }
     try {
       let data = await api('/api/fetch',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({matchId:String(id)})});
       if (data.matchId) { done(); return; }
@@ -52,7 +53,7 @@ export function processControl(id, state = 'available') {
         await new Promise(resolve => setTimeout(resolve,1000));
       }
     } catch (e) { status.textContent = e instanceof TypeError ? 'Нет связи с сервером. Попробуйте снова.' : e.message; status.setAttribute('role','alert'); status.className = 'error'; }
-    finally { update(); }
+    finally { host.classList.remove('is-processing'); update(); }
   };
   return host;
 }

@@ -8,11 +8,11 @@ test('profile states, anonymous header, mobile',async({page})=>{
  await mock(page); await page.setViewportSize({width:390,height:844}); await page.goto('/p/42');
  await expect(page.getByRole('link',{name:'Войти через Steam'})).toHaveAttribute('href','/auth/login');
  await expect(page.getByRole('heading',{name:'Игрок <тест>'})).toBeVisible();
- await expect(page.getByRole('link',{name:'Обработан',exact:true})).toHaveAttribute('href','/m/100');
- await expect(page.getByText('В очереди / обрабатывается')).toBeVisible();
- await expect(page.getByRole('button',{name:'Войдите через Steam, чтобы обработать'})).toBeDisabled();
+ await expect(page.getByRole('link',{name:'Отчёт',exact:true})).toHaveAttribute('href','/m/100');
+ await expect(page.getByText('Обрабатывается', {exact:true})).toBeVisible();
+ await expect(page.getByRole('link',{name:'Войти, чтобы обработать'})).toHaveAttribute('href','/auth/login');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
- await page.screenshot({path:'test-results/profile-mobile.png',fullPage:true});
+
 });
 test('process job and logout',async({page})=>{
  await mock(page,true); await page.route('**/api/fetch',r=>r.fulfill({status:202,json:{job:'abc'}}));
@@ -20,7 +20,7 @@ test('process job and logout',async({page})=>{
  await page.route('**/auth/logout',r=>r.fulfill({json:{ok:true}})); await page.goto('/p/42');
  await expect(page.locator('[data-auth] a')).toHaveAttribute('href','/p/42');
  await page.getByRole('button',{name:'Обработать',exact:true}).click();
- await expect(page.getByRole('link',{name:'Обработан',exact:true})).toHaveCount(2);
+ await expect(page.getByRole('link',{name:'Отчёт',exact:true})).toHaveCount(2);
  await page.getByRole('button',{name:'Выйти',exact:true}).click();
  await expect(page.getByRole('link',{name:'Войти через Steam'})).toBeVisible();
 });
@@ -45,13 +45,41 @@ test('search and upstream error',async({page})=>{
 test('duplicate processing and report nickname link',async({page})=>{
  await mock(page,true); await page.route('**/api/fetch',r=>r.fulfill({json:{matchId:102,duplicate:true}}));
  await page.goto('/p/42'); await page.getByRole('button',{name:'Обработать',exact:true}).click();
- await expect(page.getByRole('link',{name:'Обработан',exact:true})).toHaveCount(2);
+ await expect(page.getByRole('link',{name:'Отчёт',exact:true})).toHaveCount(2);
  await page.goto('/m/133162474#players'); await expect(page.locator('#players a[href^="/p/"]').first()).toBeVisible();
 });
 
 test('queued match becomes processed',async({page})=>{
  await mock(page); let reads=0;
  await page.route('**/api/players/42',r=>r.fulfill({json:{accountId:42,name:'Игрок',avatar:'',matches:[{...matches[1],state:reads++?'processed':'queued'}]}}));
- await page.goto('/p/42'); await expect(page.getByText('В очереди / обрабатывается')).toBeVisible();
- await expect(page.getByRole('link',{name:'Обработан',exact:true})).toBeVisible({timeout:10000});
+ await page.goto('/p/42'); await expect(page.getByText('Обрабатывается', {exact:true})).toBeVisible();
+ await expect(page.getByRole('link',{name:'Отчёт',exact:true})).toBeVisible({timeout:10000});
+});
+for (const width of [1280,390]) test('profile visual layout '+width,async({page})=>{
+ await mock(page,true);
+ const recent=Array.from({length:10},(_,i)=>({...matches[i%3],matchId:100+i,heroId:[1,2,3,4,6][i%5],startTime:Math.floor(Date.now()/1000)-(i+2)*3600,won:i%3!==1}));
+ await page.route('**/api/players/*',r=>r.fulfill({json:{accountId:42,name:'Nightfall',avatar:'',matches:recent}}));
+ await page.setViewportSize({width,height:900}); await page.goto('/p/42');
+ await expect(page.locator('.profile-match')).toHaveCount(10);
+ await expect(page.locator('.profile-summary')).toContainText('7 — 3 · 70%');
+ await expect(page.locator('.profile-avatar')).toContainText('N');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+ if(width===1280) expect((await page.locator('.profile-match').first().boundingBox())!.height).toBeLessThanOrEqual(60);
+ await page.screenshot({path:`test-results/profile-${width===1280?'desktop':'mobile'}.png`,fullPage:true});
+ await page.locator('#theme-toggle').click();
+ await expect(page.locator('html')).toHaveAttribute('data-theme','light');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+ await page.screenshot({path:`test-results/profile-${width}-light.png`,fullPage:true});
+});
+test('loading empty error retry and row navigation',async({page})=>{
+ await mock(page); let release; const gate=new Promise(resolve=>release=resolve);
+ await page.route('**/api/players/*',async r=>{await gate; await r.fulfill({json:{accountId:42,name:'Игрок',avatar:'',matches:[]}});});
+ await page.goto('/p/42', {waitUntil:'domcontentloaded'}); await expect(page.locator('.profile-skeleton')).toHaveCount(8); release();
+ await expect(page.getByText('Матчей пока нет')).toBeVisible(); await expect(page.locator('.profile-skeleton')).toHaveCount(0);
+ await page.route('**/api/players/*',r=>r.abort()); await page.reload();
+ await expect(page.getByRole('alert')).toContainText('API временно недоступен');
+ await mock(page); await page.getByRole('button',{name:'Попробовать снова'}).click();
+ await expect(page.locator('.profile-match')).toHaveCount(3);
+ await page.locator('.profile-match').first().click({position:{x:580,y:25}});
+ await expect(page).toHaveURL(/\/m\/100$/);
 });
