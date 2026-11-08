@@ -63,7 +63,17 @@ async function load() {
       result.append(el('strong',m.won?'Победа':'Поражение'),date);
       const kda=el('div','','match-kda'); kda.append(el('strong',[m.kills,m.deaths,m.assists].join(' / ')),el('small',((m.kills+m.assists)/Math.max(1,m.deaths)).toFixed(2)+' KDA','mut'));
       row.append(identity,result,el('span',duration(m.durationS),'match-duration mut'),kda,el('span',Number(m.netWorth).toLocaleString('ru-RU'),'match-worth'),processControl(m.matchId,m.state,true));
-      list.append(row);
+      const more=el('button','Игроки ▾','match-players-toggle'); more.type='button'; more.setAttribute('aria-expanded','false');
+      const box=el('div','','match-players'); box.hidden=true;
+      more.onclick=async()=>{ const open=box.hidden; box.hidden=!open; more.setAttribute('aria-expanded',String(open)); more.textContent=open?'Игроки ▴':'Игроки ▾';
+        if(open && !box.dataset.loaded) { box.textContent='Загрузка…';
+          try { const r=await api('/api/remote/'+m.matchId); box.replaceChildren(); box.dataset.loaded='1';
+            for (const [team,cls] of [[0,'amber'],[1,'sapphire']]) { const col=el('div','','match-players-team '+cls);
+              for (const q of r.players.filter(q=>q.team===team)) { const line=el('div','','match-player'+(q.accountId===p.accountId?' is-self':''));
+                line.append(portrait({heroId:q.heroId,hero:heroName(q.heroId)}),link(q.name||String(q.accountId),'/p/'+q.accountId),el('span',[q.kills,q.deaths,q.assists].join('/'),'mut small')); col.append(line); }
+              box.append(col); } }
+          catch(e) { box.textContent='Не удалось загрузить игроков: '+e.message; } } };
+      row.lastElementChild.prepend(more); list.append(row,box);
       if(m.state==='queued') watchQueued(row,p.accountId,m.matchId);
     }
   } catch {
@@ -84,7 +94,7 @@ export async function remoteMatch(id) {
     section.append(el('h2',name + ' · ' + players.reduce((s,p)=>s+p.kills,0) + ' убийств',cls));
     for (const p of players) {
       const row = el('article','','card remote-player'); const hero = heroes[p.heroId] || 'Герой ' + p.heroId;
-      row.append(portrait({heroId:p.heroId,hero}),link(String(p.accountId),'/p/'+p.accountId),el('span',hero),el('span',[p.kills,p.deaths,p.assists].join(' / ')),el('span','Нетворс: '+Number(p.netWorth).toLocaleString('ru-RU'))); section.append(row);
+      row.append(portrait({heroId:p.heroId,hero}),link(p.name || String(p.accountId),'/p/'+p.accountId),el('span',hero),el('span',[p.kills,p.deaths,p.assists].join(' / ')),el('span','Нетворс: '+Number(p.netWorth).toLocaleString('ru-RU'))); section.append(row);
     }
   }
   section.append(processControl(id)); document.querySelector('#status').replaceWith(section);

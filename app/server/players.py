@@ -153,9 +153,23 @@ async def remote(match_id: str, request: Request):
     if not re.fullmatch(r'[0-9]{1,20}', match_id):
         return JSONResponse({'error': 'Неверный номер матча'}, status_code=400)
     try:
-        return await cached(request, f'{API}/matches/{int(match_id)}/metadata', parse_remote)
+        result = await cached(request, f'{API}/matches/{int(match_id)}/metadata', parse_remote)
     except UPSTREAM_ERRORS:
         return unavailable()
+    ids = ','.join(str(p['accountId']) for p in result['players'])
+    try:
+        names = await cached(request, f'{API}/players/steam?account_ids={ids}', parse_names) if ids else {}
+    except UPSTREAM_ERRORS:
+        names = {}
+    return result | {'players': [p | {'name': names.get(p['accountId'], '')} for p in result['players']]}
+
+
+def parse_names(body):
+    rows = json.loads(body)
+    if not isinstance(rows, list):
+        raise ValueError('Неверный ответ API')
+    return {row['account_id']: str(row.get('personaname') or '')[:64] for row in rows
+            if isinstance(row, dict) and type(row.get('account_id')) is int}
 
 
 @router.get('/api/search')

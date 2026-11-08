@@ -44,3 +44,10 @@ nav:not(.tabs){flex-wrap:wrap} [data-auth]{margin-left:auto;display:flex;align-i
 
 .profile-refresh{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:14px}
 .profile-refresh button{padding:6px 12px}
+
+.match-players-toggle{font-size:12px;padding:4px 8px;justify-self:end}
+.match-players{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:10px 12px 14px;border:1px solid var(--line);border-top:0;border-radius:0 0 8px 8px;margin:-4px 0 6px}
+.match-players-team{display:flex;flex-direction:column;gap:6px}.match-players-team.amber{border-left:3px solid #e0a43a;padding-left:8px}.match-players-team.sapphire{border-left:3px solid #5b93ec;padding-left:8px}
+.match-player{display:flex;align-items:center;gap:8px;min-width:0}.match-player a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.match-player .portrait{width:26px;height:26px;flex:0 0 26px}.match-player.is-self a{font-weight:700}
+@media(max-width:700px){.match-players{grid-template-columns:1fr}}
+.profile-match .process-control .match-players-toggle{background:none;color:var(--fg);border:1px solid var(--line);font-weight:600}
