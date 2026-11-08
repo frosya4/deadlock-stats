@@ -8,6 +8,8 @@ services:
       dockerfile: Dockerfile
     environment:
       DATA_DIR: /data
+      PUBLIC_URL: https://${SITE_HOST}
+      PER_ACCOUNT_FETCH_PER_HOUR: 2
     volumes:
       - ./data:/data
     dns:
