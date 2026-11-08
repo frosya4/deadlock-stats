@@ -125,11 +125,15 @@ async function load() {
     const bar = el('div', '', 'gold-bar');
     const labels = [...sourceColumns.map(([, name]) => name), 'Орбы душ', 'Пассив и прочее'];
     parts.forEach((value, i) => {
-      const segment = el('span'); segment.style.width = (p.netWorth ? value / p.netWorth * 100 : 0) + '%'; segment.style.background = sourceColors[i]; segment.title = labels[i] + ': ' + format(value); bar.append(segment);
+      const share = p.netWorth ? value / p.netWorth * 100 : 0;
+      const segment = el('span'); segment.style.width = share + '%'; segment.style.background = sourceColors[i];
+      segment.dataset.tip = labels[i] + ': ' + format(value) + ' (' + share.toFixed(1).replace('.', ',') + '%)';
+      segment.setAttribute('aria-label', segment.dataset.tip); segment.tabIndex = 0; bar.append(segment);
     });
-    return [playerButton(p), format(p.netWorth), format(p.gpm), ...parts.map(format), format(p.goldDeathLoss), bar];
+    return [playerButton(p), bar, format(p.netWorth), format(p.gpm), ...parts.map(format), format(p.goldDeathLoss)];
   });
-  table($('#gold'), ['Игрок', 'Всего', 'GPM', ...sourceColumns.map(([, label]) => label), 'Орбы душ', 'Пассив и прочее', 'Потеряно при смертях', 'Структура'], goldRows);
+  table($('#gold'), ['Игрок', 'Структура', 'Всего', 'GPM', ...sourceColumns.map(([, label]) => label), 'Орбы душ', 'Пассив и прочее', 'Потеряно при смертях'], goldRows);
+  goldBarTips($('#gold'));
   table($('#objectives'), ['Объект', 'Чей', 'Первый урон', 'Уничтожен', 'Урон игроков'], data.objectives.map(o => [o.name, el('span', teamName(o.owner), teamClass(o.owner)), o.firstDamage, o.destroyed || 'цел', format(o.playerDamage)]));
   $('#death-map').append(deathMap(players));
   table($('#damage'), ['Кто → Кому', ...players.map(p => playerButton(p, true))], players.map(a => [playerButton(a), ...players.map(b => format(data.damageMatrix[a.slot]?.[b.slot]))]));
@@ -185,3 +189,14 @@ load().catch(error => {
   $('#status').hidden = false; $('#status').classList.add('error');
   $('#status').textContent = error instanceof TypeError || error instanceof SyntaxError ? 'Не удалось загрузить матч. Проверьте подключение и обновите страницу.' : error.message || 'Не удалось загрузить матч';
 });
+
+// Hover/tap tooltip for gold structure bars (native title is slow and absent on touch).
+function goldBarTips(root) {
+  const tip = el('div', '', 'gold-tip'); tip.hidden = true; document.body.append(tip);
+  const show = (segment, x, y) => { tip.textContent = segment.dataset.tip; tip.hidden = false;
+    const w = tip.offsetWidth; tip.style.left = Math.max(8, Math.min(innerWidth - w - 8, x - w / 2)) + 'px'; tip.style.top = (y - 40 + scrollY) + 'px'; };
+  root.addEventListener('pointermove', e => { const s = e.target.closest('.gold-bar span'); if (s) show(s, e.clientX, e.clientY); else tip.hidden = true; });
+  root.addEventListener('pointerleave', () => { tip.hidden = true; });
+  root.addEventListener('focusin', e => { const s = e.target.closest('.gold-bar span'); if (s) { const r = s.getBoundingClientRect(); show(s, r.left + r.width / 2, r.top); } });
+  root.addEventListener('focusout', () => { tip.hidden = true; });
+}
